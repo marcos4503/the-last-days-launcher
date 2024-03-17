@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32203.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Last Days Updater", "The Last Days Updater.csproj", "{DA6F2AC3-24CD-4EFE-9DE6-712BDD94CCEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA6F2AC3-24CD-4EFE-9DE6-712BDD94CCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6F2AC3-24CD-4EFE-9DE6-712BDD94CCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6F2AC3-24CD-4EFE-9DE6-712BDD94CCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6F2AC3-24CD-4EFE-9DE6-712BDD94CCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CC17370-9407-4D72-8333-A41502372AA9}
+	EndGlobalSection
+EndGlobal

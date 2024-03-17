@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32203.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The Last Days Launcher", "The Last Days Launcher.csproj", "{F4F89854-E7B0-4804-9E58-297F1F0DEAD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The Last Days Updater", "Add-Ons\The Last Days Updater\The Last Days Updater.csproj", "{93991F28-06A1-437A-B6C3-C89E0A5481AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4F89854-E7B0-4804-9E58-297F1F0DEAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F89854-E7B0-4804-9E58-297F1F0DEAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F89854-E7B0-4804-9E58-297F1F0DEAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F89854-E7B0-4804-9E58-297F1F0DEAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93991F28-06A1-437A-B6C3-C89E0A5481AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93991F28-06A1-437A-B6C3-C89E0A5481AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93991F28-06A1-437A-B6C3-C89E0A5481AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93991F28-06A1-437A-B6C3-C89E0A5481AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F3A52CD-BD70-4140-883D-1402EC65D314}
+	EndGlobalSection
+EndGlobal
