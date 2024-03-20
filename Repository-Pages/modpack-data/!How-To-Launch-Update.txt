@@ -1,0 +1,10 @@
+1. Copy all folders and file relevant for the The Last Days modpack, of a Minecraft instance of The Last Days, to a folder of computer
+   Example of relevant files/folders: "mods", "config", "resourcepacks", "texturepacks", etc...
+   (These files that will be copied will be the modpack files, which will be added to the game data (Prism Launcher + Minecraft The Last Days instance)
+   base that was downloaded to the user's computer. Therefore, these files can only be things like mods, mod configurations, resource packs, etc. 
+   They will be installed inside the ".minecraft" folder of the "The Last Days" instance on the players computers.)
+2. Using 7-Zip, compact all the files/folders that you have copied, but splitting into pieces of 10MB
+   The name of the parts must be like "current-modpack-data.zip.XXX"
+3. Copy all parts to the folder "Repository-Pages/modpack-data"
+4. Update the file "current-modpack-info.json" to have the current version of modpack data available for download in this repository
+5. The Launcher will download these data and apply on The Last Days Minecraft instance of the players, replacing the old files by these files

@@ -1,0 +1,11 @@
+1. Download all ZIP files of this folder
+2. Unpack it to a folder of the computer
+3. Make the needed changes to the Minecraft The Last Days instance, or to the Prism Launcher 
+   (don't add mods to "mods" or "config" folder of the "The Last Days" instance and don't leave a created world saved. This content is the base content
+   that will be downloaded to the players, and therefore can only contain the Prism Launcher, and the base Minecraft with Forge installed. Whether mods, 
+   worlds or things like that.)
+4. After all changes done, using 7-Zip, compact all the content that you have unpacked before, but splitting into pieces of 25MB
+   The name of the parts must be like "current-game-data.zip.XXX"
+5. Copy all parts to the folder "Repository-Pages/game-data"
+6. Update the file "current-game-data-info.json" to have the current version of game data data available for download in this repository
+7. The Launcher will download these data and apply on to the players that don't have the game data downloaded, or that have a old game data downloaded

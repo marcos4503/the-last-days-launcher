@@ -1,0 +1,9 @@
+1. Put the Java skin of the player inside this folder with the name of "nickname.png".
+   (The skin must have a Java compatible, and must be a PNG skin. The resolution must be 64x64.)
+2. Put the Java cape of the player (if have) inside this folder, with the name of "nickname=cape.png"
+   (The cape must have a Java compatible, and must be a PNG cape. The resolution must be 32x32.)
+3. If a skin/cape was added, or modified, update the last edit date in the file "current-cosmetics-info.json" and if is a new
+   skin or cape, add it to the list of skins with the format of...
+   If SKIN: "https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/cosmetics-db/nickname.png"
+   If CAPE: "https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/cosmetics-db/nickname=cape.png"
+4. The Launcher will automatically download the skinlist to the players computers.

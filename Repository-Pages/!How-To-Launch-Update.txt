@@ -1,0 +1,5 @@
+1. In properties of module "The Last Days Launcher", change the version string to the new version like "1.X.X"
+2. Compile "The Last Days Launcher" modules in RELEASE mode
+3. Get "release" resultant files and ZIP all files
+4. Copy the Zip file to folder "Repository-Pages" with the name of "current-launcher-compilation.zip"
+5. Update the file "current-launcher-version.txt" to have the current version string of current version.

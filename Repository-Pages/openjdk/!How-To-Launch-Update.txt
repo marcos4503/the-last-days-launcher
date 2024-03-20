@@ -1,0 +1,6 @@
+1. Download the ZIP of desired OpenJDK version at "https://jdk.java.net/archive/" (for Windows x64)
+2. Unzip all files of the OpenJDK inside a folder of computer
+3. Using 7-Zip, compact all the files of the OpenJDK in ZIP format, but splitting into pieces of 15MB
+   The name of the parts must be like "current-openjdk.zip.XXX"
+4. Copy all partes to the folder "Repository-Pages/openjdk"
+5. Update the file "current-java-info.json" to have the version of current JDK available for download in this repository
