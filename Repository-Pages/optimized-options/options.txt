@@ -19,7 +19,7 @@ fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:true
-darkMojangStudiosBackground:true
+darkMojangStudiosBackground:false
 hideLightningFlashes:false
 mouseSensitivity:0.1619718309859155
 fov:0.125
