@@ -1,3 +1,3 @@
 1. Copy the "options.txt" of a the "The Last Days" minecraft instance
 2. Place at this folder with the name of "options.txt"
-3. The Launcher will download this file and copy the options of interest to the Minecraft of players
+3. The Launcher will download this file and copy the options of relevancy/interest to the Minecraft of players
