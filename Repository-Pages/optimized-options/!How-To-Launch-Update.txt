@@ -1,3 +1,5 @@
 1. Copy the "options.txt" of a the "The Last Days" minecraft instance
 2. Place at this folder with the name of "options.txt"
-3. The Launcher will download this file and copy the options of relevancy/interest to the Minecraft of players
+3. Update the file "options-to-apply-in-clients.ini" to inform the name of the options contained in "options.txt"
+   that should be applied to the players game.
+4. The Launcher will download this file and copy the options of relevancy/interest to the Minecraft of players
