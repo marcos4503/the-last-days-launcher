@@ -3,4 +3,5 @@
 3. Using 7-Zip, compact all the files of the OpenJDK in ZIP format, but splitting into pieces of 15MB
    The name of the parts must be like "current-openjdk.zip.XXX"
 4. Copy all partes to the folder "Repository-Pages/openjdk"
-5. Update the file "current-java-info.json" to have the version of current JDK available for download in this repository
+5. Update the file "current-java-info.json" to have the version of current JDK available for download and to have all
+   links for each part of the ZIP file, in this repository
