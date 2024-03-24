@@ -34,6 +34,13 @@ You need to fulfill some requirements to be able to use this Software or play th
 - Your computer's operating system must be Windows 10 or newer.
 - Your computer must have at least 25GB free on drive C.
 
+# Minimum Hardware requirements to play Modpack
+
+- 12 Thread CPU (like "Intel i5 11400" or "AMD Ryzen 5 5600") or better.
+- 16GB of RAM DDR4 or better.
+- Graphics of NVidia GTX 1650 / AMD RX 580 or better.
+- NVMe SSD is recommended (especially if you intend to run a server from this modpack).
+
 # How to edit this Software
 
 The source project of this Software is here in this repository as well. You can simply open the "The-Last-Days-Source" folder with your Visual Studio IDE and edit the Software.
