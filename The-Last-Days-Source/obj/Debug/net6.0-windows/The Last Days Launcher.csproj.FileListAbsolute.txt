@@ -1,0 +1,144 @@
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\The Last Days Launcher.exe
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7-zip.chm
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7-zip.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7-zip32.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7z.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7z.exe
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7z.sfx
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7zCon.sfx
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7zFM.exe
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\7zG.exe
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\descript.ion
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\History.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\af.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\an.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ar.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ast.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\az.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ba.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\be.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\bg.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\bn.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\br.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ca.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\co.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\cs.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\cy.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\da.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\de.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\el.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\en.ttt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\eo.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\es.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\et.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\eu.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ext.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\fa.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\fi.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\fr.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\fur.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\fy.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ga.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\gl.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\gu.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\he.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\hi.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\hr.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\hu.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\hy.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\id.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\io.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\is.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\it.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ja.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ka.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\kaa.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\kab.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\kk.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ko.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ku-ckb.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ku.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ky.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\lij.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\lt.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\lv.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\mk.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\mn.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\mng.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\mng2.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\mr.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ms.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\nb.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ne.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\nl.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\nn.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\pa-in.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\pl.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ps.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\pt-br.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\pt.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ro.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ru.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sa.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\si.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sk.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sl.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sq.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sr-spc.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sr-spl.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sv.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\sw.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ta.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\tg.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\th.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\tk.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\tr.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\tt.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\ug.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\uk.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\uz-cyrl.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\uz.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\va.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\vi.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\yo.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\zh-cn.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\Lang\zh-tw.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\License.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\7Zip\readme.txt
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\The Last Days Launcher.deps.json
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\The Last Days Launcher.runtimeconfig.json
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\The Last Days Launcher.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\The Last Days Launcher.pdb
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.csproj.AssemblyReference.cache
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\Controls\BeautyButton\BeautyButton.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\App.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher_Content.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher_MarkupCompile.cache
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher_MarkupCompile.lref
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\Controls\BeautyButton\BeautyButton.baml
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.g.resources
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.AssemblyInfoInputs.cache
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.AssemblyInfo.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.csproj.CoreCompileInputs.cache
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.csproj.CopyComplete
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.dll
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\refint\The Last Days Launcher.dll
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.pdb
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.genruntimeconfig.cache
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\ref\The Last Days Launcher.dll
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\WindowNickChange.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\WindowNickChange.baml
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\Controls\ValidableTextBox\ValidableTextBox.g.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\Controls\ValidableTextBox\ValidableTextBox.baml
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Resources\system-tray.ico
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll

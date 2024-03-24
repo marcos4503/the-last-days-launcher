@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:The_Last_Days_Launcher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>

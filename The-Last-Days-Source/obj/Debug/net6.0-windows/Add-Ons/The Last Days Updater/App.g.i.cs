@@ -59,8 +59,7 @@ namespace The_Last_Days_Updater {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.0.0.0;component/add-ons/the%20last%20days%20updater/ap" +
-                    "p.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;component/add-ons/the%20last%20days%20updater/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Add-Ons\The Last Days Updater\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

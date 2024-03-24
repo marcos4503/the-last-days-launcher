@@ -1,0 +1,24 @@
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\The Last Days Updater.exe
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\The Last Days Updater.deps.json
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\The Last Days Updater.runtimeconfig.json
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\The Last Days Updater.dll
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\The Last Days Updater.pdb
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.csproj.AssemblyReference.cache
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\App.g.cs
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater_MarkupCompile.cache
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater_MarkupCompile.lref
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.g.resources
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.AssemblyInfoInputs.cache
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.AssemblyInfo.cs
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.csproj.CoreCompileInputs.cache
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.dll
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\refint\The Last Days Updater.dll
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.pdb
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.genruntimeconfig.cache
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\ref\The Last Days Updater.dll
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater_Content.g.cs
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\DotNetZip.dll
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.csproj.CopyComplete

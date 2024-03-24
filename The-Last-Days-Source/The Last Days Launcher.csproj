@@ -6,6 +6,538 @@
     <RootNamespace>The_Last_Days_Launcher</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <ApplicationIcon>Resources\app-icon-32px.ico</ApplicationIcon>
+    <UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Add-Ons\**" />
+    <EmbeddedResource Remove="Add-Ons\**" />
+    <None Remove="Add-Ons\**" />
+    <Page Remove="Add-Ons\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\7Zip\7-zip.chm" />
+    <None Remove="Resources\7Zip\7-zip.dll" />
+    <None Remove="Resources\7Zip\7-zip32.dll" />
+    <None Remove="Resources\7Zip\7z.dll" />
+    <None Remove="Resources\7Zip\7z.exe" />
+    <None Remove="Resources\7Zip\7z.sfx" />
+    <None Remove="Resources\7Zip\7zCon.sfx" />
+    <None Remove="Resources\7Zip\7zFM.exe" />
+    <None Remove="Resources\7Zip\7zG.exe" />
+    <None Remove="Resources\7Zip\descript.ion" />
+    <None Remove="Resources\7Zip\History.txt" />
+    <None Remove="Resources\7Zip\Lang\af.txt" />
+    <None Remove="Resources\7Zip\Lang\an.txt" />
+    <None Remove="Resources\7Zip\Lang\ar.txt" />
+    <None Remove="Resources\7Zip\Lang\ast.txt" />
+    <None Remove="Resources\7Zip\Lang\az.txt" />
+    <None Remove="Resources\7Zip\Lang\ba.txt" />
+    <None Remove="Resources\7Zip\Lang\be.txt" />
+    <None Remove="Resources\7Zip\Lang\bg.txt" />
+    <None Remove="Resources\7Zip\Lang\bn.txt" />
+    <None Remove="Resources\7Zip\Lang\br.txt" />
+    <None Remove="Resources\7Zip\Lang\ca.txt" />
+    <None Remove="Resources\7Zip\Lang\co.txt" />
+    <None Remove="Resources\7Zip\Lang\cs.txt" />
+    <None Remove="Resources\7Zip\Lang\cy.txt" />
+    <None Remove="Resources\7Zip\Lang\da.txt" />
+    <None Remove="Resources\7Zip\Lang\de.txt" />
+    <None Remove="Resources\7Zip\Lang\el.txt" />
+    <None Remove="Resources\7Zip\Lang\en.ttt" />
+    <None Remove="Resources\7Zip\Lang\eo.txt" />
+    <None Remove="Resources\7Zip\Lang\es.txt" />
+    <None Remove="Resources\7Zip\Lang\et.txt" />
+    <None Remove="Resources\7Zip\Lang\eu.txt" />
+    <None Remove="Resources\7Zip\Lang\ext.txt" />
+    <None Remove="Resources\7Zip\Lang\fa.txt" />
+    <None Remove="Resources\7Zip\Lang\fi.txt" />
+    <None Remove="Resources\7Zip\Lang\fr.txt" />
+    <None Remove="Resources\7Zip\Lang\fur.txt" />
+    <None Remove="Resources\7Zip\Lang\fy.txt" />
+    <None Remove="Resources\7Zip\Lang\ga.txt" />
+    <None Remove="Resources\7Zip\Lang\gl.txt" />
+    <None Remove="Resources\7Zip\Lang\gu.txt" />
+    <None Remove="Resources\7Zip\Lang\he.txt" />
+    <None Remove="Resources\7Zip\Lang\hi.txt" />
+    <None Remove="Resources\7Zip\Lang\hr.txt" />
+    <None Remove="Resources\7Zip\Lang\hu.txt" />
+    <None Remove="Resources\7Zip\Lang\hy.txt" />
+    <None Remove="Resources\7Zip\Lang\id.txt" />
+    <None Remove="Resources\7Zip\Lang\io.txt" />
+    <None Remove="Resources\7Zip\Lang\is.txt" />
+    <None Remove="Resources\7Zip\Lang\it.txt" />
+    <None Remove="Resources\7Zip\Lang\ja.txt" />
+    <None Remove="Resources\7Zip\Lang\ka.txt" />
+    <None Remove="Resources\7Zip\Lang\kaa.txt" />
+    <None Remove="Resources\7Zip\Lang\kab.txt" />
+    <None Remove="Resources\7Zip\Lang\kk.txt" />
+    <None Remove="Resources\7Zip\Lang\ko.txt" />
+    <None Remove="Resources\7Zip\Lang\ku-ckb.txt" />
+    <None Remove="Resources\7Zip\Lang\ku.txt" />
+    <None Remove="Resources\7Zip\Lang\ky.txt" />
+    <None Remove="Resources\7Zip\Lang\lij.txt" />
+    <None Remove="Resources\7Zip\Lang\lt.txt" />
+    <None Remove="Resources\7Zip\Lang\lv.txt" />
+    <None Remove="Resources\7Zip\Lang\mk.txt" />
+    <None Remove="Resources\7Zip\Lang\mn.txt" />
+    <None Remove="Resources\7Zip\Lang\mng.txt" />
+    <None Remove="Resources\7Zip\Lang\mng2.txt" />
+    <None Remove="Resources\7Zip\Lang\mr.txt" />
+    <None Remove="Resources\7Zip\Lang\ms.txt" />
+    <None Remove="Resources\7Zip\Lang\nb.txt" />
+    <None Remove="Resources\7Zip\Lang\ne.txt" />
+    <None Remove="Resources\7Zip\Lang\nl.txt" />
+    <None Remove="Resources\7Zip\Lang\nn.txt" />
+    <None Remove="Resources\7Zip\Lang\pa-in.txt" />
+    <None Remove="Resources\7Zip\Lang\pl.txt" />
+    <None Remove="Resources\7Zip\Lang\ps.txt" />
+    <None Remove="Resources\7Zip\Lang\pt-br.txt" />
+    <None Remove="Resources\7Zip\Lang\pt.txt" />
+    <None Remove="Resources\7Zip\Lang\ro.txt" />
+    <None Remove="Resources\7Zip\Lang\ru.txt" />
+    <None Remove="Resources\7Zip\Lang\sa.txt" />
+    <None Remove="Resources\7Zip\Lang\si.txt" />
+    <None Remove="Resources\7Zip\Lang\sk.txt" />
+    <None Remove="Resources\7Zip\Lang\sl.txt" />
+    <None Remove="Resources\7Zip\Lang\sq.txt" />
+    <None Remove="Resources\7Zip\Lang\sr-spc.txt" />
+    <None Remove="Resources\7Zip\Lang\sr-spl.txt" />
+    <None Remove="Resources\7Zip\Lang\sv.txt" />
+    <None Remove="Resources\7Zip\Lang\sw.txt" />
+    <None Remove="Resources\7Zip\Lang\ta.txt" />
+    <None Remove="Resources\7Zip\Lang\tg.txt" />
+    <None Remove="Resources\7Zip\Lang\th.txt" />
+    <None Remove="Resources\7Zip\Lang\tk.txt" />
+    <None Remove="Resources\7Zip\Lang\tr.txt" />
+    <None Remove="Resources\7Zip\Lang\tt.txt" />
+    <None Remove="Resources\7Zip\Lang\ug.txt" />
+    <None Remove="Resources\7Zip\Lang\uk.txt" />
+    <None Remove="Resources\7Zip\Lang\uz-cyrl.txt" />
+    <None Remove="Resources\7Zip\Lang\uz.txt" />
+    <None Remove="Resources\7Zip\Lang\va.txt" />
+    <None Remove="Resources\7Zip\Lang\vi.txt" />
+    <None Remove="Resources\7Zip\Lang\yo.txt" />
+    <None Remove="Resources\7Zip\Lang\zh-cn.txt" />
+    <None Remove="Resources\7Zip\Lang\zh-tw.txt" />
+    <None Remove="Resources\7Zip\License.txt" />
+    <None Remove="Resources\7Zip\readme.txt" />
+    <None Remove="Resources\app-icon-128px.png" />
+    <None Remove="Resources\app-icon-256px.png" />
+    <None Remove="Resources\app-icon-32px.ico" />
+    <None Remove="Resources\app-icon-32px.png" />
+    <None Remove="Resources\app-icon-64px.png" />
+    <None Remove="Resources\background-image-1.png" />
+    <None Remove="Resources\background-image-2.png" />
+    <None Remove="Resources\background-image-3.png" />
+    <None Remove="Resources\background-image-original-1.jpg" />
+    <None Remove="Resources\background-image-original-2.jpg" />
+    <None Remove="Resources\background-image-original-3.jpg" />
+    <None Remove="Resources\discord.png" />
+    <None Remove="Resources\docs-load-1.gif" />
+    <None Remove="Resources\docs-load-2.gif" />
+    <None Remove="Resources\docs-load-3.gif" />
+    <None Remove="Resources\edit-icon.png" />
+    <None Remove="Resources\github.png" />
+    <None Remove="Resources\link-donate.png" />
+    <None Remove="Resources\menu-background-footer.png" />
+    <None Remove="Resources\menu-background.png" />
+    <None Remove="Resources\Minecraft-Bold.otf" />
+    <None Remove="Resources\Minecraft.otf" />
+    <None Remove="Resources\mini-icon-128px.png" />
+    <None Remove="Resources\mini-icon-256px.png" />
+    <None Remove="Resources\mini-icon-32px.png" />
+    <None Remove="Resources\mini-icon-64px.png" />
+    <None Remove="Resources\moon-texture.png" />
+    <None Remove="Resources\play-icon.png" />
+    <None Remove="Resources\Player=bskin_alex.png" />
+    <None Remove="Resources\Player=cape.png" />
+    <None Remove="Resources\Player=elytra.png" />
+    <None Remove="Resources\problem-icon.png" />
+    <None Remove="Resources\profile-icon.png" />
+    <None Remove="Resources\sun-texture.png" />
+    <None Remove="Resources\system-tray.ico" />
+    <None Remove="Resources\the-last-days-logo.png" />
+    <None Remove="Resources\umbrella-background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\7Zip\7-zip.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7-zip.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7-zip32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7z.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7z.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7z.sfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7zCon.sfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7zFM.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\7zG.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\descript.ion">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\History.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\af.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\an.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ar.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ast.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\az.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ba.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\be.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\bg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\bn.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\br.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ca.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\co.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\cs.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\cy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\da.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\de.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\el.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\en.ttt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\eo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\es.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\et.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\eu.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ext.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\fa.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\fi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\fr.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\fur.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\fy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ga.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\gl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\gu.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\he.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\hi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\hr.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\hu.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\hy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\id.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\io.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\is.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\it.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ja.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ka.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\kaa.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\kab.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\kk.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ko.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ku-ckb.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ku.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ky.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\lij.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\lt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\lv.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\mk.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\mn.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\mng.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\mng2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\mr.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ms.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\nb.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ne.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\nl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\nn.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\pa-in.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\pl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ps.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\pt-br.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\pt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ro.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ru.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sa.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\si.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sk.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sq.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sr-spc.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sr-spl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sv.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\sw.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ta.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\tg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\th.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\tk.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\tr.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\tt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\ug.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\uk.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\uz-cyrl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\uz.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\va.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\vi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\yo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\zh-cn.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\Lang\zh-tw.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7Zip\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\app-icon-32px.ico" />
+    <Content Include="Resources\system-tray.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app-icon-32px.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app-icon-128px.png" />
+    <Resource Include="Resources\app-icon-256px.png" />
+    <Resource Include="Resources\app-icon-32px.png" />
+    <Resource Include="Resources\app-icon-64px.png" />
+    <Resource Include="Resources\background-image-1.png" />
+    <Resource Include="Resources\background-image-2.png" />
+    <Resource Include="Resources\background-image-3.png" />
+    <Resource Include="Resources\background-image-original-1.jpg" />
+    <Resource Include="Resources\background-image-original-2.jpg" />
+    <Resource Include="Resources\background-image-original-3.jpg" />
+    <Resource Include="Resources\discord.png" />
+    <Resource Include="Resources\docs-load-1.gif" />
+    <Resource Include="Resources\docs-load-2.gif" />
+    <Resource Include="Resources\docs-load-3.gif" />
+    <Resource Include="Resources\edit-icon.png" />
+    <Resource Include="Resources\github.png" />
+    <Resource Include="Resources\link-donate.png" />
+    <Resource Include="Resources\menu-background-footer.png" />
+    <Resource Include="Resources\menu-background.png" />
+    <Resource Include="Resources\Minecraft-Bold.otf" />
+    <Resource Include="Resources\Minecraft.otf" />
+    <Resource Include="Resources\mini-icon-128px.png" />
+    <Resource Include="Resources\mini-icon-256px.png" />
+    <Resource Include="Resources\mini-icon-32px.png" />
+    <Resource Include="Resources\mini-icon-64px.png" />
+    <Resource Include="Resources\moon-texture.png" />
+    <Resource Include="Resources\play-icon.png" />
+    <Resource Include="Resources\Player=bskin_alex.png" />
+    <Resource Include="Resources\Player=cape.png" />
+    <Resource Include="Resources\Player=elytra.png" />
+    <Resource Include="Resources\problem-icon.png" />
+    <Resource Include="Resources\profile-icon.png" />
+    <Resource Include="Resources\sun-texture.png" />
+    <Resource Include="Resources\the-last-days-logo.png" />
+    <Resource Include="Resources\umbrella-background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2365.46" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 
 </Project>

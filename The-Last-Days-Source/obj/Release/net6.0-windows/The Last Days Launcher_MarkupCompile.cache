@@ -1,0 +1,20 @@
+﻿The Last Days Launcher
+1.0.0
+
+winexe
+C#
+.cs
+D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\
+The_Last_Days_Launcher
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+D:\Visual-Studio\The Last Days Launcher\App.xaml
+41118295854
+111-600949120
+10-1760259871
+207-1769798826
+Controls\BeautyButton\BeautyButton.xaml;Controls\ValidableTextBox\ValidableTextBox.xaml;MainWindow.xaml;WindowNickChange.xaml;
+
+False
+

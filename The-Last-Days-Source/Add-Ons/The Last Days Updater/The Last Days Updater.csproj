@@ -6,6 +6,40 @@
     <RootNamespace>The_Last_Days_Updater</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <ApplicationIcon>Resources\app-icon-32px.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\app-icon-128px.png" />
+    <None Remove="Resources\app-icon-256px.png" />
+    <None Remove="Resources\app-icon-32px.png" />
+    <None Remove="Resources\app-icon-64px.png" />
+    <None Remove="Resources\mini-icon-128px.png" />
+    <None Remove="Resources\mini-icon-256px.png" />
+    <None Remove="Resources\mini-icon-32px.png" />
+    <None Remove="Resources\mini-icon-64px.png" />
+    <None Remove="Resources\splash-screen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\app-icon-32px.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetZip" Version="1.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app-icon-128px.png" />
+    <Resource Include="Resources\app-icon-256px.png" />
+    <Resource Include="Resources\app-icon-32px.png" />
+    <Resource Include="Resources\app-icon-64px.png" />
+    <Resource Include="Resources\mini-icon-128px.png" />
+    <Resource Include="Resources\mini-icon-256px.png" />
+    <Resource Include="Resources\mini-icon-32px.png" />
+    <Resource Include="Resources\mini-icon-64px.png" />
+    <Resource Include="Resources\splash-screen.png" />
+  </ItemGroup>
 
 </Project>

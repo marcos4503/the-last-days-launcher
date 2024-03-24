@@ -1,5 +1,5 @@
 ﻿The Last Days Launcher
-1.0.0.0
+1.0.0
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Visual-Studio\The Last Days Launcher\App.xaml
-3-1558134858
+41118295854
+111-600949120
+122100792103
+207-1769798826
+Controls\BeautyButton\BeautyButton.xaml;Controls\ValidableTextBox\ValidableTextBox.xaml;MainWindow.xaml;WindowNickChange.xaml;
 
-121465714290
-194-1977528901
-Add-Ons\The Last Days Updater\App.xaml;Add-Ons\The Last Days Updater\MainWindow.xaml;MainWindow.xaml;
-
-False
+True
 
