@@ -33,10 +33,10 @@
                     </Grid>
                     <Border BorderThickness="0,0,0,0" Margin="0,8,0,0" VerticalAlignment="Top" Background="#4CFFFFFF" CornerRadius="8,8,8,8">
                         <StackPanel Margin="8,8,8,8">
-                            <BeautyButton:BeautyButton x:Name="goHome" Content="INÍCIO" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" FontFamily="Minecraft" FontWeight="Normal" FontSize="13"/>
-                            <BeautyButton:BeautyButton x:Name="goSkin" Content="ENVIAR SKIN" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" FontFamily="Minecraft" FontWeight="Normal" FontSize="13" Margin="0,8,0,0"/>
-                            <BeautyButton:BeautyButton x:Name="goDocs" Content="DOCUMENTAÇÅO" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" Margin="0,8,0,0" FontFamily="Minecraft" FontWeight="Normal" FontSize="13"/>
-                            <BeautyButton:BeautyButton x:Name="goAbout" Content="SOBRE" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" Margin="0,8,0,0" FontFamily="Minecraft" FontWeight="Normal" FontSize="13"/>
+                            <BeautyButton:BeautyButton x:Name="goHome" Content="INÍCIO" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" FontFamily="{DynamicResource Minecraft}" FontWeight="Normal"/>
+                            <BeautyButton:BeautyButton x:Name="goSkin" Content="ENVIAR SKIN" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" FontFamily="{DynamicResource Minecraft}" FontWeight="Normal" Margin="0,8,0,0"/>
+                            <BeautyButton:BeautyButton x:Name="goDocs" Content="DOCUMENTAÇÅO" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" Margin="0,8,0,0" FontFamily="{DynamicResource Minecraft}" FontWeight="Normal"/>
+                            <BeautyButton:BeautyButton x:Name="goAbout" Content="SOBRE" Padding="0,0,0,0" Height="24" Background="#FFFDFDFD" BorderBrush="#FF9E9E9E" HoverBackground="#FFEFEFEF" Cursor="Hand" Margin="0,8,0,0" FontFamily="{DynamicResource Minecraft}" FontWeight="Normal"/>
                         </StackPanel>
                     </Border>
                 </StackPanel>

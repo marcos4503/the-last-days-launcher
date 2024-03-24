@@ -72,7 +72,7 @@ namespace The_Last_Days_Launcher {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.0.0;component/windownickchange.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.0.1;component/windownickchange.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WindowNickChange.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

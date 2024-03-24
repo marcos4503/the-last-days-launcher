@@ -142,3 +142,4 @@ D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Resources\sys
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Core.dll
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\App.baml

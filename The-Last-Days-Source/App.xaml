@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:The_Last_Days_Launcher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        
+        <ResourceDictionary>
+
+            <!-- Minecraft font resources -->
+            <FontFamily x:Key="Minecraft">pack://application:,,,/Resources/#Minecraft</FontFamily>
+            <FontFamily x:Key="MinecraftBold">pack://application:,,,/Resources/#Minecraft-Bold</FontFamily>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
