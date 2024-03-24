@@ -710,8 +710,11 @@ namespace The_Last_Days_Launcher
 
                         //Build a list of unwanted files
                         List<string> unwantedFiles = new List<string>();
+                        unwantedFiles.Add(".sl_password");
                         unwantedFiles.Add("icon.png");
                         unwantedFiles.Add("options.txt");
+                        unwantedFiles.Add("usercache.json");
+                        unwantedFiles.Add("usernamecache.json");
                         unwantedFiles.Add("local-current-version.txt");
                         //Build a list of unwanted folders
                         List<string> unwantedFolders = new List<string>();
@@ -1125,25 +1128,18 @@ namespace The_Last_Days_Launcher
             editNick.Opacity = 1.0f;
             editNick.IsHitTestVisible = true;
             //Prepare the edit nickname button
-            editNick.Click += (s, e) =>
-            {
-                //Enable the interaction blocker
-                interactionBlocker.Visibility = Visibility.Visible;
-
-                //Open the window of Nickname change
-                WindowNickChange nickChange = new WindowNickChange(modpackPath);
-                nickChange.Closed += (s, e) => 
-                {
-                    interactionBlocker.Visibility = Visibility.Collapsed;
-                    UpdateAccountDisplay(); 
-                };
-                nickChange.Owner = this;
-                nickChange.Show();
-            };
+            editNick.Click += (s, e) => { OpenLoginCredentialsEdit(); };
 
             //Prepare the play button
             playButton.Click += (s, e) =>
             {
+                //If don't have a password defined, cancel and open the login credentials edit
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/.sl_password")) == false)
+                {
+                    OpenLoginCredentialsEdit();
+                    return;
+                }
+
                 //Try to launch the game
                 try
                 {
@@ -1215,6 +1211,22 @@ namespace The_Last_Days_Launcher
         }
 
         //Auxiliar methods
+
+        private void OpenLoginCredentialsEdit()
+        {
+            //Enable the interaction blocker
+            interactionBlocker.Visibility = Visibility.Visible;
+
+            //Open the window of Nickname change
+            WindowNickChange nickChange = new WindowNickChange(modpackPath);
+            nickChange.Closed += (s, e) =>
+            {
+                interactionBlocker.Visibility = Visibility.Collapsed;
+                UpdateAccountDisplay();
+            };
+            nickChange.Owner = this;
+            nickChange.Show();
+        }
 
         private void ChangeLauncherPage(LauncherPage page)
         {

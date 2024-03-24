@@ -6,9 +6,25 @@
         xmlns:local="clr-namespace:The_Last_Days_Launcher"
         xmlns:ValidableTextBox="clr-namespace:TS3_Dream_Launcher.Controls.ValidableTextBox" xmlns:BeautyButton="clr-namespace:TS3_Dream_Launcher.Controls.BeautyButton" x:Class="The_Last_Days_Launcher.WindowNickChange"
         mc:Ignorable="d"
-        Title="Mudar Nome de Usuário" WindowStyle="ToolWindow" Icon="/Resources/mini-icon-32px.png" ResizeMode="NoResize" ShowInTaskbar="False" SizeToContent="WidthAndHeight" Topmost="True" WindowStartupLocation="CenterScreen">
-    <Grid Width="324" Height="200">
-        <ValidableTextBox:ValidableTextBox x:Name="nickname" Margin="16,16,16,0" VerticalAlignment="Top" LabelName="Digite seu novo Nickname..." FontWeight="Normal"/>
+        Title="Editar Credenciais de Login" WindowStyle="ToolWindow" Icon="/Resources/mini-icon-32px.png" ResizeMode="NoResize" ShowInTaskbar="False" SizeToContent="WidthAndHeight" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid Width="328" Height="348">
+        <StackPanel VerticalAlignment="Top" Margin="16,16,16,0">
+            <ValidableTextBox:ValidableTextBox x:Name="nickname" LabelName="Nome de Usuário" FontWeight="Normal" VerticalAlignment="Top"/>
+            <ValidableTextBox:ValidableTextBox x:Name="password" LabelName="Senha" FontWeight="Normal" Margin="0,16,0,0"/>
+            <Grid Margin="0,16,0,0" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Height="20" Width="20" VerticalAlignment="Top" Margin="0,3,0,0">
+                    <Image Source="/Resources/hint-icon.png"/>
+                </Grid>
+                <Grid Grid.Column="2" VerticalAlignment="Top">
+                    <TextBlock TextWrapping="Wrap" Text="Esta senha é usada para fazer login automático em servidores multiplayer de The Last Days. Caso você não esteja registrado num servidor de The Last Days, essa senha será usada para te registrar automaticamente no primeiro acesso! É importante guarda-la!" VerticalAlignment="Top" TextAlignment="Justify" FontSize="11" Opacity="0.7"/>
+                </Grid>
+            </Grid>
+        </StackPanel>
         <BeautyButton:BeautyButton x:Name="finish" Height="24" Width="128" Padding="0,0,0,2" Background="#FF00A027" BorderBrush="#FF005B16" HoverBackground="#FF00C12F" VerticalAlignment="Bottom" Margin="0,0,0,16" Cursor="Hand" HorizontalAlignment="Center" Content="PRONTO" FontWeight="Bold" Foreground="White" FontFamily="Segoe UI Variable Text Semibold" FontSize="14"/>
     </Grid>
 </Window>

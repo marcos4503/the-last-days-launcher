@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -22,6 +23,10 @@ namespace The_Last_Days_Launcher
 
     public partial class WindowNickChange : Window
     {
+        //Cache variables
+        private bool hasErrorInNickname = false;
+        private bool hasErrorInPassword = false;
+
         //Private variables
         private string modpackPath = "";
         private AccountsData accountsData = null;
@@ -47,8 +52,11 @@ namespace The_Last_Days_Launcher
 
             //Show the current nickname
             nickname.textBox.Text = accountsData.loadedData.accounts[0].profile.name;
+            //Show the current password, if have the password file
+            if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/.sl_password")) == true)
+                password.textBox.Text = File.ReadAllText((modpackPath + @"/Game/instances/The Last Days/.minecraft/.sl_password"));
 
-            //Prepare the validation rules
+            //Prepare the validation rules for nickname
             nickname.RegisterOnTextChangedValidationCallback((currentInput) =>
             {
                 //Prepare the value to return
@@ -56,41 +64,91 @@ namespace The_Last_Days_Launcher
 
                 //Check if is empty, cancel here
                 if (currentInput == "")
-                {
                     toReturn = "O campo não pode estar vazio!";
-                    return toReturn;
+                //If is not empty...
+                if (currentInput != "")
+                {
+                    //Check if is too long
+                    if (currentInput.Length > 16)
+                        toReturn = "O Nome de Usuário é muito longo.";
+                    //Check if is too short
+                    if (currentInput.Length < 3)
+                        toReturn = "O Nome de Usuário é muito curto.";
+                    //Check if contains spaces
+                    if (currentInput.Contains(" ") == true)
+                        toReturn = "O Nome de Usuário não pode conter espaços";
+                    //Check if have only allowed characters
+                    if (Regex.IsMatch(currentInput, @"^[a-zA-Z0-9_]+$") == false)
+                        toReturn = "O Nome de Usuário só pode conter caracteres de A à Z, de 0 à 9, e underlines.";
                 }
-                //Check if is too long
-                if (currentInput.Length > 16)
-                    toReturn = "O Nome de Usuário é muito longo.";
-                //Check if is too short
-                if (currentInput.Length < 3)
-                    toReturn = "O Nome de Usuário é muito curto.";
-                //Check if contains spaces
-                if (currentInput.Contains(" ") == true)
-                    toReturn = "O Nome de Usuário não pode conter espaços";
-                //Check if have only allowed characters
-                if (Regex.IsMatch(currentInput, @"^[a-zA-Z0-9_]+$") == false)
-                    toReturn = "O Nome de Usuário só pode conter caracteres de A à Z, de 0 à 9, e underlines.";
 
-                //Disable or enable the finish button
+                //Inform error
                 if (toReturn == "")
-                    finish.IsEnabled = true;
+                    hasErrorInNickname = false;
                 if (toReturn != "")
-                    finish.IsEnabled = false;
+                    hasErrorInNickname = true;
+                //Handle the button availability
+                HandleTheFinishButtonAvailability();
 
                 //Return the value
                 return toReturn;
             });
 
+            //Prepare the validation rules for password
+            password.RegisterOnTextChangedValidationCallback((currentInput) => 
+            {
+                //Prepare the value to return
+                string toReturn = "";
+
+                //Check if is empty, cancel here
+                if (currentInput == "")
+                    toReturn = "O campo não pode estar vazio!";
+                //If is not empty...
+                if (currentInput != "")
+                {
+                    //Check if is too long
+                    if (currentInput.Length > 32)
+                        toReturn = "A senha está muito longa.";
+                    //Check if is too short
+                    if (currentInput.Length < 8)
+                        toReturn = "A senha está muito curta.";
+                }
+
+                //Inform error
+                if (toReturn == "")
+                    hasErrorInPassword = false;
+                if (toReturn != "")
+                    hasErrorInPassword = true;
+                //Handle the button availability
+                HandleTheFinishButtonAvailability();
+
+                //Return the value
+                return toReturn;
+            });
+
+            //Force first validation of fields
+            nickname.hasError();
+            password.hasError();
+
             //Prepare the finish button
             finish.Click += (s, e) => { FinishEdit(); };
         }
 
+        private void HandleTheFinishButtonAvailability()
+        {
+            //If have errors, disable the finish button
+            if (hasErrorInNickname == true || hasErrorInPassword == true)
+                finish.IsEnabled = false;
+
+            //If don't have errors, enable the finish button
+            if (hasErrorInNickname == false && hasErrorInPassword == false)
+                finish.IsEnabled = true;
+        }
+
         private void FinishEdit()
         {
-            //If has erros on field, cancel
-            if (nickname.hasError() == true)
+            //If has erros on fields, cancel
+            if (nickname.hasError() == true || password.hasError() == true)
                 return;
 
             //Change the username on the "accounts.json" file and save
@@ -103,6 +161,9 @@ namespace The_Last_Days_Launcher
 
             //Save the nickname change
             accountsData.Save();
+
+            //Save the password
+            File.WriteAllText((modpackPath + @"/Game/instances/The Last Days/.minecraft/.sl_password"), password.textBox.Text);
 
             //Close this window
             this.Close();
