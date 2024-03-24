@@ -16,7 +16,7 @@
 
     <body>
         <!-- #region TOPBAR -->
-        <div class="topBar">
+        <div class="topBar" style="display: none;">
             <div class="topBarLogoIcon"><img src="DocumentationFiles/logo/logo.png" height="100%" /></div>
             <div class="topBarLogoTextContainer">
                 <div class="topBarLogoText">Documentation Template</div>
@@ -29,7 +29,7 @@
                 <div class="topBarSupportTextEmail">email@domain.name</div>
             </div>
         </div>
-        <div class="readProgressContainer">
+        <div class="readProgressContainer" style="top: 0px;">
             <div class="readProgressBar" id="readProgressBar"></div>
         </div>
         <div class="fullscreenImageBackground" id="fullScreenImageViewerBg" onclick="CloseImageFullScreenViewer();"></div>
@@ -59,7 +59,7 @@
         </div>
         <!-- #endregion -->
         <!-- SUBBODY -->
-        <div class="subBody">
+        <div class="subBody" style="padding-top: 0px;">
             <!-- SUMMARY -->
             <div class="subBodySummary" id="summary" onscroll="OnScrollSummary(this);" onmouseover="isMouseOverTheSummary(this, true);" onmouseout="isMouseOverTheSummary(this, false);">
                 <div id="summaryTitleAndSearch" class="subBodySummaryTitleAndSearch">
@@ -740,16 +740,6 @@ Your code goes here...
                     <div class="processingTimeResult">
                         Page processed in <div id="processingTime">0</div> ms
                     </div>
-                    <br>
-                    <a href="https://www.paypal.com/donate/?hosted_button_id=MVDJY3AXLL8T2" target="_blank">Donate</a>
-                    •
-                    <a href="https://github.com/marcos4503/documentation-template" target="_blank">Fork Me On GitHub</a>
-
-
-                    <div style="display: inline; margin-left: 8px; margin-right: 8px;">|</div>
-                    <a href="https://github.com/marcos4503/documentation-template" target="_blank">
-                        <div style="display: inline;"><img src="DocumentationFiles/footer/github.png" style="width: 14px; height: 14px; border-radius: 14px; transform: translateY(2px);"></div> See This Documentation Template On GitHub!
-                    </a>
                 </small>
             </center>
         </div>

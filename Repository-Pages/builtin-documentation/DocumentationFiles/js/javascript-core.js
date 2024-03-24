@@ -249,7 +249,7 @@ function FinishSearchJob() {
 function ScrollSummaryWithWindow() {
     //Do calcs to know total page height
     var endOfContentPointDiv = document.getElementById("contentEndPoint");
-    var topbarHeightSize = 64;
+    var topbarHeightSize = 8;
 
     //Find the divs and calculate the size of each
     var dividerDiv = document.getElementById("divider");
