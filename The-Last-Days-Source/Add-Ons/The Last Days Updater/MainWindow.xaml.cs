@@ -58,7 +58,7 @@ namespace The_Last_Days_Updater
 
             //Check if the launcher is already currently opened. If is, cancel this...
             Process[] processes2 = Process.GetProcessesByName("The Last Days Launcher");
-            if (processes2.Length > 1)
+            if (processes2.Length > 0)
             {
                 //Warn abou the problem
                 MessageBox.Show("O The Last Days já está em execução!", "Erro");
