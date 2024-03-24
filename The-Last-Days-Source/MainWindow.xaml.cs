@@ -183,6 +183,9 @@ namespace The_Last_Days_Launcher
             //Change to home page
             ChangeLauncherPage(LauncherPage.Home);
 
+            //Show versions info
+            UpdateLauncherAboutVersionsInfo();
+
             //Start the patching
             StartPatching();
         }
@@ -1118,6 +1121,9 @@ namespace The_Last_Days_Launcher
 
         private void FinishPatching()
         {
+            //Update information about versions
+            UpdateLauncherAboutVersionsInfo();
+
             //Hide the task display
             taskDisplay.Visibility = Visibility.Collapsed;
 
@@ -1276,6 +1282,46 @@ namespace The_Last_Days_Launcher
 
             //Inform the current page
             currentPage = page;
+        }
+
+        private void UpdateLauncherAboutVersionsInfo()
+        {
+            //Show the updater version
+            aboutUpdaterVers.Text = "Não Encontrado";
+            if (File.Exists((modpackPath + @"/updater-path.tld")) == true)
+            {
+                //Get the updater path
+                string updaterPath = File.ReadAllText((modpackPath + @"/updater-path.tld"));
+
+                //If the updater is found
+                if(File.Exists(updaterPath) == true)
+                {
+                    //Get updater windows version
+                    string rawVersion = FileVersionInfo.GetVersionInfo(updaterPath).FileVersion;
+
+                    //Show the fixed version
+                    string[] splittedVersion = rawVersion.Split(".");
+                    aboutUpdaterVers.Text = (splittedVersion[0] + "." + splittedVersion[1] + "." + splittedVersion[2]);
+                }
+            }
+
+            //Show the launcher version
+            aboutLauncherVers.Text = GetLauncherVersion();
+
+            //Show the java version
+            aboutJavaVers.Text = "Não Instalado Ainda";
+            if (File.Exists((modpackPath + @"/Java/local-current-version.txt")) == true)
+                aboutJavaVers.Text = File.ReadAllText((modpackPath + @"/Java/local-current-version.txt"));
+
+            //Show game data version
+            aboutGameDataVers.Text = "Não Instalado Ainda";
+            if (File.Exists((modpackPath + @"/Game/local-current-version.txt")) == true)
+                aboutGameDataVers.Text = File.ReadAllText((modpackPath + @"/Game/local-current-version.txt"));
+
+            //Show modpack data version
+            aboutModpackVers.Text = "Não Instalado Ainda";
+            if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/local-current-version.txt")) == true)
+                aboutModpackVers.Text = File.ReadAllText((modpackPath + @"/Game/instances/The Last Days/.minecraft/local-current-version.txt"));
         }
 
         private string GetLauncherVersion()

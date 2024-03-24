@@ -320,6 +320,10 @@ namespace The_Last_Days_Updater
 
         private void OpenLauncher()
         {
+            //Register the path for the current executable
+            //File.WriteAllText((modpackPath + "/updater-path.tld"), (AppDomain.CurrentDomain.BaseDirectory + AppDomain.CurrentDomain.FriendlyName + ".exe"));
+            File.WriteAllText((modpackPath + "/updater-path.tld"), (System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName));
+
             //Open the launcher
             Process newProcess = new Process();
             newProcess.StartInfo.FileName = System.IO.Path.Combine(modpackPath, "Launcher", "The Last Days Launcher.exe");

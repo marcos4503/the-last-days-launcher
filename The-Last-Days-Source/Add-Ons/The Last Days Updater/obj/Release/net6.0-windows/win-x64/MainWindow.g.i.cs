@@ -69,7 +69,7 @@ namespace The_Last_Days_Updater {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/The Last Days Updater;V1.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/The Last Days Updater;V1.0.8;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

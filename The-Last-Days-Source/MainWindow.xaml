@@ -66,7 +66,7 @@
                     <TextBlock x:Name="pageTitle" TextWrapping="Wrap" Text="Título" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" Foreground="White" FontFamily="Segoe UI Variable Text Semibold" Margin="0,0,0,2"/>
                 </Border>
                 <Grid Margin="4,40,8,8">
-                    <Grid x:Name="pageHome" Visibility="Visible">
+                    <Grid x:Name="pageHome" Visibility="Collapsed">
                         <Border x:Name="backgroundImage" BorderThickness="0,0,0,0" Margin="0,0,0,84">
                             <Border.Background>
                                 <ImageBrush Stretch="UniformToFill" ImageSource="/Resources/background-image-2.png"/>
@@ -174,12 +174,74 @@
                         <wv2:WebView2 x:Name="webviewDocs" Margin="0,0,0,1"/>
                         <Rectangle Height="0.5" VerticalAlignment="Bottom" StrokeThickness="0" Fill="Black" Opacity="0.5" Margin="0,0,0,0"/>
                     </Grid>
-                    <Grid x:Name="pageAbout" Visibility="Collapsed" Margin="0,0,0,8">
+                    <Grid x:Name="pageAbout" Visibility="Visible" Margin="0,0,0,8">
                         <StackPanel VerticalAlignment="Top" Margin="64,16,64,0">
                             <TextBlock TextWrapping="Wrap" Text="Sobre o The Last Days" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" Margin="0,0,0,24" TextAlignment="Center"/>
                             <TextBlock TextWrapping="Wrap" Text="O The Last Days é um Modpack para Minecraft 1.20.1, criado por Marcos Tomaz. O objetivo deste Modpack é basicamente ser um jogo a parte do Minecraft, como se fosse um jogo Standalone, por isso, diversas mecânicas do Minecraft são alteradas ou removidas neste Modpack." FontFamily="Segoe UI" FontWeight="Normal" TextAlignment="Justify"/>
                             <TextBlock TextWrapping="Wrap" Text="Todas essas alterações tem o objetivo de trazer uma experiência de simulação de um mundo pós apocaliptico, onde o fim da humanidade foi causado por uma doença infecciosa que contaminou a humanidade, transformando as pessoas em Zumbis ou Monstros Mutantes." FontFamily="Segoe UI" FontWeight="Normal" Margin="0,16,0,0" TextAlignment="Justify"/>
                             <TextBlock TextWrapping="Wrap" Text="Pegue suas armas e lute, plante, mate, brigue, roube, explore, construa, aprenda, pesquise, coopere, avance e se proteja! TUDO para sobreviver! Tudo pela vida!" FontFamily="Segoe UI" FontWeight="Normal" TextAlignment="Justify" Margin="0,16,0,0"/>
+                            <TextBlock TextWrapping="Wrap" Text="Informações de Versão" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Center" Margin="0,24,0,24"/>
+                            <TextBlock TextWrapping="Wrap" Text="Estas são informações de versão de cada módulo do The Last Days instalado no seu computador." FontFamily="Segoe UI" FontWeight="Normal" TextAlignment="Justify"/>
+                            <Grid VerticalAlignment="Top" Margin="0,16,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="0,0,0,0" Height="4" Width="4" CornerRadius="8,8,8,8" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,1,0,0"/>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock TextWrapping="Wrap" Text="Versão do Atualizador:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                                    <TextBlock x:Name="aboutUpdaterVers" TextWrapping="Wrap" Text="0.0.0"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="0,8,0,0" VerticalAlignment="Top">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="0,0,0,0" Height="4" Width="4" CornerRadius="8,8,8,8" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,1,0,0"/>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock TextWrapping="Wrap" Text="Versão do Launcher:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                                    <TextBlock x:Name="aboutLauncherVers" TextWrapping="Wrap" Text="0.0.0"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="0,8,0,0" VerticalAlignment="Top">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="0,0,0,0" Height="4" Width="4" CornerRadius="8,8,8,8" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,1,0,0"/>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock TextWrapping="Wrap" Text="Versão do Java:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                                    <TextBlock x:Name="aboutJavaVers" TextWrapping="Wrap" Text="0.0.0"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="0,8,0,0" VerticalAlignment="Top">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="0,0,0,0" Height="4" Width="4" CornerRadius="8,8,8,8" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,1,0,0"/>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock TextWrapping="Wrap" Text="Versão dos Dados de Jogo:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                                    <TextBlock x:Name="aboutGameDataVers" TextWrapping="Wrap" Text="0.0.0"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="0,8,0,0" VerticalAlignment="Top">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="0,0,0,0" Height="4" Width="4" CornerRadius="8,8,8,8" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,1,0,0"/>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock TextWrapping="Wrap" Text="Versão do Modpack:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                                    <TextBlock x:Name="aboutModpackVers" TextWrapping="Wrap" Text="0.0.0"/>
+                                </StackPanel>
+                            </Grid>
                         </StackPanel>
                         <Rectangle Height="0.5" VerticalAlignment="Bottom" StrokeThickness="0" Fill="Black" Opacity="0.5" Margin="0,0,0,0"/>
                     </Grid>
