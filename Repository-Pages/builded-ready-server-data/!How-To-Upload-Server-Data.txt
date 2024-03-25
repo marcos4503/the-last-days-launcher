@@ -1,4 +1,5 @@
-1. Using 7-Zip, compact all the content of a The Last Days Server, but splitting into pieces of 15MB. DO NOT include the "world" folder.
+1. Using 7-Zip, compact all the content of a The Last Days Server, but splitting into pieces of 15MB. DO NOT include the "world" and
+   "!Server-Panel" folders.
    The name of the parts must be like "current-server-data.zip.XXX"
 2. Copy all parts to the folder "Repository-Pages/builded-ready-server-data"
 3. Update the file "current-server-data-info.json" to have the links for each part of the server data ZIP files.
