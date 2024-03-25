@@ -66,7 +66,7 @@
                     <TextBlock x:Name="pageTitle" TextWrapping="Wrap" Text="Título" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" Foreground="White" FontFamily="Segoe UI Variable Text Semibold" Margin="0,0,0,2"/>
                 </Border>
                 <Grid Margin="4,40,8,8">
-                    <Grid x:Name="pageHome" Visibility="Collapsed">
+                    <Grid x:Name="pageHome" Visibility="Visible">
                         <Border x:Name="backgroundImage" BorderThickness="0,0,0,0" Margin="0,0,0,84">
                             <Border.Background>
                                 <ImageBrush Stretch="UniformToFill" ImageSource="/Resources/background-image-2.png"/>
@@ -174,7 +174,7 @@
                         <wv2:WebView2 x:Name="webviewDocs" Margin="0,0,0,1"/>
                         <Rectangle Height="0.5" VerticalAlignment="Bottom" StrokeThickness="0" Fill="Black" Opacity="0.5" Margin="0,0,0,0"/>
                     </Grid>
-                    <Grid x:Name="pageAbout" Visibility="Visible" Margin="0,0,0,8">
+                    <Grid x:Name="pageAbout" Visibility="Collapsed" Margin="0,0,0,8">
                         <StackPanel VerticalAlignment="Top" Margin="64,16,64,0">
                             <TextBlock TextWrapping="Wrap" Text="Sobre o The Last Days" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" Margin="0,0,0,24" TextAlignment="Center"/>
                             <TextBlock TextWrapping="Wrap" Text="O The Last Days é um Modpack para Minecraft 1.20.1, criado por Marcos Tomaz. O objetivo deste Modpack é basicamente ser um jogo a parte do Minecraft, como se fosse um jogo Standalone, por isso, diversas mecânicas do Minecraft são alteradas ou removidas neste Modpack." FontFamily="Segoe UI" FontWeight="Normal" TextAlignment="Justify"/>
