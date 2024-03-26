@@ -2,5 +2,6 @@
    "!Server-Panel" folders.
    The name of the parts must be like "current-server-data.zip.XXX"
 2. Copy all parts to the folder "Repository-Pages/builded-ready-server-data"
-3. Update the file "current-server-data-info.json" to have the links for each part of the server data ZIP files.
-4. The "The Last Days Server Panel" application will download this server data if the user runs the Panel without having server data.
+3. Update the file "current-server-data-info.json" to have the new version ID and links for each part of the server data ZIP files.
+4. The "The Last Days Server Panel" application will download this server data if the user runs the Panel without having server data,
+   and the users will be notified about server update if the "version" changes on the file "current-server-data-info.json".
