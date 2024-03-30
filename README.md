@@ -10,9 +10,9 @@ The Last Days Launcher is an all-in-one Launcher for a Modpack created by me cal
 
 Thanks to The Last Days Launcher, it's as if this Modpack was a completely Standalone game, as The Last Days Launcher is capable of doing everything you need. As soon as you open it, the Launcher will update itself, download game files, install Mods, update settings, etc. Additionally, if there are updates to the game files, or mods, or anything else, The Last Days Launcher will take care of the update for you, automatically. Once the game is ready, you can still use the Launcher to view the Modpack documentation, change your game nickname and much more!
 
-<center>
+<p align="center">
 If you want to run a The Last Days Modpack server, <a href="https://github.com/marcos4503/the-last-days-server-panel" target="_blank">try this</a>!
-</center>
+</p>
 
 # To use this Software
 
