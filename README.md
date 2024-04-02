@@ -6,7 +6,7 @@
 
 # About this Software
 
-The Last Days Launcher is an all-in-one Launcher for a Modpack created by me called "The Last Days". In this Modpack, you need to live in a post-apocalyptic world, infested by Zombies and Mutant Creatures. You need to survive, search, steal, kill, build, arm yourself, ally, research, hide, and much, much, much more. The Modpack is basically a mix of Minecraft with RPG elements and survival games like DayZ and Project Zomboid.
+The Last Days Launcher is an all-in-one Launcher for a Modpack created by me called "The Last Days". In this Modpack, you need to live in a post-apocalyptic world, infested by Zombies and Mutant Creatures. You need to survive, search, steal, kill, build, arm yourself, ally, research, hide, and much, much, much more. The Modpack is basically a mix of Minecraft with RPG elements, Horror elements and survival games like DayZ and Project Zomboid.
 
 Thanks to The Last Days Launcher, it's as if this Modpack was a completely Standalone game, as The Last Days Launcher is capable of doing everything you need. As soon as you open it, the Launcher will update itself, download game files, install Mods, update settings, etc. Additionally, if there are updates to the game files, or mods, or anything else, The Last Days Launcher will take care of the update for you, automatically. Once the game is ready, you can still use the Launcher to view the Modpack documentation, change your game nickname and much more!
 
