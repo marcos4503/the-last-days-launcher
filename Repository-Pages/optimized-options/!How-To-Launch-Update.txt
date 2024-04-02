@@ -1,5 +1,7 @@
-1. Copy the "options.txt" of a the "The Last Days" minecraft instance
-2. Place at this folder with the name of "options.txt"
+1. Set up an instance of Minecraft The Last Days using the game, as you would normally set up the game.
+2. Using a tool like "https://www.diffchecker.com/text-compare/", compare the differences between the
+   "options.txt" in this folder and the "options.txt" of your configured game. Copy the "options.txt" values
+   from your game to the "options.txt" file in this folder, for each setting you changed in the game.
 3. Update the file "options-to-apply-in-clients.ini" to inform the name of the options contained in "options.txt"
    that should be applied to the players game.
-4. The Launcher will download this file and copy the options of relevancy/interest to the Minecraft of players
+4. The Launcher will download this file and copy the options of relevancy/interest to the Minecraft of players.

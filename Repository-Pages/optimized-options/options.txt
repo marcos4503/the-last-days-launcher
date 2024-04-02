@@ -93,12 +93,12 @@ key_key.right:key.keyboard.d
 key_key.jump:key.keyboard.space
 key_key.sneak:key.keyboard.left.shift
 key_key.sprint:key.keyboard.left.control
-key_key.drop:key.keyboard.t
+key_key.drop:key.keyboard.enter
 key_key.inventory:key.keyboard.e
-key_key.chat:key.keyboard.enter
+key_key.chat:key.keyboard.t
 key_key.playerlist:key.keyboard.tab
 key_key.pickItem:key.mouse.middle
-key_key.command:key.keyboard.world.2
+key_key.command:scancode.115
 key_key.socialInteractions:key.keyboard.unknown
 key_key.screenshot:key.keyboard.unknown
 key_key.togglePerspective:key.keyboard.f5
@@ -185,7 +185,7 @@ key_gui.xaero_map_zoom_out:key.keyboard.unknown
 key_gui.xaero_quick_confirm:key.keyboard.unknown
 key_gui.xaero_toggle_dimension:key.keyboard.unknown
 soundCategory_master:1.0
-soundCategory_music:0.25704225352112675
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
