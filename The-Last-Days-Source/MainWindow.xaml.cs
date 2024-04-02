@@ -899,7 +899,7 @@ namespace The_Last_Days_Launcher
                         optionsToApply[key] = value;
                     }
 
-                    //Get all values for all settings to be applied, to the user game
+                    //Apply all settings to be applied, to the local user game options
                     string[] localOptionsLines = File.ReadAllLines((modpackPath + @"/Game/instances/The Last Days/.minecraft/options.txt"));
                     //Read each line and apply the settings
                     for(int i = 0; i < localOptionsLines.Length; i++)
@@ -918,6 +918,41 @@ namespace The_Last_Days_Launcher
                     }
                     //Save the modified options file
                     File.WriteAllLines((modpackPath + @"/Game/instances/The Last Days/.minecraft/options.txt"), localOptionsLines);
+
+                    //Add all options found in downloaded options, that not exists in local game options
+                    List<string> localOptionsLinesList = File.ReadAllLines((modpackPath + @"/Game/instances/The Last Days/.minecraft/options.txt")).ToList();
+                    //Check each key inside the options to apply
+                    foreach(var item in optionsToApply)
+                    {
+                        //Get the key and value of this option
+                        string optionKey = item.Key;
+                        string optionValue = item.Value;
+
+                        //Store if found the options in the game options
+                        bool foundThisOption = false;
+                        //Search the option...
+                        foreach(string line in localOptionsLinesList)
+                            if(line.Contains(optionKey) == true)
+                            {
+                                foundThisOption = true;
+                                break;
+                            }
+
+                        //If found this option, continue to check next option
+                        if (foundThisOption == true)
+                            continue;
+
+                        //If this option to apply have a empty value, ignore it
+                        if (optionValue == "")
+                            continue;
+
+                        //If not found this option in local game options, add it to the options
+                        localOptionsLinesList.Add((optionKey + ":" + optionValue));
+                    }
+                    //Save the modified options file
+                    File.WriteAllLines((modpackPath + @"/Game/instances/The Last Days/.minecraft/options.txt"), localOptionsLinesList.ToArray());
+
+
 
                     //Return a success response
                     return new string[] { "success" };
