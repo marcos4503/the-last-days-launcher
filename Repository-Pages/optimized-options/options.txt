@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources"]
+resourcePacks:["vanilla","mod_resources","file/Recursos Para o Tema.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
@@ -184,6 +184,7 @@ key_gui.xaero_map_zoom_in:key.keyboard.unknown
 key_gui.xaero_map_zoom_out:key.keyboard.unknown
 key_gui.xaero_quick_confirm:key.keyboard.unknown
 key_gui.xaero_toggle_dimension:key.keyboard.unknown
+key_key.corpse.death_history:key.keyboard.l
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
