@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","fabric","file/Recursos Para o Tema.zip"]
+resourcePacks:["vanilla","mod_resources","fabric","file/Recursos Para o Tema.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
