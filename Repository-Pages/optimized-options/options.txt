@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","fabric","file/Recursos Para o Tema.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip"]
+resourcePacks:["vanilla","mod_resources","fabric","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
