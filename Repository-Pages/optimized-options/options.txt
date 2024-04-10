@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","fabric","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip"]
+resourcePacks:["vanilla","mod_resources","fabric","file/Adaptação de Tradução.zip","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip","file/Adrenaline Injection.zip","file/Creature Generator.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
@@ -185,6 +185,35 @@ key_gui.xaero_map_zoom_out:key.keyboard.unknown
 key_gui.xaero_quick_confirm:key.keyboard.unknown
 key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_key.corpse.death_history:key.keyboard.l
+key_key.jei.toggleCheatModeConfigButton:key.keyboard.unknown
+key_key.jei.cheatOneItem2:key.keyboard.unknown
+key_key.jei.nextSearch:key.keyboard.unknown
+key_key.jei.cheatItemStack:key.keyboard.unknown
+key_key.jei.nextRecipePage:key.keyboard.unknown
+key_key.jei.clearSearchBar:key.keyboard.unknown
+key_key.jei.cheatItemStack2:key.keyboard.unknown
+key_key.jei.previousRecipePage:key.keyboard.unknown
+key_key.jei.closeRecipeGui:key.keyboard.escape
+key_key.jei.toggleWildcardHideIngredient:key.keyboard.unknown
+key_key.jei.toggleCheatMode:key.keyboard.unknown
+key_key.jei.previousSearch:key.keyboard.unknown
+key_key.jei.showUses:key.keyboard.unknown
+key_key.jei.previousCategory:key.keyboard.unknown
+key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
+key_key.jei.nextPage:key.keyboard.unknown
+key_key.jei.nextCategory:key.keyboard.unknown
+key_key.jei.showRecipe2:key.mouse.left
+key_key.jei.previousPage:key.keyboard.unknown
+key_key.jei.showUses2:key.mouse.right
+key_key.jei.toggleEditMode:key.keyboard.unknown
+key_key.jei.toggleOverlay:key.keyboard.unknown
+key_key.jei.bookmark:key.keyboard.right.bracket
+key_key.jei.showRecipe:key.keyboard.unknown
+key_key.jei.toggleHideIngredient:key.keyboard.unknown
+key_key.jei.focusSearch:key.keyboard.unknown
+key_key.jei.copy.recipe.id:key.keyboard.unknown
+key_key.jei.cheatOneItem:key.keyboard.unknown
+key_key.jei.recipeBack:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
