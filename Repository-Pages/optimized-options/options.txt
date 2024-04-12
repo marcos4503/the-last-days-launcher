@@ -214,6 +214,10 @@ key_key.jei.focusSearch:key.keyboard.unknown
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 key_key.jei.cheatOneItem:key.keyboard.unknown
 key_key.jei.recipeBack:key.keyboard.unknown
+key_iris.keybind.reload:key.keyboard.unknown
+key_iris.keybind.toggleShaders:key.keyboard.unknown
+key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_key.entityculling.toggle:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
