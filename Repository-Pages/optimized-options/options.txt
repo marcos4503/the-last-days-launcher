@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","fabric","file/Adaptação de Tradução.zip","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip","file/Adrenaline Injection.zip","file/Creature Generator.zip","file/No Items Glint.zip","file/Clear Infested Blocks.zip","file/All Helmets Hidden.zip","file/Vanilla Emissive Ores.zip"]
+resourcePacks:["vanilla","mod_resources","fabric","file/Adaptação de Tradução.zip","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip","file/Adrenaline Injection.zip","file/Creature Generator.zip","file/No Items Glint.zip","file/Clear Infested Blocks.zip","file/All Helmets Hidden.zip","file/Vanilla Emissive Ores.zip","file/Bat Updated Visual.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
@@ -218,6 +218,35 @@ key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
+key_quark.keybind.autorun:key.keyboard.unknown
+key_quark.keybind.back:key.keyboard.unknown
+key_quark.keybind.camera_mode:key.keyboard.unknown
+key_quark.keybind.transfer_insert:key.keyboard.unknown
+key_quark.keybind.transfer_extract:key.keyboard.unknown
+key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.emote.no:key.keyboard.keypad.1
+key_quark.emote.yes:key.keyboard.keypad.3
+key_quark.emote.wave:key.keyboard.keypad.2
+key_quark.emote.salute:key.keyboard.unknown
+key_quark.emote.cheer:key.keyboard.keypad.6
+key_quark.emote.clap:key.keyboard.keypad.4
+key_quark.emote.think:key.keyboard.unknown
+key_quark.emote.point:key.keyboard.keypad.5
+key_quark.emote.shrug:key.keyboard.keypad.7
+key_quark.emote.headbang:key.keyboard.unknown
+key_quark.emote.weep:key.keyboard.keypad.8
+key_quark.emote.facepalm:key.keyboard.keypad.9
+key_quark.keybind.patreon_emote.dance:key.keyboard.unknown
+key_quark.keybind.patreon_emote.tpose:key.keyboard.unknown
+key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
+key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
+key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
+key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
+key_quark.keybind.change_hotbar:key.keyboard.z
+key_quark.keybind.sort_player:key.keyboard.unknown
+key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.lock_rotation:key.keyboard.grave.accent
+key_quark.keybind.variant_selector:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

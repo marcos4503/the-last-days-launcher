@@ -74,10 +74,13 @@
                     <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="1">Sobre a Documentação</a></li>
                     <li class="summarySubItem">Elementos Adicionados</li>
                     <ul>
-                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_1">Minimapa e Mapa Mundial</a></li>
-                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_2">Cidades Abandonadas</a></li>
-                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_3">Cadáveres</a></li>
-                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_4">Visualização dos Itens do Jogo no Inventário</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_1">Otimizações Gráficas e de Performance</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_2">Minimapa e Mapa Mundial</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_3">Cidades Abandonadas</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_4">Cadáveres</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_5">Visualização dos Itens do Jogo no Inventário</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_6">Minérios Emissivos Sem Shader</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_7">Ajustes e Adições Menores de Aspectos ou Mecânicas</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -99,7 +102,6 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_12">Remoção de Efeitos de Encantamento</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_13">Clareza de Blocos Infestados</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_14">Ocultação de Elmos</a></li>
-                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_15">Minérios Emissivos Sem Shader</a></li>
                     </ul>
                     <li class="summarySubItem">Outros</li>
                     <ul>
@@ -134,8 +136,35 @@
 
 
 
-                <!-- #region Elementos Adicionados: Minimapa e Mapa Mundial -->
+
+
+                <!-- #region Elementos Adicionados: Otimizações Gráficas e de Performance -->
                 <doc.topic topicid="2_1">
+                    <doc.topictitle>Elementos Adicionados: Otimizações Gráficas e de Performance</doc.topictitle>
+
+                    Diversas melhorias gráficas, de recursos e de performance foram trazidas ao Modpack. Veja abaixo a lista das melhorias de destaque, além do rework na engine de iluminação trazida pelo Minecraft 1.20!
+                    <doc.list>
+                        <doc.listr>Melhorias gráficas e forte otimização gráfica, aprimorada pelo Embbedium que é um porte direto do Sodium.</doc.listr>
+                        <doc.listr>Mais parâmetros de configurações trazidas pelo Embbedium Extra, um porte direto do Sodium Extra.</doc.listr>
+                        <doc.listr>Melhor compatibilidade do Forge e da API Fabric de renderização, graças ao Lazurite, um porte direto do Indium.</doc.listr>
+                        <doc.listr>Suporte a resource packs com texturas emissivas e aleatórias para mobs/entidades, aprimorado pelo Entity Texture Features.</doc.listr>
+                        <doc.listr>Suporte a resource packs que alteram os modelos 3D de mobs/entidades, aprimorado pelo Entity Model Features.</doc.listr>
+                        <doc.listr>Suporte a resource packs que adicionam animações de textura para itens, blocos e mobs/entidades, graças ao MoreMcMeta.</doc.listr>
+                        <doc.listr>Suporte a resource packs que adicionam texturas emissivas para itens e blocos, aprimorado pelo MoreMcMeta Emissive Plugin.</doc.listr>
+                        <doc.listr>Suporte a resource packs que alteram o ícone de itens do jogo, aos quais batem com certa condição ou com base em suas NBTs, graças ao Forge CIT.</doc.listr>
+                        <doc.listr>Suporte a texturas conectadas, aprimorado pelo Fusion.</doc.listr>
+                        <doc.listr>Suporte a Shaderpacks, aprimorado pelo Oculus, que é um porte direto do Iris.</doc.listr>
+                        <doc.listr>Otimização de Culling de Entidades, ou seja, entidades/mobs que não estão sendo vistos ou estão obstruídos, não são renderizados.</doc.listr>
+                        <doc.listr>Diversas melhorias de uso de CPU e RAM trazidas pelo Canary (porte direto do Lithium), Saturn e FerriteCore.</doc.listr>
+                        <doc.listr>Mais otimizações do NetCode que tem como consequência menor uso de CPU e RAM no servidor, graças ao Krypton Reforged.</doc.listr>
+                        <doc.listr>Salvamento de Chunks mais suave, o que reduz o uso de CPU e reduz os Lag Spikes que possam vir a ocorrer, graças ao Smooth Chunk Save.</doc.listr>
+                    </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Minimapa e Mapa Mundial -->
+                <doc.topic topicid="2_2">
                     <doc.topictitle>Elementos Adicionados: Minimapa e Mapa Mundial</doc.topictitle>
 
                     Um Minimapa e Mapa Mundial foram adicionados ao The Last Days! O Minimapa mostra partes do mapa e Mobs que estejam próximos a você. Você poderá observar uma seta que indica se o mob está acima
@@ -149,7 +178,7 @@
                 <!-- #endregion -->
 
                 <!-- #region Elementos Adicionados: Cidades Abandonadas -->
-                <doc.topic topicid="2_2">
+                <doc.topic topicid="2_3">
                     <doc.topictitle>Elementos Adicionados: Cidades Abandonadas</doc.topictitle>
 
                     O mundo está acabado. Tudo está um caos. Os únicos seres vivos que existem nas cidades agora são Zumbis e Mutantes. O governo fez o que pode para tentar conter a situação, enquanto ainda
@@ -164,7 +193,7 @@
                 <!-- #endregion -->
 
                 <!-- #region Elementos Adicionados: Cadáveres -->
-                <doc.topic topicid="2_3">
+                <doc.topic topicid="2_4">
                     <doc.topictitle>Elementos Adicionados: Cadáveres</doc.topictitle>
 
                     Agora, quando um jogador morre, ao invés de todos seus itens explodirem para todos os lados, apenas um Cadáver é deixado no local da morte. Esse Cadáver pode reagir a alguns eventos físicos
@@ -178,7 +207,7 @@
                 <!-- #endregion -->
 
                 <!-- #region Elementos Adicionados: Visualização dos Itens do Jogo no Inventário -->
-                <doc.topic topicid="2_4">
+                <doc.topic topicid="2_5">
                     <doc.topictitle>Elementos Adicionados: Visualização dos Itens do Jogo no Inventário</doc.topictitle>
 
                     Agora, ao abrir o seu inventário, você poderá visualizar todos os itens disponíveis para você no jogo. Clicando com o <doc.detach>Botão Direito</doc.detach> do mouse, você poderá visualizar quais receitas utilizam o
@@ -190,6 +219,91 @@
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Minérios Emissivos Sem Shader  -->
+                <doc.topic topicid="2_6">
+                    <doc.topictitle>Elementos Adicionados: Minérios Emissivos Sem Shader</doc.topictitle>
+
+                    Agora, todos os minérios são brilhantes. Um bom ajuste, já que agora as Cavernas serão bem mais perigosas. Note que, não é necessário o uso de Shaders para que os minérios brilhem! Apenas os gráficos Vanilla já são o
+                    suficiente!
+                    <doc.image src="DocumentationFiles/images/25.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Ajustes e Adições Menores de Aspectos ou Mecânicas  -->
+                <doc.topic topicid="2_7">
+                    <doc.topictitle>Elementos Adicionados: Ajustes e Adições Menores de Aspectos ou Mecânicas</doc.topictitle>
+
+                    Diversos ajustes menores foram feitos e mecânicas menores foram adicionadas ou reformuladas neste modpack, graças aos mods Quark, Vanilla Tweaks, Every Compat, Supplementaries, YUNG's Better Mineshafts e YUNG's Extras.
+                    Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividad entre as mudanças em destaque, que são mudanças menores, mas que merecem um certo destaque, e as mudanças de menor destaque.
+
+                    <doc.topicsubtitle>Mudanças de Destaque</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>Novo item adicionado. O "Rolo de Corda" pode ser colocado na face de baixo de um bloco, e se você segurar o <doc.detach>Botão Direito</doc.detach> do mouse, enquanto segura outro "Rolo de Corda", a corda será extendida até onde for possível. É possível escala-la, ou descer usando-a.</doc.listr>
+                        <doc.listr>Agora, você pode alternar os itens da sua hotbar com itens em linhas diferentes do seu inventário. Para isso, pressione <doc.detach>Z</doc.detach> e então <doc.detach>1</doc.detach>, <doc.detach>2</doc.detach> ou <doc.detach>3</doc.detach>.</doc.listr>
+                        <doc.listr>Nova ferramenta adicionada. A "Colher de Pedreiro" escolherá um bloco aleatoriamente da sua hotbar, quando clicada com o <doc.detach>Botão Direito</doc.detach> do mouse.</doc.listr>
+                        <doc.listr>Agora, você pode executar animações de Emotes com seu personagem. Você pode usar as teclas <doc.detach>Num 1</doc.detach> até <doc.detach>Num 9</doc.detach> para ativar os Emotes rapidamente.</doc.listr>
+                        <doc.listr>Agora, você pode ativar a Trava de Rotação de Blocos. Essa trava é capaz de rotacionar automaticamente blocos colocados, para a direção que você estava olhando quando ativou a trava. A Trava de Rotação pode ser acessada através da tecla <doc.detach>'</doc.detach> (aspas).</doc.listr>
+                        <doc.listr>Agora, ao usar uma Enxada para destruir plantações ou grama, plantações ou grama vizinhas em uma área de até 5x5 também serão quebradas, a depender do tipo de Enxada.</doc.listr>
+                        <doc.listr>Agora, clicar com o <doc.detach>Botão Direito</doc.detach> do mouse, fará com que você colha uma plantação, sem quebra-la. Se estiver com uma Enxada na mão enquanto clica, uma área de até 5x5 da plantação será colhida.</doc.listr>
+                        <doc.listr>Novos blocos adicionados. Os "Troncos Ocos" são como os troncos normais do jogo, porém, são ocos! Enquanto segura <doc.detach>SHIFT</doc.detach>, você pode andar na direção de um deles e você será capaz de entrar dentro deles.</doc.listr>
+                        <doc.listr>Agora, os Cavalos serão capazes de nadar. Ao invés de apenas afundar, igual a...</doc.listr>
+                        <doc.listr>Agora, os Aldeões lhe seguirão, caso você esteja segurando um Bloco de Esmeralda.</doc.listr>
+                        <doc.listr>Novos blocos adicionados. Os "Vidros Emoldurados" são blocos ou painéis de Vidro que possuem uma moldura de ferro, bem semelhante as janelas da idade média.</doc.listr>
+                        <doc.listr>Novos itens adicionados. A "Moldura de Vidro" e a "Moldura de Vidro Brilhante" são como as molduras normais, porém, quando possuem um item, as molduras ficam invisíveis. Já a "Moldura de Vidro Brilhante" é como qualquer outra, mas no escuro, o item fica brilhando.</doc.listr>
+                        <doc.listr>As "Estantes de Livros" agora tem variantes de acordo com a madeira que você usa para cria-las.</doc.listr>
+                        <doc.listr>Os "Baús" agora tem variantes de acordo com a madeira que você usa para cria-los.</doc.listr>
+                        <doc.listr>Agora, ao pegar uma criatura com um Balde, você poderá ver um ícone que representa melhor a criatura.</doc.listr>
+                        <doc.listr>Os Baús agora possuem novos controles de filtro, organização e pesquisa.</doc.listr>
+                        <doc.listr>Agora, as dicas flutuantes dos itens exibem detalhes deles. Seus atributos como dano e armadura, aumento da alimentação, dicas de mapa e aplicação de Diagramas aparecerão sempre nas dicas flutuantes dos itens.</doc.listr>
+                        <doc.listr>Novo item adicionado. A "Flecha com tocha" colocará uma tocha no bloco colidido, quando disparada.</doc.listr>
+                        <doc.listr>Agora, alimentar um bebê de um animal com "Batata Envenenada" possui uma pequena chance de evenenar o animal. Se isso acontecer o animal nunca se tornará adulto.</doc.listr>
+                        <doc.listr>Novo item adicionado. O "Pedestal" é um item que lhe permite colocar qualquer item nele, e então o item ficará ali a mostra, como num display giratório.</doc.listr>
+                    </doc.list>
+
+                    <doc.topicsubtitle>Mudanças de Menor Destaque</doc.topicsubtitle>
+                    <doc.list>
+                        <doc.listr>Agora, as Correntes podem conectar blocos. Se um bloco se mover por causa de um pistão, todos os blocos conectados a ele também irão se mover.</doc.listr>
+                        <doc.listr>Novo item de Redstone adicionado. A "Calha". Este item é capaz de dropar todo item que é enviado para ele, seja través de encanamentos ou de fúnis.</doc.listr>
+                        <doc.listr>Novo item de Redstone adicionado. O "Fabricador". Este item é capaz de Craftar items automaticamente caso receba um sinal de Redstone, e é um porte direto do "Crafter" do Minecraft 1.21.</doc.listr>
+                        <doc.listr>Os Ejetores, agora podem colocar blocos a sua frente. Eles rotacionarão o bloco para que fiquem de frente aos Ejetores.</doc.listr>
+                        <doc.listr>Novo item adicionado. O "Comedouro" é um item que alimenta automaticamente os animais. Clique com o botão direito nele e adicione comida a ele. Animais próximos irão comer comida automaticamente e reproduzir automaticamente. Mas se houver mais de 32 animais em um raio de 10 blocos, os animais comerão, mas nunca entrarão no modo amor.</doc.listr>
+                        <doc.listr>Novo item adicionado. A "Vara de Ferro" é apenas uma vara, mas quando colocada a um Pistão Grudento, ele funciona como uma broca e é capaz de quebrar blocos a frente dele com o movimento do Pistão.</doc.listr>
+                        <doc.listr>Novo item adicionado. A "Place de Pressão de Obsidiana" funciona como as outras, mas só é ativada quando um Player anda sobre ela.</doc.listr>
+                        <doc.listr>Os Pistões agora podem mover blocos ladrilhados, ou seja, blocos com dados atrelados a eles, como o Baú e Fornalha. Se um bloco não puder ser movido para a posição alvo, ele será quebrado, ainda sim.</doc.listr>
+                        <doc.listr>Novo item de Redstone adicionado. O "Randomizador de Redstone" é um item que emite um sinal de Redstone para um lado aleatório dele, quando recebe um sinal.</doc.listr>
+                        <doc.listr>Novos itens adicionados. As "Cercas Vivas" funcionam como cercas normais do jogo, mas são feitas de madeira e folhas. São muito bonitas!</doc.listr>
+                        <doc.listr>Novo conjunto de blocos adicionados. O "Chapemento de Ferro" são blocos feitos de ferro que tem um visual muito parecido com o industrial. Há blocos, lajes e escadas.</doc.listr>
+                        <doc.listr>Novo conjunto de blocos adicionados. As "Lanternas de Papel", "Paredes de Papel", "Esteira de Bambu" e o "Tatami de Bambu" são itens inspirados no tema japonês.</doc.listr>
+                        <doc.listr>Novo conjunto de blocos adicionados. Os "Blocos de Barro" são blocos feitos de barro. Há blocos, lajes e escadas.</doc.listr>
+                        <doc.listr>Agora, DIVERSAS novas plantas podem ser adicionadas a vasos.</doc.listr>
+                        <doc.listr>Novo conjunto de blocos adicionados. As "Telhas" são blocos inspirados nas Telhas de Telhados Portugueses e há diferentes cores de telhas, com base nas cores de terracota.</doc.listr>
+                        <doc.listr>As "Escadas de Mão" agora tem variantes de acordo com a madeira que você usa para cria-las.</doc.listr>
+                        <doc.listr>Novos itens adicionados. Os "Postes" são como troncos, porém, bem mais finos. Possibilitam uma ifinidade de construções com blocos agora, já que antes só tinhamos a opção de usar troncos.</doc.listr>
+                        <doc.listr>Agora, os animais tem texturas variadas e aleatórias. Isso se aplica a Galinhas, Porcos e Vacas. Alguns outros animais também tem variantes bem raras.</doc.listr>
+                        <doc.listr>Se um item que está na sua hotbar se quebrar, o jogo tentará colocar um item igual na sua mão. Esqueça de ficar tendo que abrir o inventário continuamente enquanto minera.</doc.listr>
+                        <doc.listr>Novo mob adicionado. Os "Caranguejos" spawnam nas praias e andam de lado. Eles podem ser colocados em baldes, podem ser reproduzidos com peixes, galinha ou trigo. Gostam de música e se mortos, podem dropar uma concha ou perna de caranguejo, que pode ser cozida.</doc.listr>
+                        <doc.listr>Agora, as Ametistas podem ser usadas para redirecionar o feixe de luminosidade dos Sinalizadores.</doc.listr>
+                        <doc.listr>Agora os Papagaios podem botar ovos que resultarão em Papagaios de mesma cor. Para isso, eles devem ser alimentados com sementes de Beterraba. Mas as chances de ele entrar no modo de reprodução ao comer as sementes, são baixas.</doc.listr>
+                        <doc.listr>Agora, todas as receitas são desbloqueadas automaticamente.</doc.listr>
+                        <doc.listr>Agora, Corais podem ser colocados em cima de Cactus. A água dentro do Cactus irá manter o Coral vivo.</doc.listr>
+                        <doc.listr>Portas duplas serão automaticamente abertas caso você abra uma delas.</doc.listr>
+                        <doc.listr>Molduras feitas com Couro agora podem ser tingidas com Corantes.</doc.listr>
+                        <doc.listr>Agora os Estandardes podem ter até 16 camadas de pintura, ao invés de apenas 6 camadas.</doc.listr>
+                        <doc.listr>Agora, Coelhos terão que cair de alturas bem maiores para tomarem dano de queda.</doc.listr>
+                        <doc.listr>Agora, duas Lajes podem ser colocadas na Bancada de Trabalho para serem recombinadas em um Bloco.</doc.listr>
+                        <doc.listr>Agora, os Vexes irão morrer juntamente do Invocador, caso este venha a falecer.</doc.listr>
+                        <doc.listr>Agora, Pétalas de Cerejeira podem ser colocadas sob a água.</doc.listr>
+                        <doc.listr>Agora, o Bloco Musical, possui mais notas musicais.</doc.listr>
+                        <doc.listr>Há um novo Bioma Cintilante que existe nas camadas baixas do mundo. Esse biome possui cogumelos gigantes e brilhantes, além de ser um local ao qual as Lulas Brilhantes gostam.</doc.listr>
+                        <doc.listr>Agora é possível criar blocos de Carvão Vegetal, Açucar e Sílex.</doc.listr>
+                        <doc.listr>Agora, quando um mob nomeado com uma Etiqueta é morto, a Etiqueta será dropada.</doc.listr>
+                        <doc.listr>Morcegos agora tem uma rara chance de droparem Couro quando morrem.</doc.listr>
+                        <doc.listr>Agora, a receita de criação da Dinamite não mais resultará em um Bloco de Dinamite, mas sim em Bananas de Dinamite que podem ser combinadas para construir um Bloco de Dinamite. As Bananas podem ser arremessadas como granadas.</doc.listr>
+                    </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
 
 
                 <!-- #region Alterações do Vanilla: Novo Serviço de Skins -->
@@ -275,6 +389,10 @@
                     <br>
                     Já os Allays, ninguém sabe ao certo. Há quem jure que os Allays são uma parcela da população das primeiras crianças infectadas pelo vírus, durante os primeiros dias do apocalipse. Isso somado com provas fornecidas por
                     outros sobreviventes, se torna uma hipótese bem plausível. São seres que possuem uma consciência e sempre que podem, ajudam os humanos.
+
+                    <doc.topicsubtitle>Morcego</doc.topicsubtitle>
+                    Os Morcegos agora possuem duas cores diferentes e tiveram seus visuais atualizados para ficar igual ao Minecraft 1.21, com olhos que brilham no escuro, também.
+                    <doc.image src="DocumentationFiles/images/26.png"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -393,17 +511,6 @@
                     ficarão invisíveis. Nem você e nem outros jogadores verão os Elmos uns dos outros, mas ele estará lá os protegendo (caso o tenha). O lado bom é que há um toque de mistério pelo ar!
                     <doc.image src="DocumentationFiles/images/24.png"></doc.image>
                     Vale lembrar que os ícones dos Elmos e os seus Elmos no seu inventário, continuam a aparecer normalmente. Além disso, o Elmo de Caso de Tartaruga não é ocultado. Este ainda sempre será mostrado.
-
-                </doc.topic>
-                <!-- #endregion -->
-
-                <!-- #region Alterações do Vanilla: Minérios Emissivos Sem Shader  -->
-                <doc.topic topicid="4_15">
-                    <doc.topictitle>Alterações do Vanilla: Minérios Emissivos Sem Shader</doc.topictitle>
-
-                    Agora, todos os minérios são brilhantes. Um bom ajuste, já que agora as Cavernas serão bem mais perigosas. Note que, não é necessário o uso de Shaders para que os minérios brilhem! Apenas os gráficos Vanilla já são o
-                    suficiente!
-                    <doc.image src="DocumentationFiles/images/25.png"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
