@@ -247,6 +247,7 @@ key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
 key_quark.keybind.lock_rotation:key.keyboard.grave.accent
 key_quark.keybind.variant_selector:key.keyboard.unknown
+key_supplementaries.keybind.quiver:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
