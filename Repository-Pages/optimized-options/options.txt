@@ -94,7 +94,7 @@ key_key.jump:key.keyboard.space
 key_key.sneak:key.keyboard.left.shift
 key_key.sprint:key.keyboard.left.control
 key_key.drop:key.keyboard.enter
-key_key.inventory:key.keyboard.e
+key_key.inventory:key.keyboard.unknown
 key_key.chat:key.keyboard.t
 key_key.playerlist:key.keyboard.tab
 key_key.pickItem:key.mouse.middle
@@ -248,6 +248,7 @@ key_quark.keybind.sort_container:key.keyboard.unknown
 key_quark.keybind.lock_rotation:key.keyboard.grave.accent
 key_quark.keybind.variant_selector:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.unknown
+key_key.curios.open.desc:key.keyboard.e
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
