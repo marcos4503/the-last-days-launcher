@@ -253,6 +253,9 @@ key_key.toolbelt.open:key.keyboard.x
 key_key.toolbelt.cycle.left:key.keyboard.unknown
 key_key.toolbelt.cycle.right:key.keyboard.unknown
 key_key.toolbelt.slot:key.keyboard.unknown
+key_key.travelersbackpack.inventory:key.keyboard.b
+key_key.travelersbackpack.toggle_tank:key.keyboard.o
+key_key.travelersbackpack.cycle_tool:key.keyboard.p
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

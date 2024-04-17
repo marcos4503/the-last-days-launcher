@@ -84,10 +84,11 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_8">Melhor Visão do Ping e Clareza no Chat</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_9">Inventário Melhorado</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_10">Cinto de Ferramentas</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_11">Mochila</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
-                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="3">Displaying a Title within a Topic</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="3_1">Diversos Ajustes em Receitas</a></li>
                     </ul>
                     <li class="summarySubItem">Alterações do Vanilla</li>
                     <ul>
@@ -136,8 +137,6 @@
                     do Vanilla e Outros. Aproveite para ler e ficar por dentro de tudo!
                 </doc.topic>
                 <!-- #endregion -->
-
-
 
 
 
@@ -362,7 +361,7 @@
                     <doc.topictitle>Elementos Adicionados: Inventário Melhorado</doc.topictitle>
 
                     Agora, ao apertar <doc.detach>E</doc.detach>, você terá acesso a um Inventário aprimorado e renovado, graças as adições do Quark, No Recipe Book e Curios. Além disso, há um gerenciador de elementos vestíveis, embutido e
-                    todo elemento vestível colocado em seus slots específicos, não são dropados quando você morre!
+                    todo elemento vestível colocado em seus slots específicos, não são dropados quando você morre, com excessão das Mochilas. Estas ainda serão dropadas se você morrer.
                     <doc.image src="DocumentationFiles/images/28.png"></doc.image>
 
                 </doc.topic>
@@ -387,6 +386,84 @@
                     <doc.image src="DocumentationFiles/images/30.png"></doc.image>
                     Por padrão, após construir seu "Cinto de Ferramentas", ele só terá 2 slots. Porém, é possível expandir a quantidade para até 9 slots. Para fazer essa expansão, crie um item chamado "Bolso de Cinto" e então, utilize uma
                     Bigorna para unir o seu "Cinto de Ferramentas" com o item "Bolso de Cinto", ao custo de XP.
+                    <doc.warn>
+                        Um Cinto com Ferramentas é pesado! Se você mantiver qualquer Cinto de Ferramentas em seu inventário, fora do slot de Cinto, seu personagem terá dificuldades de se mover. Além disso, não é possível guardar uma Mochila
+                        num Cinto de Ferramentas.
+                    </doc.warn>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Mochila -->
+                <doc.topic topicid="2_11">
+                    <doc.topictitle>Elementos Adicionados: Mochila</doc.topictitle>
+
+                    A Mochila é um novo acessório de utilidade que com certeza irá lhe ajudar muito em suas aventuras! As Mochilas lhe fornecem um inventário, espaços para guardar somente ferramentas, assim como o Cinto de Ferramentas,
+                    opções de organização, Tanques para armazenar fluídos como Água e Lava, visuais diferenciados e também uma Bancada de Trabalho embutida na mochila. Para conseguir uma Mochila, basta criar o item chamado "Mochila". Você
+                    pode buscar pelo item através da interface do seu inventário, para ver a receita.
+                    <br>
+                    <br>
+                    Uma vez que tenha a Mochila, basta equipa-la no Slot destinado a Mochilas, no seu inventário, e pronto! Sua mochila estará disponível e para abri-la, é só pressionar <doc.detach>B</doc.detach>. Mas para essa tecla
+                    funcionar a sua Mochila precisa estar no Slot de Mochilas.
+                    <doc.image src="DocumentationFiles/images/31.png"></doc.image>
+                    Também é possível colocar sua Mochila no chão. Para isso, coloque a Mochila na sua mão, segure <doc.detach>SHIFT</doc.detach> e clique com o <doc.detach>Botão Direito</doc.detach> do mouse, no chão. Uma vez que ela
+                    esteja no chão, você poderá usa-la como se fosse um baú e é até possível estender um saco de dormir, à frente dela! Para vesti-la novamente, basta quebra-la com a mão e então coloca-la no Slot de Mochilas em seu
+                    Inventário, novamente.
+                    <doc.warn>
+                        A Mochila é pesada! Se você mantiver qualquer Mochila em seu inventário, fora do slot de Mochila, seu personagem terá dificuldades de se mover. Além disso, não é possível guardar um Cinto de Ferramentas
+                        numa Mochila.
+                    </doc.warn>
+
+                    <doc.topicsubtitle>Colocando uma Bancada de Trabalho embutida</doc.topicsubtitle>
+                    É possível colocar uma Bancada de Trabalho embutida dentro da sua Mochila. Para fazer isso, você precisará criar um item chamado "Molde de Melhoria de Fabricação". Uma vez que tenha este item em mãos, basta ir até uma
+                    Bancada de Ferraria para atribuí-lo a sua Mochila e então adicionar esta melhoria a ela.
+                    <doc.image src="DocumentationFiles/images/32.png"></doc.image>
+                    Após fazer isso, você irá notar que o ícone <doc.icon src="DocumentationFiles/images/33.png"></doc.icon> aparece na sua Mochila. Basta clicar nele para acessar a Bancada de Trabalho embutida!
+
+                    <doc.topicsubtitle>Melhorando sua Mochila</doc.topicsubtitle>
+                    Há 4 melhorias adicionais, disponíveis para as Mochilas. Cada uma dessas melhorias são classificadas nos Tiers "Ferro", "Ouro", "Diamante" e "Netherita". A cada nível de melhoria aplicada a sua Mochila, você desbloqueará
+                    mais Slots de espaço, mais Slots de ferramentas e mais capacidade nos Tanques de fluídos. Os 4 itens de melhoria são...
+                    <doc.list>
+                        <doc.listr>Molde de Melhoria de Ferro</doc.listr>
+                        <doc.listr>Molde de Melhoria de Ouro</doc.listr>
+                        <doc.listr>Molde de Melhoria de Diamante</doc.listr>
+                        <doc.listr>Molde de Melhoria de Netherita</doc.listr>
+                    </doc.list>
+                    Uma vez que tenha acesso a qualquer um destes itens, você poderá aplica-los a sua Mochila usando uma Bancada de Ferraria. Note que uma Mochila não pode pular níveis de melhoria. Então, para ir ao nível de Netherita por
+                    exemplo, sua Mochila precisará ser melhorada para Ferro, depois Ouro e depois Diamante.
+                    <doc.image src="DocumentationFiles/images/34.png"></doc.image>
+                    Para ver o nível de melhoria de uma Mochila, basta passar o mouse sobre ela, enquanto ela está em seu Inventário.
+
+                    <doc.topicsubtitle>Gerenciando fluídos em sua Mochila</doc.topicsubtitle>
+                    Para guardar ou retirar flúidos dos Tanques da sua Mochila, você pode usar Baldes do Minecraft. Mas uma maneira bem legal de fazer isso é usando Mangueiras! Ao criar uma Mangueira pela primeira vez, ela estará como "Não
+                    Atribuída". Para atribui-la a sua Mochila, primeiro certifique-se de estar vestindo a Mochila, em seguida, com a Mangueira em mãos, clique com o <doc.detach>Botão Direito</doc.detach> do mouse. As Mangueiras possuem 3
+                    modos de operação. São eles...
+                    <doc.list>
+                        <doc.listr><b>Sucção</b>: Esse modo irá sugar o fluído para o Tanque atualmente selecionado de sua Mochila, se ele não estiver cheio. Para sugar, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse sobre algum fluído.</doc.listr>
+                        <doc.listr><b>Ejeção</b>: Esse modo irá expelir o fluído do Tanque atualmente selecionado de sua Mochila, como se você estivesse usando um Balde. Para expelir, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse sobre algum bloco.</doc.listr>
+                        <doc.listr><b>Bebida</b>: Esse modo te permite beber o fluído do Tanque atualmente selecionado de sua Mochila. Para beber, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse, como se fosse comer algum alimento.</doc.listr>
+                    </doc.list>
+                    Para trocar o modo de uma Mangueira, basta usar a tecla <doc.detach>P</doc.detach>. Se quiser trocar o Tanque selecionado, basta usar a tecla <doc.detach>O</doc.detach>. Você pode saber o Tanque que está atualmente
+                    selecionado, ao olhar para o canto Inferior Direito da sua tela. O Tanque selecionado aparece com uma borda branca.
+                    <doc.image src="DocumentationFiles/images/35.png"></doc.image>
+
+                    <doc.topicsubtitle>Estilizando sua Mochila</doc.topicsubtitle>
+                    Há diversas Skins disponíveis para suas Mochilas, e você pode estilizar suas Mochilas como bem entendender!
+                    <doc.image src="DocumentationFiles/images/36.png"></doc.image>
+                    Para ver a receita de uma determinada Skin, basta abrir o seu Inventário. Se quiser remover a Skin de uma Mochila, basta coloca-la numa Bancada de Trabalho juntamente de uma Tesoura, e o estilo será removido.
+                    <doc.image src="DocumentationFiles/images/37.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+
+
+                <!-- #region Rebalanceamentos: Diversos Ajustes em Receitas -->
+                <doc.topic topicid="3_1">
+                    <doc.topictitle>Rebalanceamentos: Diversos Ajustes em Receitas</doc.topictitle>
+
+                    Diversos itens do Minecraft Vanilla e de conteúdos adicionados pelo Modpack tiveram suas receitas alteradas, removidas ou adicionadas para ter uma melhor sinergia com o Modpack e sua dificuldade. Você irá notar que
+                    alguns itens possuem receitas diferentes para a Fabricação. Se quiser visualizar a receita de qualquer item, basta abrir seu Inventário e clicar sobre um item que aparece no Painel a direita do seu Inventário.
 
                 </doc.topic>
                 <!-- #endregion -->
