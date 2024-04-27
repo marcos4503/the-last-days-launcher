@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","fabric","file/Adaptação de Tradução.zip","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip","file/Adrenaline Injection.zip","file/Creature Generator.zip","file/No Items Glint.zip","file/Clear Infested Blocks.zip","file/All Helmets Hidden.zip","file/Vanilla Emissive Ores.zip","file/Bat Updated Visual.zip"]
+resourcePacks:["vanilla","mod_resources","fabric","file/Adaptação de Tradução.zip","file/Recursos Para o Tema.zip","file/Default Connected Textures.zip","file/Human Player Villagers.zip","file/Enhanced Zombie Pack.zip","file/The Last Iron Golems.zip","file/The Zombie Snow Golem.zip","file/The Undead Vex.zip","file/The Saddly Allay.zip","file/The Drugs Of The Cultists.zip","file/The Upgrade Diagrams.zip","file/Adrenaline Injection.zip","file/Creature Generator.zip","file/No Items Glint.zip","file/Clear Infested Blocks.zip","file/All Helmets Hidden.zip","file/Vanilla Emissive Ores.zip","file/Bat Updated Visual.zip","file/The Encyclopedia.zip","Moonlight Mods Dynamic Assets"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br
@@ -256,6 +256,13 @@ key_key.toolbelt.slot:key.keyboard.unknown
 key_key.travelersbackpack.inventory:key.keyboard.b
 key_key.travelersbackpack.toggle_tank:key.keyboard.o
 key_key.travelersbackpack.cycle_tool:key.keyboard.p
+key_keybind.musicmanager.open:key.keyboard.unknown
+key_keybind.musicmanager.show_toast:key.keyboard.equal
+key_key.nbttooltip.copy:key.keyboard.unknown
+key_key.nbttooltip.toggle:key.keyboard.unknown
+key_key.nbttooltip.scroll_down:key.keyboard.unknown
+key_key.nbttooltip.scroll_up:key.keyboard.unknown
+key_key.commandkeys.open_config:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
