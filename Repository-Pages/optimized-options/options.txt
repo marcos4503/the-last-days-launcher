@@ -210,7 +210,7 @@ key_key.jei.toggleOverlay:key.keyboard.unknown
 key_key.jei.bookmark:key.keyboard.right.bracket
 key_key.jei.showRecipe:key.keyboard.unknown
 key_key.jei.toggleHideIngredient:key.keyboard.unknown
-key_key.jei.focusSearch:key.keyboard.unknown
+key_key.jei.focusSearch:key.keyboard.end
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 key_key.jei.cheatOneItem:key.keyboard.unknown
 key_key.jei.recipeBack:key.keyboard.unknown
@@ -263,6 +263,10 @@ key_key.nbttooltip.toggle:key.keyboard.unknown
 key_key.nbttooltip.scroll_down:key.keyboard.unknown
 key_key.nbttooltip.scroll_up:key.keyboard.unknown
 key_key.commandkeys.open_config:key.keyboard.unknown
+key_key.whistle.1:key.keyboard.unknown
+key_key.whistle.2:key.keyboard.unknown
+key_key.whistle.3:key.keyboard.unknown
+key_key.whistle.4:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

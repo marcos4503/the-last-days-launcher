@@ -585,7 +585,7 @@ function RunPostProcessOfAllToolsTags() {
         var currentItem = temporaryTags[i];
         if (isInsideCodeTag(currentItem) == true) //<-- Ignore this item, if is inside of CODE tag
             continue;
-        currentItem.setAttribute("hidden-href", "topic-id:" + currentItem.getAttribute("correspondentTopicId"));
+        currentItem.setAttribute("title", "topic-id:" + currentItem.getAttribute("correspondentTopicId"));
     }
     //all li itens that is submenu
     temporaryTags = document.getElementsByClassName("summarySubItem");
