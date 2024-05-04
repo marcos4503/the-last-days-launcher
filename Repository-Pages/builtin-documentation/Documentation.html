@@ -87,6 +87,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_11">Mochila</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_12">Exibição de Músicas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_13">Cachorros Treinados</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_14">Efeitos Sonoros de Ambiente</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -108,6 +109,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_12">Remoção de Efeitos de Encantamento</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_13">Clareza de Blocos Infestados</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_14">Ocultação de Elmos</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_15">Melhorias menores em Texturas, Efeitos Visuais e Recursos</a></li>
                     </ul>
                     <li class="summarySubItem">Outros</li>
                     <ul>
@@ -341,7 +343,7 @@
                         <doc.listr>Agora, os Vendedores Ambulates são capazes de abrir portas.</doc.listr>
                         <doc.listr>Agora, é possível colocar pólvora no chão e inclusive ascende-la.</doc.listr>
                         <doc.listr>Agora, é possível colocar qualquer livro no chão.</doc.listr>
-                        <doc.listr>Agora, os Calderões podem armazenar QUALQUER líquido, misturar corantes, e ao interagir com um Caldeirão com água colorida, com um item tingível na mão, irá tingir o item com a mesma cor.</doc.listr>
+                        <doc.listr>Agora, os Calderões podem armazenar QUALQUER líquido, misturar corantes, armazenar Drogas, e além disso, ao interagir com um Caldeirão com água colorida, com um item tingível na mão, irá tingir o item com a mesma cor. Você também pode armazenar qualquer fluído em Caldeirões além de poder guarda-los em frascos, ou colocar o conteúdo de fracos em Caldeirões, etc.</doc.listr>
                         <doc.listr>Ao segurar um Lampião, haverá uma nova animação.</doc.listr>
                         <doc.listr>Agora as Placas Suspensas podem exibir desenhos de estandarde, podem segurar items, assim como as Molduras e possuem uma nova animação baseada em física.</doc.listr>
                         <doc.listr>Agora, os Toca-Discos possuem um novo visual e exibem qual disco estão tocando.</doc.listr>
@@ -568,8 +570,8 @@
                     <doc.image src="DocumentationFiles/images/55.png"></doc.image>
                     Indo da esquerda para a direita, estes são os itens...
                     <doc.list>
-                        <doc.listr><b>Grãos de Arroz</b>: Novo tipo de plantação. Plante os Grãos e colha arroz! É usado principalmente em receitas para cães.</doc.listr>
-                        <doc.listr><b>Grãos de Feijão</b>: Novo tipo de plantação. Plante os Grãos e colha feijão! É usado principalmente em receitas para cães.</doc.listr>
+                        <doc.listr><b>Grãos de Arroz</b>: Novo tipo de plantação. Plante os Grãos e colha arroz! É usado principalmente em receitas para cães e pode ser obtido ao quebrar gramas altas.</doc.listr>
+                        <doc.listr><b>Grãos de Feijão</b>: Novo tipo de plantação. Plante os Grãos e colha feijão! É usado principalmente em receitas para cães e pode ser obtido ao abater alguns tipos de mobs hostís.</doc.listr>
                         <doc.listr><b>Osso Arremessável, Graveto Arremessável e Frisbee</b>: São brinquedos que você pode arremessar e os Cães os buscarão e trarão para você.</doc.listr>
                         <doc.listr><b>Petisco Energético</b>: É um tipo de Petisco que não alimenta seu Cão, nem o sobe de nível, mas o garante buffs de visão, o faz brilhar e aumenta sua regeneração de vida e velocidade de movimento, por 5 segundos.</doc.listr>
                         <doc.listr><b>Brinquedo de Pelúcia e Banheira Para Cães</b>: São blocos decorativos que você pode utilizar para criar um ambiente mais aconchegante para seus Cães!</doc.listr>
@@ -577,6 +579,16 @@
                         <doc.listr><b>Cama Para Cães</b>: Funciona como uma Cama normal, porém, para Cães! Você pode definir um cão como sendo dono da Cama, o deixando em pé próximo a Cama, e então usando <doc.detach>SHIFT</doc.detach> + <doc.detach>Botão Direito</doc.detach> na Cama, a Cama ficará marcada como sendo do Cachorro.</doc.listr>
                         <doc.listr><b>Moinho de Arroz</b>: O Moinho de Arroz é um bloco que processa suas colheitas de Grão de Arroz e Arroz Bruto em Arroz branco normal. As pás da helice do Moinho devem estar em contato com a água para que possam girar e moer suas colheitas de Arroz.</doc.listr>
                     </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Efeitos Sonoros de Ambiente -->
+                <doc.topic topicid="2_14">
+                    <doc.topictitle>Elementos Adicionados: Efeitos Sonoros de Ambiente</doc.topictitle>
+
+                    O jogo agora possui efeitos sonoros de ambiente para uma maior impressão de vida no jogo. Há efeitos sonoros de ventos, pássaros, lobos, corujas, grilos e muito mais. Sem contar os efeitos sonoros de ambientes, como
+                    cavernas. Todos esses efeitos sonoros são controlados pelo volume <doc.detach>Ambiente</doc.detach> que pode ser ajustado nas configurações de Som do jogo.
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -800,6 +812,34 @@
                     ficarão invisíveis. Nem você e nem outros jogadores verão os Elmos uns dos outros, mas ele estará lá os protegendo (caso o tenha). O lado bom é que há um toque de mistério pelo ar!
                     <doc.image src="DocumentationFiles/images/24.png"></doc.image>
                     Vale lembrar que os ícones dos Elmos e os seus Elmos no seu inventário, continuam a aparecer normalmente. Além disso, o Elmo de Caso de Tartaruga não é ocultado. Este ainda sempre será mostrado.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Alterações do Vanilla: Melhorias menores em Texturas, Efeitos Visuais e Recursos  -->
+                <doc.topic topicid="4_15">
+                    <doc.topictitle>Alterações do Vanilla: Melhorias menores em Texturas, Efeitos Visuais e Recursos</doc.topictitle>
+
+                    Diversas melhorias menores foram trazidas através de Mods e Resource Packs. Dentre essas melhorias estão melhorias de Texturas, Efeitos Visuais e de Recursos. Veja a lista completa dessas pequenas melhorias, abaixo...
+                    <doc.list>
+                        <doc.listr>As fogueiras, agora quando num inventário possuem seus ícones animados.</doc.listr>
+                        <doc.listr>Fogueiras apagadas não mais possuem uma pilha de cinzas abaixo delas.</doc.listr>
+                        <doc.listr>Portas e Alçapões agora possuem belas janelas de vidro.</doc.listr>
+                        <doc.listr>Cercas de Madeira agora parecem mais refinadas e bonitas quando comparadas as suas versões Vanilla.</doc.listr>
+                        <doc.listr>Os blocos de folha de árvores agora são mais arredondados.</doc.listr>
+                        <doc.listr>O Sol e Lua agora são arredondados e o céu noturo possui estrelas animadas que piscam.</doc.listr>
+                        <doc.listr>A água agora, é mais transparente.</doc.listr>
+                        <doc.listr>Os Girassóis agora são mais bonitos e mais altos.</doc.listr>
+                        <doc.listr>Blocos de Grama e Grama Alta agora são ligeiramente mais baixos.</doc.listr>
+                        <doc.listr>O volume do efeito sonoro de chuva foi reduzido em 80%.</doc.listr>
+                        <doc.listr>O volume do efeito sonoro de portais foi reduzido em 95%.</doc.listr>
+                        <doc.listr>Os antigos sons de orbes de experiência, foram trazidos de volta para o jogo.</doc.listr>
+                        <doc.listr>Agora os blocos de Composteira, Colméia e Caldeirão, exibem um medidor de preenchimento.</doc.listr>
+                        <doc.listr>As explosões (sejam de TNT ou de outras fontes) possuem um efeito visual mais bonito e brilhante.</doc.listr>
+                        <doc.listr>As Chuvas e Neves agora são menos irritantes e não obstruem sua tela como antes, tornando-as mais aceitáveis.</doc.listr>
+                        <doc.listr>Agora, o Pântano de Mangues possui vagalumes durante a noite.</doc.listr>
+                        <doc.listr>Há novas particulas e efeitos para Chuvas e Tempestades, além de efeitos visuais exclusivos para Chuvas em Desertos e Áreas Frias.</doc.listr>
+                    </doc.list>
 
                 </doc.topic>
                 <!-- #endregion -->
