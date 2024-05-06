@@ -90,6 +90,10 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_14">Efeitos Sonoros de Ambiente</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_15">Suporte de Armaduras Retrabalhado</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_16">Nova Câmera de Terceira Pessoa</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_17">Carregador de Chunks</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_18">Indicador Direcional de Dano</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_19">Case de Exibição de Itens</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_20">Escudos Retrabalhados</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -275,6 +279,7 @@
                         <doc.listr>Novo item adicionado. A "Flecha com tocha" colocará uma tocha no bloco colidido, quando disparada.</doc.listr>
                         <doc.listr>Agora, alimentar um bebê de um animal com "Batata Envenenada" possui uma pequena chance de evenenar o animal. Se isso acontecer o animal nunca se tornará adulto.</doc.listr>
                         <doc.listr>Novo item adicionado. O "Pedestal" é um item que lhe permite colocar qualquer item nele, e então o item ficará ali a mostra, como num display giratório.</doc.listr>
+                        <doc.listr>Agora, os blocos de Árdosia são quebrados na mesma velocidade dos blocos de Pedra.</doc.listr>
                     </doc.list>
 
                     <doc.topicsubtitle>Mudanças de Menor Destaque</doc.topicsubtitle>
@@ -618,6 +623,68 @@
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Carregador de Chunks -->
+                <doc.topic topicid="2_17">
+                    <doc.topictitle>Elementos Adicionados: Carregador de Chunks</doc.topictitle>
+
+                    Agora é possível manter certas Chunks sempre carregadas, mesmo que você esteja longe! Diga oi para o <doc.detach>Carregador de Chunks</doc.detach>, um novo bloco que é capaz de manter a Chunk em que ele se encontra (ou
+                    chunks vizinhas dependendo), carregadas, mesmo que você esteja longe ou até offline com o servidor rodando!
+                    <br>
+                    <br>
+                    Ao criar o Carregador de Chunks, basta coloca-lo na Chunk ao qual você deseja manter carregada, e então clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no bloco Carregador de Chunk, para ativa-lo. Feito
+                    isso, a Chunk permanecerá carregada, mesmo que você esteja longe ou offline. No caso de um servidor, se o servidor estiver rodando enquanto seu Carregador de Chunk está ativo, o bloco permanecerá mantendo sua Chunk
+                    carregada por um período de até 7 dias do jogo, ou 140 minutos da vida real. Se você estiver on-line, a Chunk permanecerá carregada permanentemente. Pressionando a tecla <doc.detach>]</doc.detach>, as Chunks que
+                    possuirem um Carregador de Chunk ativo terão uma caixa amarela transparênte, lhe mostrando que dentro daquela Chunk, há um Carregador de Chunk. Se quiser visualizar as Chunks do mundo para ficar mais fácil decidir onde
+                    colocar o Carregador de Chunks, basta pressionar <doc.detach>F3 + G</doc.detach>.
+                    <br>
+                    <br>
+                    Para saber o posicionamento de Carregadores de Chunk, presentes no mundo, pressione <doc.detach>~</doc.detach>, mas se quiser saber o posicionamento somente de Carregadores de Chunk ativados, pressione
+                    <doc.detach>Ç</doc.detach>. Se você segurar um bloco Carregador de Chunk na mão, os blocos Carregadores de Chunks vísiveis, na sua tela, também exibirão um tracejado ao qual indica se aquele bloco está ativo ou não.
+                    <doc.image src="DocumentationFiles/images/58.gif"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Indicador Direcional de Dano -->
+                <doc.topic topicid="2_18">
+                    <doc.topictitle>Elementos Adicionados: Indicador Direcional de Dano</doc.topictitle>
+
+                    Sempre que você receber dano de algum inimigo ou fonte de dano não natural (por exemplo, queda), um indicador de dano aparecerá ao redor da sua mira para lhe mostrar a direção da onde a fonte causadora do dano está.
+                    <doc.image src="DocumentationFiles/images/59.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Case de Exibição de Itens -->
+                <doc.topic topicid="2_19">
+                    <doc.topictitle>Elementos Adicionados: Case de Exibição de Itens</doc.topictitle>
+
+                    Prepare-se para se exibir com seus itens, com um bacana <doc.detach>Case de Exibição</doc.detach>. Após colocar um item nele, você pode clicar com o <doc.detach>Botão Direito</doc.detach> nele com um
+                    <doc.detach>Favo de Mel</doc.detach> para fazer o item dentro do Case, parar de rotacionar. Se quiser que volte a rotacionar, novamente clique com o <doc.detach>Botão Direito</doc.detach> nele, mas com
+                    qualquer <doc.detach>Machado</doc.detach> em mãos.
+                    <doc.image src="DocumentationFiles/images/60.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Escudos Retrabalhados -->
+                <doc.topic topicid="2_20">
+                    <doc.topictitle>Elementos Adicionados: Escudos Retrabalhados</doc.topictitle>
+
+                    O sistema de escudo foi retrabalhado. Agora não há mais o escudo padrão do Minecraft, porém, há novos escudos. Agora existem os escudos de Pedra, Ouro, Ferro, Diamante e Netherita. Cada um deles possui diferentes níveis
+                    de durabilidade. Além disso, cada escudo agora possui um tempo de recarga diferente e a maioria deles não pode mais ser levantada eternamente. Isso quer dizer que agora, você precisará levantar o escudo somente na hora
+                    que for bloquear um ataque. Sem essa de andar com o escudo levantando para sempre. Se você mantiver um escudo levantado por mais tempo do que ele pode permanecer levantado, ele entrará automaticamente em tempo de
+                    recarga.
+                    <br>
+                    <br>
+                    Além disso tudo, agora os escudos começam a defender imediatamente assim que você segura o <doc.detach>Botão Direito</doc.detach> do mouse, ou seja, após 0ms o escudo já estará defendendo, enquanto que no Vanilla, há um
+                    pequeno intervalo de 250ms após pressionar o <doc.detach>Botão Direito</doc.detach> até que o escudo realmente comece a defender. Por fim, se um escudo estiver na sua mão secundária, mas você não estiver atualmente
+                    defendendendo, o escudo não aparecerá na tela. De resto, os novos escudos se comportam como o escudo Vanilla, até mesmo na customização.
+                    <doc.image src="DocumentationFiles/images/61.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
 
 
                 <!-- #region Rebalanceamentos: Diversos Ajustes em Receitas -->
@@ -870,6 +937,8 @@
                         <doc.listr>As nuvens foram retrabalhadas e agora estão mais bonitas, além de reagirem a mudanças de tempo.</doc.listr>
                         <doc.listr>Os blocos de grama agora possuem animação de movimentação pelo vento.</doc.listr>
                         <doc.listr>As Vitórias-Regias agora possuem texturas aleatórias e podem ter flores em cima delas, por padrão.</doc.listr>
+                        <doc.listr>O céu noturno agora possui nebulosas visíveis.</doc.listr>
+                        <doc.listr>Novas Chunks que aparecem na tela, agora possuem uma transição de entrada, ao invés de apenas aparecerem instantaneamente.</doc.listr>
                     </doc.list>
 
                 </doc.topic>

@@ -267,6 +267,7 @@ key_key.whistle.1:key.keyboard.unknown
 key_key.whistle.2:key.keyboard.unknown
 key_key.whistle.3:key.keyboard.unknown
 key_key.whistle.4:key.keyboard.unknown
+key_key.chunkymcchunkface.show_bounds:key.keyboard.backslash
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
