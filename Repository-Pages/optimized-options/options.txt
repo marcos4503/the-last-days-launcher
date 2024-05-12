@@ -277,6 +277,18 @@ key_Camera down:key.keyboard.unknown
 key_Swap shoulder:key.keyboard.f6
 key_Toggle perspective:key.keyboard.unknown
 key_Free look:key.keyboard.unknown
+key_key.inventoryhud.toggle:key.keyboard.unknown
+key_key.inventoryhud.openconfig:key.keyboard.unknown
+key_key.inventoryhud.togglepot:key.keyboard.unknown
+key_key.inventoryhud.togglearm:key.keyboard.unknown
+key_key.inventoryhud.toggleall:key.keyboard.unknown
+key_key.coordinatesdisplay.visible:key.keyboard.unknown
+key_key.coordinatesdisplay.coordinatesgui:key.keyboard.unknown
+key_key.coordinatesdisplay.copypos:key.keyboard.unknown
+key_key.coordinatesdisplay.sendpos:key.keyboard.unknown
+key_key.coordinatesdisplay.copypostp:key.keyboard.unknown
+key_key.coordinatesdisplay.changeHudPos:key.keyboard.unknown
+key_key.coordinatesdisplay.cycleDisplayMode:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
