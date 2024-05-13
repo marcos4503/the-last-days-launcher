@@ -289,6 +289,16 @@ key_key.coordinatesdisplay.sendpos:key.keyboard.unknown
 key_key.coordinatesdisplay.copypostp:key.keyboard.unknown
 key_key.coordinatesdisplay.changeHudPos:key.keyboard.unknown
 key_key.coordinatesdisplay.cycleDisplayMode:key.keyboard.unknown
+key_key.jade.config:key.keyboard.unknown
+key_key.jade.show_overlay:key.keyboard.unknown
+key_key.jade.toggle_liquid:key.keyboard.unknown
+key_key.jade.show_recipes:key.keyboard.unknown
+key_key.jade.show_uses:key.keyboard.unknown
+key_key.jade.narrate:key.keyboard.unknown
+key_key.jade.show_details:key.keyboard.unknown
+key_keys.nyfsquiver.nextslot:key.keyboard.period
+key_keys.nyfsquiver.previousslot:key.keyboard.comma
+key_keys.nyfsquiver.openquiver:key.keyboard.n
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
