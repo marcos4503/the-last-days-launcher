@@ -100,6 +100,8 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_25">Novos Elementos de HUD</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_26">Visualização de Informações de Entidades e Blocos</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_27">Mudanças nos Arcos/Bestas Para Usar Aljava</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_28">Exibidor de Saúde de Entidades</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_29">Sistemas de Torres de Defesa</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -768,6 +770,136 @@
                     <br>
                     Por fim, enquanto você possuir um Arco ou Besta na mão, um pequeno HUD aparecerá no canto superior esquerdo da sua tela, exibindo o slot atualmente ativo da Aljava, além de mostrar quantas flechas restam nesse slot.
                     <doc.image src="DocumentationFiles/images/70.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Exibidor de Saúde de Entidades -->
+                <doc.topic topicid="2_28">
+                    <doc.topictitle>Elementos Adicionados: Exibidor de Saúde de Entidades</doc.topictitle>
+
+                    Entidades como Mobs hostís, pacíficos ou objetos interativos agora podem exibir suas barras de saúde acima deles. Somente os Mobs que não tiverem vida cheia exibirão a barra de saúde. Além disso, as barras de vida só
+                    aparecem para Mobs a no máximo 24 blocos de distância de você.
+                    <doc.image src="DocumentationFiles/images/71.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Sistemas de Torres de Defesa -->
+                <doc.topic topicid="2_29">
+                    <doc.topictitle>Elementos Adicionados: Sistemas de Torres de Defesa</doc.topictitle>
+
+                    Um novo sistema de Torres de Defesa foi adicionado! As Torres de Defesa lhe ajudarão a defender locais aos quais você considere estratégicos para sua sobrevivência. As Torres atacarão automaticamente quaisquer Mobs
+                    configurados por você, para serem atacados.
+                    <doc.image src="DocumentationFiles/images/72.png"></doc.image>
+                    Logo após colocar uma Torre, ela já virá com configurações padrões, prontas para te servir. Se você quiser editar essas configurações, você pode segurar <doc.detach>SHIFT</doc.detach> e clicar com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse numa Torre.
+                    <doc.image src="DocumentationFiles/images/73.png"></doc.image>
+                    No lado esquerdo, você verá uma lista de todos os Mobs que serão alvejados pela Torre, caso o Mob se aproxime do raio de detecção da Torre. Você pode segurar <doc.detach>ALT</doc.detach> e usar a
+                    <doc.detach>Roda do Mouse</doc.detach> para rolar a lista de Mobs alvo. Você também pode adicionar novos Mobs a lista de alvos, bastando digitar o ID do Mob, no campo e clicar em "Adicionar Mob à Lista de Alvos". Se você
+                    quiser remover um Mob da lista de alvos, basta clicar no nome do Mob na lista a esquerda.
+                    <doc.info>
+                        Tenha em mente que ao colocar uma Torre, por padrão, todos os Mobs agressivos do jogo serão adicionados a lista de alvos automaticamente.
+                    </doc.info>
+                    Clicando em "Fixa", você pode alternar se a Torre poderá ser movida ou não. Ao Clicar em "Desmontar", a Torre será dropada e você poderá coleta-la. Se quiser que a Torre ataque a outros jogadores, clique em "Não
+                    Protegendo Contra Players" e então a Torre alternará para o modo "Protegendo Contra Players".
+                    <doc.warn>
+                        Ao colocar uma Torre, lembre-se de clicar em "Reinvindicar Torre" nas configurações da Torre! Dessa forma, ninguém mais além de você, poderá acessar as configurações da Torre. Além disso, a Torre nunca irá te
+                        alvejar ou alvejar outras Torres que lhe pertencem.
+                    </doc.warn>
+
+                    <doc.topicsubtitle>Reparando Torres</doc.topicsubtitle>
+                    Torres podem ser reparadas usando Titânio. Para reparar uma Torre, basta ter barras de Titânio em mãos, então segurar <doc.detach>SHIFT</doc.detach> e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse numa
+                    Torre.
+
+                    <doc.topicsubtitle>Munições</doc.topicsubtitle>
+                    Toda Torre precisa e consome diferentes tipos de munições. Para fornecer munições para uma Torre, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse numa Torre, e então você acessará o inventário de
+                    munições da Torre. Você também pode alimentar a Torre com munições, usando Funís, para automação.
+
+                    <doc.topicsubtitle>Adicionando Jogadores a Lista Branca</doc.topicsubtitle>
+                    Se você habilitar uma Torre a atacar jogadores, mas decidir que sua Torre não deve atacar certos jogadores, então, basta usar o campo de digitação e inserir o nome do jogador, com um prefixo de "!". Por exemplo
+                    "!marcos4503". Por fim, é só clicar em "Adicionar Mob à Lista de Alvos".
+
+                    <doc.topicsubtitle>Torre de Pedregulho</doc.topicsubtitle>
+                    Esta é uma Torre barata de se manter e tem seu maior objetivo, a dispersão de Alvos, já que possui uma baixa cadência de disparos e médio alcance. Porém, ela só acerta por volta de 70% de seus tiros, sendo que alguns
+                    irão se dispersar para os arredores do alvo e a chance de erro de disparos é maior para Alvos mais distântes.
+                    <doc.image src="DocumentationFiles/images/74.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Alcance=>20 Blocos</doc.tabler>
+                        <doc.tabler>Cadência=>4 Tiros a cada 1 segundo</doc.tabler>
+                        <doc.tabler>Dano=>1 Coração por tiro</doc.tabler>
+                        <doc.tabler>Munição=>Pedregulhos</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Torre de Flechas</doc.topicsubtitle>
+                    Esta é uma Torre de médio para longo alcance, útil, e que pode ser útil para defender posições estratégicas. Embora tenha uma munição mais cara, pode ser uma opção barata de médio para longo alcance. Para esta Torre,
+                    além de fornecer a munição, você também precisa fornecer um Arco ou Besta para a Torre.
+                    <doc.image src="DocumentationFiles/images/75.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Alcance=>32 Blocos</doc.tabler>
+                        <doc.tabler>Cadência=>1 Tiro a cada 3 segundos</doc.tabler>
+                        <doc.tabler>Dano=>3.5 Corações por tiro (Com Arco) e 4.5 Corações por tiro (Com Besta)</doc.tabler>
+                        <doc.tabler>Munição=>Flechas</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Torre de Pólvora Explosiva</doc.topicsubtitle>
+                    Esta é uma Torre incendiária de baixo alcance. Útil para causar dano ao longo do tempo.
+                    <doc.image src="DocumentationFiles/images/76.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Alcance=>8 Blocos</doc.tabler>
+                        <doc.tabler>Cadência=>1 Tiro a cada 3 segundos</doc.tabler>
+                        <doc.tabler>Dano=>3 Corações por tiro (mais 2 Corações ao longo de 4 segundos)</doc.tabler>
+                        <doc.tabler>Munição=>Pólvoras Explosivas</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Torre de Tijolos</doc.topicsubtitle>
+                    Esta é uma Torre de baixo alcance e de alta velocidade que causa um dano considerável a inimigos. É uma alternativa para causar dano focado e preciso a inimigos próximos.
+                    <doc.image src="DocumentationFiles/images/77.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Alcance=>10 Blocos</doc.tabler>
+                        <doc.tabler>Cadência=>1 Tiro a cada 1 segundo</doc.tabler>
+                        <doc.tabler>Dano=>3 Corações por tiro</doc.tabler>
+                        <doc.tabler>Munição=>Tijolos</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Torre de Pepitas</doc.topicsubtitle>
+                    Esta é uma Torre de médio alcance e de baixa velocidade que causa um menor dano a inimigos, porém, apesar de ter um maior alcance, é capaz de causar dano focado e preciso aos inimigos.
+                    <doc.image src="DocumentationFiles/images/78.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Alcance=>14 Blocos</doc.tabler>
+                        <doc.tabler>Cadência=>1 Tiro a cada 2 segundos</doc.tabler>
+                        <doc.tabler>Dano=>2 Corações por tiro (Com Pepita de Ferro) e 4 Corações por tiro (com Pepita de Ouro)</doc.tabler>
+                        <doc.tabler>Munição=>Pepitas de Ferro ou Pepitas de Ouro</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Torre de Gauss</doc.topicsubtitle>
+                    Esta é uma Torre de longo alcance com foco em alto dano, longo alcance e baixa velocidade de ataque. Embora esta tenha uma munição mais cara, o dano causado é muito alto e pode ser muito valiosa para defender posições
+                    importantes, embora não seja recomendado posiciona-la de modo que ela atire em inimigos não importantes.
+                    <doc.image src="DocumentationFiles/images/79.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Alcance=>50 Blocos</doc.tabler>
+                        <doc.tabler>Cadência=>1 Tiro a cada 3 segundos</doc.tabler>
+                        <doc.tabler>Dano=>8 Corações por tiro</doc.tabler>
+                        <doc.tabler>Munição=>Projéteis de Gauss</doc.tabler>
+                    </doc.table>
 
                 </doc.topic>
                 <!-- #endregion -->
