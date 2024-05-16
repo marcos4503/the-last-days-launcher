@@ -301,6 +301,7 @@ key_keys.nyfsquiver.previousslot:key.keyboard.comma
 key_keys.nyfsquiver.openquiver:key.keyboard.n
 key_Highlight drone locations:key.keyboard.unknown
 key_neat.keybind.toggle:key.keyboard.unknown
+key_key.conveyorbelts.belt_key:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
