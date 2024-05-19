@@ -83,6 +83,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_7">Ajustes e Adições Menores de Aspectos ou Mecânicas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_7a">Cabos Redstone</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_7b">Redstone Sem Fio</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_7c">Caneta Redstone, Relê e Controlador Lógico</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_8">Melhor Visão do Ping e Clareza no Chat</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_9">Inventário Melhorado</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_10">Cinto de Ferramentas</a></li>
@@ -107,6 +108,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_30">Esteiras e Braços Robôs</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_31">Tubos a Vácuo</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_32">Transporte de Fluídos</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_33">Locomotivas, Carrinhos de Minas e Novos Trilhos</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -409,6 +411,63 @@
                     para se usar. Para receber um sinal de Redstone, você precisará usar o "Receptor Redstone Sem Fio". Ao colocar um destes, clique com o <doc.detach>Botão Direito</doc.detach> do mouse nele, e então defina o mesmo canal do
                     Transmissor. Dessa forma, se o Transmissor emitir um sinal, o Receptor o receberá e repassará para blocos vizinhos. Note que a distância máxima de transmissão sem fio é de 256 blocos.
                     <doc.image src="DocumentationFiles/images/90.png"></doc.image>
+                    Se você quiser usar um Controle Remoto ao invés de Transmissores e Receptores sem fio padrões, você também pode! Para isso, você precisará de um bloco "Receptor de Sinal de Controle Remoto Redstone" e do "Controle Remoto
+                    Redstone", então, basta colocar o Receptor onde preferir e coneta-lo a algo usando redstone. Após isso basta pegar o seu controle e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no bloco Receptor, enquanto
+                    está com o controle na mão. Após isso, o controle já estará vinculado e é só usar o <doc.detach>Botão Direito</doc.detach> do mouse para enviar sinais ao bloco Receptor!
+                    <doc.image src="DocumentationFiles/images/91.gif"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Caneta Redstone, Relê e Controlador Lógico -->
+                <doc.topic topicid="2_7c">
+                    <doc.topictitle>Elementos Adicionados: Caneta Redstone, Relê e Controlador Lógico</doc.topictitle>
+
+                    Além de tudo, mais um kit de ferramentas super úteis foram adicionadas! A Caneta Redstone, Relê Redstone e Controlador Lógico de Redstone (CLR). Vamos ver a fundo sobre cada um abaixo!
+
+                    <doc.topicsubtitle>Caneta Redstone</doc.topicsubtitle>
+                    A "Caneta Redstone", é uma ferramenta extremamente poderosa que lhe da total liberdade de posicionar caminhos de redstone onde quiser, seja de horizontalmente, verticalmente, de cabeça para baixo ou até em baixo da água!
+                    A Caneta consome os redstones presentes no seu inventário para fazer os caminhos. Para desenhar um caminho redstone, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse nos locais onde você quer construir
+                    o caminho.
+                    <doc.image src="DocumentationFiles/images/92.png"></doc.image>
+                    <doc.image src="DocumentationFiles/images/93.png"></doc.image>
+                    Quando um caminho de redstone passa por blocos, ele por padrão não energiza esses blocos. Para conectar o caminho redstone desenhado pela Caneta, a um bloco, e energiza-lo há duas formas. Você pode finalizar o caminho
+                    redstone na borda do bloco ou você pode adicionar um conector explicíto clicando no centro da faixa redstone com a Caneta. Um conector redondo de redstone aparecerá, ao invés de um caminho redstone padrão. Isso acontece
+                    para lhe dar melhor controle sobre onde os redstones passam, dessa forma, num mesmo bloco pode-se passar mais de um caminho redstone.
+                    <doc.image src="DocumentationFiles/images/94.png"></doc.image>
+                    <doc.image src="DocumentationFiles/images/95.png"></doc.image>
+                    <doc.warn>
+                        Os caminhos redstone desenhados pela Caneta interagem com os componentes redstone normalmente, da mesma maneira que os fios de redstone Vanilla.
+                    </doc.warn>
+                    <doc.info>
+                        Se você estiver segurando a Caneta enquanto está esgueirado, e olhar para um caminho redstone, você verá o nível de energia fluindo naquele fio redstone atualmente.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Relê Redstone</doc.topicsubtitle>
+                    O Relê Redstone tem a capacidade de receber sinais na parte de trás, ou de partes dos lados e repassar para a frente do Relê (a parte que tem a ponta vermelha), o que faz com que eles adicionem a capacidade de passar
+                    energia redstone através de blocos quando usados juntamente com a Caneta.
+                    <doc.image src="DocumentationFiles/images/96.png"></doc.image>
+
+                    <doc.topicsubtitle>Controlador Lógico Redstone ou CLR</doc.topicsubtitle>
+                    Este item pode ser colocado em qualquer local e ao interagir com ele, você pode escrever um código de programação simples que é capaz de fazer comparações lógicas usando operadores como AND, OR, NAND, NOR e etc. O
+                    controlador possui 6 portas sendo R, Y, B, G, U e D, sendo a inicial de cada cor de entrada do controlador. Na programação, você deve basicamente ler a entrada de uma porta e então pode setar um valor para uma outra
+                    porta como saída. Por exemplo, você pode ligar 2 alavancas nas portas R e Y e então emitir um sinal na porta B se o sinal de R e Y for maior ou igual a "2". Isso pode ser representado pelo código abaixo...
+                    <doc.code language="generic"><code>
+#Comentário Exemplo
+B = if(R >= 2) AND if(Y >= 2)
+</code></doc.code>
+                    Veja mais alguns exemplos de códigos...
+                    <doc.code language="generic"><code>
+#Liberar energia na porta B somente se for de dia...
+B = time() < 12000
+</code></doc.code>
+                    <doc.code language="generic"><code>
+#Emitir um sinal aleatório para porta B, entre 0 e 15...
+B = rnd()
+</code></doc.code>
+                    O "Controlador Redstone" possui uma interface auto explicativa e você pode passar o mouse sobre os botões que existem na interface para aprender sobre todas as funções, operadores, timers, operadores aritiméticos,
+                    contadores e etc.
+                    <doc.image src="DocumentationFiles/images/97.png"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -991,6 +1050,129 @@
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Locomotivas, Carrinhos de Minas e Novos Trilhos -->
+                <doc.topic topicid="2_33">
+                    <doc.topictitle>Elementos Adicionados: Locomotivas, Carrinhos de Minas e Novos Trilhos</doc.topictitle>
+
+                    O sistema de Trilhos e Carrinhos de Mina foi revisado! Além do conteúdo previamente existente no jogo, foram adicionados Locomotivas controláveis que podem puxar Carrinhos de Minas, sistema de combustível, novos tipos de
+                    trilhos e ferramentas e mais mecânicas! Antes de mais nada, saiba que tudo que já existe envolvendo trilhos e Carrinhos de Mina já existente no jogo não mudou. Somente houveram coisas adicionadas, e tudo que você sabe
+                    sobre Trilhos e Carrinhos, ainda continua válido. Agora, vamos ver mais a fundo sobre cada componente novo!
+                    <doc.image src="DocumentationFiles/images/98.gif"></doc.image>
+
+                    <doc.topicsubtitle>Pé de Cabra Para Locomotivas</doc.topicsubtitle>
+                    O Pé de Cabra é sua ferramenta essencial se você pretende trabalhar com Locomotivas e um sistema de Trem com multiplos vagões. Ele possui vários modos de trabalho e veremos sobre cada um abaixo.
+                    <doc.image src="DocumentationFiles/images/99.gif"></doc.image>
+                    <doc.list>
+                        <doc.listr><b>Modo de Conexão de Vagões</b>: Conecta um vagão a outro vagão.</doc.listr>
+                        <doc.listr><b>Modo de Desconexão de Vagões</b>: Desconecta vagões conectados.</doc.listr>
+                        <doc.listr><b>Modo de Reversão de Vagões</b>: Alterna a orientação de vagões.</doc.listr>
+                        <doc.listr><b>Modo de Alteração de Visibilidade de Nome</b>: Alterna a visibilidade de nomes colocados com Etiquetas em vagões.</doc.listr>
+                    </doc.list>
+
+                    <doc.topicsubtitle>Locomotiva Elétrica</doc.topicsubtitle>
+                    As Locomotivas Elétricas usam o poder da eletricidade redstone para se mover e puxar vagões de maneira fácil e poderosa! Esta Locomotiva também é capaz de carregar Chunks de maneira automática, por onde ela passa.
+                    <doc.image src="DocumentationFiles/images/100.png"></doc.image>
+                    Ao clicar com o <doc.detach>Botão Direito</doc.detach> do mouse, você verá a interface da Locomotiva Elétrica. O botão <doc.icon src="DocumentationFiles/images/101b.png"></doc.icon> faz a Locomotiva dar ré. O botão
+                    <doc.icon src="DocumentationFiles/images/101s.png"></doc.icon> faz o motor da locomotiva parar. Já os botões <doc.icon src="DocumentationFiles/images/101f1.png"></doc.icon>,
+                    <doc.icon src="DocumentationFiles/images/101f2.png"></doc.icon> e <doc.icon src="DocumentationFiles/images/101f3.png"></doc.icon> fazem a locomotiva andar para a frente, em diferentes velocidades. O botão
+                    <doc.icon src="DocumentationFiles/images/101l.png"></doc.icon> controla a lâmpada da Locomotiva, e o botão <doc.icon src="DocumentationFiles/images/101h.png"></doc.icon> controla a buzina da Locomotiva.
+                    <br>
+                    <br>
+                    A Locomotiva Elétrica utiliza um sistema de Bateria interna para se mover. Ela possui 20 barras de bateria onde cada célula se preenche de verde se estiver carregada, e se preenche de branco se estiver descarregada.
+                    Sempre que uma Locomotiva Elétrica anda em cima de um Trilho Elétrico, ela se recarrega, e a cada Trilho não elétrico percorrido, ela descarrega uma célula de energia. Ou seja, a Locomotiva pode andar uma distância de
+                    até 20 Trilhos não elétricos antes de descarregar totalmente.
+                    <doc.image src="DocumentationFiles/images/101.png"></doc.image>
+                    Você pode pintar a lataria da Locomotiva com um Corante em mãos. Feito isso, é só clicar com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva. Para pintar a base da Locomotiva, segure
+                    <doc.detach>SHIFT</doc.detach> e com o Corante em mãos, clique com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva.
+                    <doc.image src="DocumentationFiles/images/102.gif"></doc.image>
+                    As Locomotivas Elétricas podem ser uma boa opção se você precisa mover vagões de maneira mais controlável, já que pode desligar os Trilhos Elétricos para que eles não alimentem mais a Locomotiva.
+                    <doc.image src="DocumentationFiles/images/103.gif"></doc.image>
+
+                    <doc.topicsubtitle>Locomotiva à Diesel</doc.topicsubtitle>
+                    As Locomotivas à Diesel usam o poder do combustível Biodiesel para se mover e puxar vagões de maneira rápida e poderosa! Esta Locomotiva também é capaz de carregar Chunks de maneira automática, por onde ela passa.
+                    <doc.image src="DocumentationFiles/images/104.png"></doc.image>
+                    Ao clicar com o <doc.detach>Botão Direito</doc.detach> do mouse, você verá a interface da Locomotiva à Diesel. O botão <doc.icon src="DocumentationFiles/images/101b.png"></doc.icon> faz a Locomotiva dar ré. O botão
+                    <doc.icon src="DocumentationFiles/images/101s.png"></doc.icon> faz o motor da locomotiva parar. Já os botões <doc.icon src="DocumentationFiles/images/101f1.png"></doc.icon>,
+                    <doc.icon src="DocumentationFiles/images/101f2.png"></doc.icon> e <doc.icon src="DocumentationFiles/images/101f3.png"></doc.icon> fazem a locomotiva andar para a frente, em diferentes velocidades. O botão
+                    <doc.icon src="DocumentationFiles/images/101l.png"></doc.icon> controla a lâmpada da Locomotiva, e o botão <doc.icon src="DocumentationFiles/images/101h.png"></doc.icon> controla a buzina da Locomotiva.
+                    <br>
+                    <br>
+                    A Locomotiva à Diesel utiliza o combustível de Biodiesel (<doc.icon src="DocumentationFiles/images/105.png"></doc.icon>). Ela possui um tanque com capacidade de 2 Baldes de Biodiesel, o tanque é esvaziado lentamente de
+                    acordo com a distância percorrida pela Locomotiva. Para encher o tanque, basta fornecer Frascos com Biodiesel para os Slots indicados. Os Frascos utilizados para encher o tanque da Locomotiva são descartados no Slot
+                    abaixo dos 3 Slots de combustível. Os Frascos vazios ou com combustível também podem ser retirados ou inseridos na Locomotiva, de maneira automática, usando Funis.
+                    <doc.image src="DocumentationFiles/images/106.png"></doc.image>
+                    Você pode pintar a lataria da Locomotiva com um Corante em mãos. Feito isso, é só clicar com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva. Para pintar a base da Locomotiva, segure
+                    <doc.detach>SHIFT</doc.detach> e com o Corante em mãos, clique com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva.
+                    <doc.image src="DocumentationFiles/images/107.gif"></doc.image>
+                    As Locomotivas Elétricas podem ser uma boa opção para funcionamento contínuo e longas distâncias, já que não é necessária a mesma matéria prima dos Trilhos Elétricos e o combustível é bem fácil de se fazer.
+                    <doc.image src="DocumentationFiles/images/108.gif"></doc.image>
+
+                    <doc.topicsubtitle>Conectando Locomotivas e Vagões</doc.topicsubtitle>
+                    A Conexão de Locomotivas é o principal motivo de você querer usar Locomotivas! Com a conexão, você pode montar Trems da maneira que preferir e com a composição de vagões que mais lhe agradar! Além disso, uma única
+                    Locomotiva pode puxar dezenas de vagões.
+                    <br>
+                    <br>
+                    Antes de começarmos, é necessário entender o conceito de Cabeça e Calda dos Trens. A Cabeça do Trem sempre será o puxador, ou seja, a Locomotiva. Já a Calda, é o último vagão do Trem (ou os vagões). Então basicamente, a
+                    Calda sempre deve ser puxada pela Cabeça, e a Cabeça sempre deve ser o puxador.
+                    <doc.image src="DocumentationFiles/images/109.png"></doc.image>
+                    Você também deve notar que a Corrente de Conexão sempre deve ter o seu lado vermelho, apontando para o lado da Calda (mais próximo da Calda), como no exemplo abaixo.
+                    <doc.image src="DocumentationFiles/images/110.png"></doc.image>
+                    Para conectar um vagão a uma Locomotiva, você precisará do Pé de Cabra. Em seguida, deve alterar o Pé de Cabra para o "Modo de Conexão de Vagões", clicando com o <doc.detach>Botão Direito</doc.detach> do mouse num bloco
+                    normal. Uma vez que ele esteja nesse modo, clique com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva. Uma vez que tenha feito isso, a Locomotiva estará selecionada pelo Pé de Cabra, então agora, é só
+                    clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no vagão.
+                    <doc.image src="DocumentationFiles/images/111.gif"></doc.image>
+                    <doc.info>
+                        Uma vez que a conexão tenha sido concluída, clique com o <doc.detach>Botão Direito</doc.detach> do mouse num bloco normal, para que o Pé de Cabra esqueça a seleção da Locomotiva anteriormente criada.
+                    </doc.info>
+                    Para conectar um vagão simples a outro vagão, primeiro clique com o <doc.detach>Botão Direito</doc.detach> do mouse para remover uma seleção de Locomotiva já existente (se houver). E depois continue clicando com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse até chegar ao "Modo de Conexão de Vagões". Em seguida, clique com o <doc.detach>Botão Direito</doc.detach> do mouse no primeiro vagão, depois clique com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse no segundo vagão.
+                    <doc.image src="DocumentationFiles/images/112.gif"></doc.image>
+
+                    <doc.topicsubtitle>Desconectando Locomotivas e Vagões</doc.topicsubtitle>
+                    Para desconectar vagões, primeiro, mude o modo de conexão do Pé de Cabra para "Modo de Desconexão de Vagões". Em seguida, clique no primeiro vagão, e depois no segundo vagão.
+                    <doc.image src="DocumentationFiles/images/113.gif"></doc.image>
+
+                    <doc.topicsubtitle>Revertendo Correntes de Conexões</doc.topicsubtitle>
+                    A Reversão da conexão das correntes de um Trem pode ser útil para Trens aos quais possuem duas Locomotivas. Uma para puxar para frente, e outra para puxar para trás. Para fazer a reversão do Trem, primeiro mude o modo de
+                    conexão do Pé de Cabra para o "Modo de Reversão de Conexões". Em seguida, clique com o <doc.detach>Botão Direito</doc.detach> do mouse numa Locomotiva e em seguida, clique com o <doc.detach>Botão Direito</doc.detach> do
+                    mouse no vagão mais próximo e pronto. Todas as correntes de conexões serão revertidas e a Locomotiva que fazia parte da Calda, se torna a Cabeça e a Locomotiva que era a Cabeça se torna parte da Calda. Após isso, a
+                    Locomotiva que fazia parte da Calda, agora poderá puxar o Trem.
+                    <doc.image src="DocumentationFiles/images/114.gif"></doc.image>
+
+                    <doc.topicsubtitle>Construindo Trilhos Com Curvas Seguras</doc.topicsubtitle>
+                    Se você quiser fazer um curva de volta, você deve adicionar dois trilhos extras na curva, caso contrário alguns carrinhos podem mudar de direção e não seguir corretamente a Locomotiva, veja os exemplos abaixo...
+                    <doc.image src="DocumentationFiles/images/115.png"></doc.image>
+
+                    <doc.topicsubtitle>Mudança de Direção Automática</doc.topicsubtitle>
+                    Você pode fazer um sistema de alteração de rota automático, e tudo que você precisa, é de um Trilho padrão e um Trilho Detector. Quando uma Locomotiva ou Carrinho de Mina passar por cima do Trilho Detector, o Trilho
+                    padrão a frente irá mudar de direção automaticamente.
+                    <doc.image src="DocumentationFiles/images/116.png"></doc.image>
+
+                    <doc.topicsubtitle>Apito Automático</doc.topicsubtitle>
+                    As Locomotivas apitam automaticamente se passarem por um Trilho Convencional, com um Bloco de Redstone em baixo.
+                    <doc.image src="DocumentationFiles/images/117.png"></doc.image>
+                    Se houver as Locomotivas passarem por um Trilho Ativador, alimentado, as Locomotivas também irão buzinar, mas Carrinhos de Mina que passarem por cima de um Trilho Ativador, irão balançar e retirar entidades de dentro
+                    deles automaticamente. Isso pode ser útil para fazer sistemas de saída automática.
+                    <doc.image src="DocumentationFiles/images/118.png"></doc.image>
+
+                    <doc.topicsubtitle>Novas Funções Menores</doc.topicsubtitle>
+                    Os Ejetores agora, também são capazes de inserir Carrinhos de Minas ou Locomotivas em Trilhos. Além disso, agora, se você colocar um Carrinho de Mina padrão num Trilho, você pode colocar um Baú nele, ou um Funil, ou
+                    qualquer outra coisa válida de ser colocada num Carrinho.
+
+                    <doc.topicsubtitle>Novos Trilhos</doc.topicsubtitle>
+                    Por fim, quanto aos novos Trilhos, vamos ver o que cada um deles fazem, tendo a imagem abaixo como base, indo da esquerda para a direita...
+                    <doc.image src="DocumentationFiles/images/119.png"></doc.image>
+                    <doc.list>
+                        <doc.listr><b>Trilho Sinalizador</b>: Funciona como o Trilho Detector Vanilla, porém, só emite sinal redstone se uma Locomotiva passar por cima dele, e somente se o botão (<doc.icon src="DocumentationFiles/images/119f1.png"></doc.icon>) da Locomotiva, estiver ativado.</doc.listr>
+                        <doc.listr><b>Trilho de Fim de Linha</b>: Esse Trilho barra Carrinhos de Mina ou Locomotivas, os parando.</doc.listr>
+                        <doc.listr><b>Trilho de Cruzamento</b>: Esse Trilho permite que duas linhas de Trilhos se cruzem de maneira funcional.</doc.listr>
+                        <doc.listr><b>Trilho Direcional</b>: Esse Trilho, caso esteja energizado com Redstone, só permite que Locomotivas ou Carrinhos de Mina se movam na direção ao qual ele foi colocado. Serve como um limitador de direção para Carrinhos e Locomotivas. Além disso, se um Carrinho se mover contra a direção do Trilho, o Trilho o empurrará na direção em que ele permite os Carrinhos de se moverem.</doc.listr>
+                    </doc.list>
+
+                </doc.topic>
+                <!-- #endregion -->
+
 
 
                 <!-- #region Rebalanceamentos: Diversos Ajustes em Receitas -->
@@ -1248,6 +1430,7 @@
                         <doc.listr>Agora, alguns blocos de minério e armaduras de alguns minérios, emitem partículas de brilho.</doc.listr>
                         <doc.listr>Aldeões e Galinhas emitem particulas quando são atacados.</doc.listr>
                         <doc.listr>Blocos de folha, como os presentes em Árvores geradas no mundo, agora soltam folhas periodicamente.</doc.listr>
+                        <doc.listr>Os Trilhos agora são totalmente em 3D, ao invés de apenas texturas 2D horizontais.</doc.listr>
                     </doc.list>
 
                 </doc.topic>
