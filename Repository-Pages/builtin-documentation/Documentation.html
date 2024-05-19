@@ -109,6 +109,10 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_31">Tubos a Vácuo</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_32">Transporte de Fluídos</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_33">Locomotivas, Carrinhos de Minas e Novos Trilhos</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_34">Rastreador de Biomas</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_35">Re-Rolagem de Ofertas de Aldeões e Nomes</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_36">Armaduras Invisíveis</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_37">Salve Seus Pets</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -273,8 +277,8 @@
                     <doc.topictitle>Elementos Adicionados: Ajustes e Adições Menores de Aspectos ou Mecânicas</doc.topictitle>
 
                     Diversos ajustes menores foram feitos e mecânicas menores foram adicionadas ou reformuladas neste modpack, graças aos mods Quark, Vanilla Tweaks, V-Tweaks, Supplementaries, YUNG's Better Mineshafts, YUNG's
-                    Extras, YUNG's Bridges e YUNG's Better Dungeons. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividad entre as mudanças em destaque, que são mudanças menores, mas que merecem um certo
-                    destaque, e as mudanças de menor destaque.
+                    Extras, YUNG's Bridges, YUNG's Better Dungeons, The Fence Unleashed, Upcycle, Visible Toggle Sprint e What's That Slot. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividad entre as mudanças
+                    em destaque, que são mudanças menores, mas que merecem um certo destaque, e as mudanças de menor destaque.
 
                     <doc.topicsubtitle>Mudanças de Destaque</doc.topicsubtitle>
                     <doc.list>
@@ -299,6 +303,7 @@
                         <doc.listr>Agora, alimentar um bebê de um animal com "Batata Envenenada" possui uma pequena chance de evenenar o animal. Se isso acontecer o animal nunca se tornará adulto.</doc.listr>
                         <doc.listr>Novo item adicionado. O "Pedestal" é um item que lhe permite colocar qualquer item nele, e então o item ficará ali a mostra, como num display giratório.</doc.listr>
                         <doc.listr>Agora, os blocos de Árdosia são quebrados na mesma velocidade dos blocos de Pedra.</doc.listr>
+                        <doc.listr>Agora, se você segurar <doc.detach>ALT</doc.detach> enquanto o Cursor está sobre um Slot de algum Bloco com inventário, você poderá visualizar uma lista de quais itens podem ser colocados ali.</doc.listr>
                     </doc.list>
 
                     <doc.topicsubtitle>Mudanças de Menor Destaque</doc.topicsubtitle>
@@ -378,6 +383,9 @@
                         <doc.listr>Agora, Vitória-Regias agora podem ter qualquer tipo de bloco colocado em cima delas.</doc.listr>
                         <doc.listr>Agora, os Ganchos de Armadilha podem segurar ferramentas se você interagir com um Gancho de Armadilha enquanto segura uma ferramenta qualquer.</doc.listr>
                         <doc.listr>Agora, as seguintes estruturas podem ser geradas pelo mundo: "Minas Melhores", "Estações de Mineração Abandonadas", "Aberturas de Minas na Superfície", "Ruinas do Deserto", "Pilares Anciões", "Obeliscos do Deserto", "Poços no Deserto", "Postos Avançados de Fogo", "Pontes", "Melhores Calabouços" e diversas outras estruturas menores e de Easter Eggs.</doc.listr>
+                        <doc.listr>Um indicador visual aparecerá ao lado da mira, enquanto o modo de Corrida estiver ativo.</doc.listr>
+                        <doc.listr>Animais agora não passarão mais através de Portões de Cercas, se não estiverem amarrados por um Laço.</doc.listr>
+                        <doc.listr>Agora, é possível colocar Carne Podre também em Composteiras.</doc.listr>
                     </doc.list>
 
                 </doc.topic>
@@ -636,7 +644,8 @@ B = rnd()
                     A nutrição é algo muito importânte para a sobrevivência do Cão e algumas habilidades dependem disso também. Os Cães se alimentam de carne, podendo ser Frango Assado, Carneiro Assado, Frango Assado ou Salsichas.
                     <br>
                     <br>
-                    Já a saúde do Cão, também pode ser monitorada através da aba Resumo. Se a saúde do seu Cão abaixar, ele começará a reclamar. Se ela zerar, ele não irá morrer, mas sim, ficar Incapacitado. Enquanto Incapacitado, o seu cão
+                    Já a saúde do Cão, também pode ser monitorada através da aba Resumo, e olhando para a etiqueta onde aparece o nome do seu Cão (o nome acima do Cão), enquanto você segura <doc.detach>SHIFT</doc.detach>. O nome na etiqueta
+                    muda de cor de acordo com o nível de saúde do Cão. Se a saúde do seu Cão abaixar, ele começará a reclamar. Se ela zerar, ele não irá morrer, mas sim, ficar Incapacitado. Enquanto Incapacitado, o seu cão
                     não mais conseguirá andar, e no nome que aparece acima da sua cabeça, você verá um número em vermelho negativo. Quando esse número chegar a zero, o Cão irá se levantar sozinho, recuperado, mas isso irá demorar.
                     <doc.image src="DocumentationFiles/images/44.png"></doc.image>
                     Enquanto está Incapacitado, o seu Cão não conseguirá se levantar. Se você clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Cão, enquanto segura um Osso, você será capaz de colocar o Cão na sua cabeça e
@@ -1173,6 +1182,54 @@ B = rnd()
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Rastreador de Biomas -->
+                <doc.topic topicid="2_34">
+                    <doc.topictitle>Elementos Adicionados: Rastreador de Biomas</doc.topictitle>
+
+                    O "Rastreador de Biomas" é uma nova ferramenta disponível. Ao interagir com ela, ela lhe permitirá selecionar um dos Biomas disponíveis no jogo e rastrea-lo de maneira simples.
+                    <doc.image src="DocumentationFiles/images/120.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Re-Rolagem de Ofertas de Aldeões e Nomes -->
+                <doc.topic topicid="2_35">
+                    <doc.topictitle>Elementos Adicionados: Re-Rolagem de Ofertas de Aldeões e Nomes</doc.topictitle>
+
+                    No jogo, por padrão, você consegue re-sortear as trocas de Aldeões de nível 1, ao quebrar seus blocos de profissão e os colocar de novo. Porém, para facilitar essa mecânica, agora um botão de re-rolagem aparecerá para
+                    Aldeões de nível 1, para que você possa re-sortear as trocas, além disso, todos os Aldeões agora possuem nomes.
+                    <doc.image src="DocumentationFiles/images/121.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Armaduras Invisíveis -->
+                <doc.topic topicid="2_36">
+                    <doc.topictitle>Elementos Adicionados: Armaduras Invisíveis</doc.topictitle>
+
+                    Você acha que as suas Armaduras são esquisitas e ficam tapando sua linda skin? Bem, agora você poderá transformar suas Armaduras em Armaduras Invisíveis! Para isso, você precisará de uma "Bancada de Ferraria", e de um
+                    "Molde de Ferraria de Mudança Para Armadura Invisível" (<doc.icon src="DocumentationFiles/images/122i.png"></doc.icon>). Então, basta levar a uma "Bancada de Ferraria" e coloca-lo junto da armadura, com o recurso
+                    necessário (<doc.icon src="DocumentationFiles/images/122s.png"></doc.icon>). Feito isso sua armadura estará invisível, mas na prática ainda funcionará da mesma maneira que uma armadura normal! Se quiser torna-la visível
+                    novamente, basta repetir o processo, porém, usando um "Molde de Ferraria de Mudança Para Armadura Visível" (<doc.icon src="DocumentationFiles/images/122v.png"></doc.icon>).
+                    <doc.image src="DocumentationFiles/images/122.gif"></doc.image>
+                    Por fim, ainda será possível aplicar Moldes de desenho, mesmo em Armaduras Invisíveis, então você ainda estará livre para criar diversos estilos de armaduras!
+                    <doc.image src="DocumentationFiles/images/123.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Salve Seus Pets -->
+                <doc.topic topicid="2_37">
+                    <doc.topictitle>Elementos Adicionados: Salve Seus Pets</doc.topictitle>
+
+                    Agora, os Pets comuns, que não são Cachorros Treinados, como Lhamas, Cavalos, Burros, Mulas, Gatos, Papagaios e outros, podem ser salvos caso morram! Quando eles morrem, eles não mais irão sumir. Após morrer, eles ficam
+                    caídos no chão durante 24 horas de jogo. Você tem esse tempo para levar um "Curativo para Pets" ou "Curativo dourado para Pets" e dar ao seu animal. Os dois Curativos irão curar o seu animal, porém, o Curativo Dourado
+                    além de curar, da um efeito de regeneração de vida para seu Pet, para que ele possa se recuperar por inteiro! Mais cuidado, caso se passe mais de 24 horas depois da morte do seu Pet, ele poderá sumir.
+                    <doc.image src="DocumentationFiles/images/124.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
 
 
                 <!-- #region Rebalanceamentos: Diversos Ajustes em Receitas -->
@@ -1431,6 +1488,7 @@ B = rnd()
                         <doc.listr>Aldeões e Galinhas emitem particulas quando são atacados.</doc.listr>
                         <doc.listr>Blocos de folha, como os presentes em Árvores geradas no mundo, agora soltam folhas periodicamente.</doc.listr>
                         <doc.listr>Os Trilhos agora são totalmente em 3D, ao invés de apenas texturas 2D horizontais.</doc.listr>
+                        <doc.listr>As Skins dos jogadores agora possuem efeitos visuais de 3D em suas camadas.</doc.listr>
                     </doc.list>
 
                 </doc.topic>
