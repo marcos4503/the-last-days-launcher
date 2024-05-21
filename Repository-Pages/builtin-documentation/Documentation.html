@@ -113,6 +113,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_35">Re-Rolagem de Ofertas de Aldeões e Nomes</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_36">Armaduras Invisíveis</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_37">Salve Seus Pets</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_38">Sistema de Embarcações</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -651,8 +652,8 @@ B = rnd()
                     Enquanto está Incapacitado, o seu Cão não conseguirá se levantar. Se você clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Cão, enquanto segura um Osso, você será capaz de colocar o Cão na sua cabeça e
                     poderá carrega-lo para onde quiser.
                     <doc.image src="DocumentationFiles/images/45.png"></doc.image>
-                    Porém, se você precisar que o Cão se levante, mesmo estando incapacitado, você pode usar um item chamado <doc.detach>Curativo</doc.detach>. Ao colocar um total de 8 ou mais Curativos no seu Cão, ele conseguirá se
-                    levantar, mesmo estando Incapacitado e fraco. Enquanto ele estiver Incapacitado, mesmo que esteja levantado, ele não irá fazer nada, apenas te seguir.
+                    Porém, se você precisar que o Cão se levante, mesmo estando incapacitado, você pode usar um item chamado <doc.detach>Curativo Para Cães Treinados</doc.detach>. Ao colocar um total de 8 ou mais Curativos no seu Cão, ele
+                    conseguirá se levantar, mesmo estando Incapacitado e fraco. Enquanto ele estiver Incapacitado, mesmo que esteja levantado, ele não irá fazer nada, apenas te seguir.
                     <br>
                     <br>
                     Para fazer o Cão se recuperar mais rapidamente, enquanto está Incapacitado, você pode leva-lo e coloca-lo numa Cama sua, ou numa Cama de Cachorro que seja dele.
@@ -1226,6 +1227,137 @@ B = rnd()
                     caídos no chão durante 24 horas de jogo. Você tem esse tempo para levar um "Curativo para Pets" ou "Curativo dourado para Pets" e dar ao seu animal. Os dois Curativos irão curar o seu animal, porém, o Curativo Dourado
                     além de curar, da um efeito de regeneração de vida para seu Pet, para que ele possa se recuperar por inteiro! Mais cuidado, caso se passe mais de 24 horas depois da morte do seu Pet, ele poderá sumir.
                     <doc.image src="DocumentationFiles/images/124.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Sistema de Embarcações -->
+                <doc.topic topicid="2_38">
+                    <doc.topictitle>Elementos Adicionados: Sistema de Embarcações</doc.topictitle>
+
+                    As Embarcações são veículos de transporte fluvial, que unem vários aspectos legais como a possibilidade de levar vários jogadores ou mobs, vários itens, e oferecem uma maneira confortável de viajar por longas distâncias
+                    em suas jornadas. Há 4 Embarcações disponíveis, o Cog, Brigg, Galley e Drakkar. Todos elas podem ser construídas através da bancada de trabalho e cada uma possui suas próprias características.
+                    <br>
+                    <br>
+                    Após construir uma Embarcação, para coloca-la na água, você deve olhar para mais longe e então com a Embarcação na mão, clique com o <doc.detach>Botão Direito</doc.detach> do mouse na água, pois a Embarcação precisa de
+                    espaço para ser colocada na água. Para entrar na Embarcação clique com o <doc.detach>Botão Direito</doc.detach> do mouse na Embarcação. O controle das Embarcações são muito parecidos com os botes, mas a propulsão se da
+                    principalmente através de Velas.
+                    <doc.image src="DocumentationFiles/images/125.png"></doc.image>
+                    Para abrir a Vela da Embarcação e para que ela receba propulsão dos ventos, você deve pressionar <doc.detach>V</doc.detach>. Assim que a Vela for aberta, a Embarcação já começará a andar, e se quiser acelera-la, basta
+                    segurar <doc.detach>W</doc.detach>, então a Vela se abrirá mais. Para reduzir a velocidade da Embarcação, segure <doc.detach>S</doc.detach>. Se quiser parar a Embarcação totalmente, basta pressionar
+                    <doc.detach>V</doc.detach> novamente, e a Vela será fechada. Algumas Embarcações, além de terem Velas, também possuem remos, então é possível move-las tanto através de remos, quanto através de Velas.
+                    <br>
+                    <br>
+                    Enquanto você está na Embarcação, você pode pressionar <doc.detach>Y</doc.detach> para acessar o inventário de Status e Itens da Embarcação. Se estiver fora da Embarcação, segure <doc.detach>SHIFT</doc.detach> e clique
+                    com o <doc.detach>Botão Direito</doc.detach> do mouse na Embarcação. Se quiser fazer um mob entrar na Embarcação, você pode usar um laço, ou se você estiver na Embarcação, clique com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse no mob que você quer levar para dentro da Embarcação. Para fazer um mob sair da Embarcação, você pode usar um Laço, ou simplesmente clicar com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse no mob que você quer tirar da Embarcação.
+                    <doc.image src="DocumentationFiles/images/126.png"></doc.image>
+                    Os detalhes visuais de baús no convés, aparecem conforme o inventário da Embarcação vai se preenchendo. Quando uma Embarcação tem 100% de dano causado, ela afundará e 15 segundos depois desaparece.
+                    <doc.info>
+                        A Embarcação pode perter até 15% de velocidade máxima com base no quanto o inventário da Embarcação está cheio.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Canhões</doc.topicsubtitle>
+                    Os Canhões são armas destinadas apenas para as Embarcações, mas nem toda Embarcação pode ter Canhões. São armas extremamente poderosas, porém, possuem uma certa dificuldade de uso. Para colocar um Canhão, na sua
+                    Embarcação, primeiramente construa-o através de um bancadada de trabalho. Após isso, com o Canhão em mãos, clique com o <doc.detach>Botão Direito</doc.detach> do mouse na sua Embarcação. Se quiser remover um Canhão, da
+                    sua Embarcação, pegue um Machado e coloque-o em mãos, em seguida clique com o <doc.detach>Botão Direito</doc.detach> do mouse na sua Embarcação.
+                    <doc.image src="DocumentationFiles/images/127.png"></doc.image>
+                    Para atirar com Canhão em sua Embarcação, primeiramente, esteja na Embarcação. Em seguida, mude para a câmera de Primeira Pesso e olhe para o lado que você quer atirar. Por fim, é só segurar
+                    <doc.detach>ESPAÇO</doc.detach>, mas para atirar, é necessário que no inventário da sua Embarcação, contenha Bolas de Canhão.
+                    <br>
+                    <br>
+                    O sistema de tiros, é um pouco complexo. As Bolas de Canhão nunca irão atingir alvos muito perto, mas também não acertaram alvos muito longe. As Bolas de Canhão possuem um comportamento um pouco aleatório, e não acertam
+                    sempre o mesmo local. Elas possuem uma pequena variação de ângulo e distância. Porém, há uma área onde a maior parte dos tiros são acertados. Note na imagem de exemplo abaixo. Na area em vermelho, as Bolas de Canhão
+                    nunca irão, porém, a área amarela é onde a maior parte dos tiros são acertados. Isso vale para todas as Embarcações.
+                    <doc.image src="DocumentationFiles/images/128.png"></doc.image>
+                    Quanto a sua mira, a mantenha um pouco acima do canhão, como na imagem abaixo. De resto, é só olhar para o lado ao qual você quer atirar, ajustar o ângulo da Embarcação com <doc.detach>A</doc.detach> e
+                    <doc.detach>D</doc.detach> e segurar <doc.detach>ESPAÇO</doc.detach> para atirar. As Bolas de Canhão causam um total de 17,5 Corações de Dano.
+                    <doc.image src="DocumentationFiles/images/129.png"></doc.image>
+                    <doc.info>
+                        Para cada Canhão colocado em sua Embarcação, ela perde 2% de velocidade máxima.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Colorindo Velas</doc.topicsubtitle>
+                    Se quiser colorir as Velas de sua Embarcação, basta ter um corante em mãos, em seguida clicar com o <doc.detach>Botão Direito</doc.detach> do mouse na sua Embarcação.
+                    <doc.image src="DocumentationFiles/images/130.png"></doc.image>
+
+                    <doc.topicsubtitle>Reparando Embarcações</doc.topicsubtitle>
+                    Para reparar uma Embarcação, tenha Tábuas em seu inventário. Pode ser qualquer tipo de Tábua de Madeira. Você também precisará de Pepitas de Ferro. Com as Pepitas de Ferro em mãos, clique e segure com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse na Embarcação, até que ela seja totalmente reparada.
+                    <doc.image src="DocumentationFiles/images/131.gif"></doc.image>
+
+                    <doc.topicsubtitle>Ancorando Embarcações</doc.topicsubtitle>
+                    Para Ancorar uma Embarcação, basta usar um Laço, prender o Laço na Embarcação e em seguida amarrar numa cerca. Uma Embarcação ancorada não pode ser controlada, e uma Embarcação que tenha um jogador controlando, não pode
+                    ser ancorada.
+                    <doc.image src="DocumentationFiles/images/132.png"></doc.image>
+
+                    <doc.topicsubtitle>Colocando Bandeiras</doc.topicsubtitle>
+                    Você pode colocar Estandartes numa Embarcação, e eles serão colocados como uma Bandeira no topo da Embarcação. Para colocar uma Bandeira, basta ter um Estandarte em mãos e em seguida clicar com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse na sua Embarcação.
+                    <doc.image src="DocumentationFiles/images/133.png"></doc.image>
+
+                    <doc.topicsubtitle>Cog</doc.topicsubtitle>
+                    O Cog é uma Embarcação medieval de comércio. É uma Embarcação que mistura as melhores características de vários mundos, ela possui uma velocidade razoável, bom armazenamento de itens e tamanho pequeno.
+                    <doc.image src="DocumentationFiles/images/134.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>150</doc.tabler>
+                        <doc.tabler>Dano=>17,5 Corações por Bola de Canhão</doc.tabler>
+                        <doc.tabler>Velocidade=>9m/s (12% mais rápido que Botes)</doc.tabler>
+                        <doc.tabler>Rotação=>Mediana</doc.tabler>
+                        <doc.tabler>Inventário=>27 Slots</doc.tabler>
+                        <doc.tabler>Espaço=>4 ascentos, além do Capitão</doc.tabler>
+                        <doc.tabler>Canhões=>2 Canhões por lado, área mediana de dano</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Brigg</doc.topicsubtitle>
+                    O Brigg é uma Embarcação medieval de transportes. É uma Embarcação grande, super resistente e que é capaz de causar grandes quantidades de dano, além de muito espaçosa, porém é muito lenta.
+                    <doc.image src="DocumentationFiles/images/135.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>350</doc.tabler>
+                        <doc.tabler>Dano=>17,5 Corações por Bola de Canhão</doc.tabler>
+                        <doc.tabler>Velocidade=>6m/s (33% mais lento que Botes)</doc.tabler>
+                        <doc.tabler>Rotação=>Lenta</doc.tabler>
+                        <doc.tabler>Inventário=>108 Slots</doc.tabler>
+                        <doc.tabler>Espaço=>10 ascentos, além do Capitão</doc.tabler>
+                        <doc.tabler>Canhões=>3 Canhões por lado, área grande de dano</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Galley</doc.topicsubtitle>
+                    O Galley é uma Embarcação focada em transporte rápido, ao custo de ser mais fraca e menos útil. É uma embarcação mediana, e de baixa resistência, porém, muito rápida. Além disso, essa Embarcação pode ter propulsão a
+                    partir de Velas e Remos, ou os dois juntos!
+                    <doc.image src="DocumentationFiles/images/136.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>75</doc.tabler>
+                        <doc.tabler>Dano=>17,5 Corações por Bola de Canhão</doc.tabler>
+                        <doc.tabler>Velocidade=>13m/s na Vela + 1m/s com Remos (62% mais rápido que Botes)</doc.tabler>
+                        <doc.tabler>Rotação=>Rápida</doc.tabler>
+                        <doc.tabler>Inventário=>9 Slots</doc.tabler>
+                        <doc.tabler>Espaço=>8 ascentos, além do Capitão</doc.tabler>
+                        <doc.tabler>Canhões=>1 Canhão por lado, área pequena de dano</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Drakkar</doc.topicsubtitle>
+                    O Drakkar é uma Embarcação pacífica Viking focada em transporte rápido e utilidade. É uma embarcação mediana e rápida. Essa Embarcação também pode ter propulsão a partir de Velas e Remos, ou os dois juntos! Além disso, o
+                    Drakkar possui a habilidade única de quebrar blocos de Gelo que estão na sua frente.
+                    <doc.image src="DocumentationFiles/images/137.png"></doc.image>
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Valor</doc.tablec>
+                        <doc.tabler>Saúde=>100</doc.tabler>
+                        <doc.tabler>Dano=>17,5 Corações por Bola de Canhão</doc.tabler>
+                        <doc.tabler>Velocidade=>13m/s na Vela + 1m/s com Remos (62% mais rápido que Botes)</doc.tabler>
+                        <doc.tabler>Rotação=>Rápida</doc.tabler>
+                        <doc.tabler>Inventário=>9 Slots</doc.tabler>
+                        <doc.tabler>Espaço=>10 ascentos, além do Capitão</doc.tabler>
+                        <doc.tabler>Canhões=>0 Canhões por lado</doc.tabler>
+                    </doc.table>
 
                 </doc.topic>
                 <!-- #endregion -->

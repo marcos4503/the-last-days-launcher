@@ -94,7 +94,7 @@ key_key.jump:key.keyboard.space
 key_key.sneak:key.keyboard.left.shift
 key_key.sprint:key.keyboard.left.control
 key_key.drop:key.keyboard.enter
-key_key.inventory:key.keyboard.unknown
+key_key.inventory:key.keyboard.y
 key_key.chat:key.keyboard.t
 key_key.playerlist:key.keyboard.tab
 key_key.pickItem:key.mouse.middle
@@ -309,6 +309,7 @@ key_key.betterminecarts.whistle:key.keyboard.unknown
 key_key.betterminecarts.redstone:key.keyboard.unknown
 key_key.betterminecarts.data:key.keyboard.unknown
 key_key.visible_toggle_sprint.desc:key.keyboard.unknown
+key_key.smallships.ship_sail:key.keyboard.v
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
