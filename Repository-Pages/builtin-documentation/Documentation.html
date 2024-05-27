@@ -74,6 +74,7 @@
                     <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="1">Sobre a Documentação</a></li>
                     <li class="summarySubItem">Elementos Adicionados</li>
                     <ul>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_0">Novas Mecânicas de Dificuldade</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_1">Otimizações Gráficas e de Performance</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_2">Minimapa e Mapa Mundial</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_3">Cidades Abandonadas</a></li>
@@ -180,6 +181,139 @@
                 <!-- #endregion -->
 
 
+
+                <!-- #region Elementos Adicionados: Novas Mecânicas de Dificuldade -->
+                <doc.topic topicid="2_0">
+                    <doc.topictitle>Elementos Adicionados: Novas Mecânicas de Dificuldade</doc.topictitle>
+
+                    Novas mecânicas de dificuldade e realismo foram adicionadas! Veja abaixo para aprender sobre cada uma delas.
+
+                    <doc.topicsubtitle>Sistema de Sede</doc.topicsubtitle>
+                    Agora há uma nova barra de sede ao qual você precisa de se precupar em mante-la cheia. Mantenha-se sempre hidratado!
+                    <doc.image src="DocumentationFiles/images/140.png"></doc.image>
+                    Se a sua barra de hidratação zerar, você começará a receber dano de tempo em tempo. Você pode se hidratar bebendo de Frascos contendo Água e Sucos, ou de Cantis com Água. Os Sucos fornecem um alto teor de hidratação,
+                    agora a água possui 3 tipos. A água Comum, Suja e Purificada. A água Suja e Comum, quando bebida, tem uma chance de lhe causar ainda mais sede. Já a água Purificada, possui um alto teor de hidratação e é a maneira mais
+                    recomendada e saudável de beber água.
+                    <doc.warn>
+                        Você só irá regenerar sua saúde se suas barras de nutrição e hidratação estiverem cheias, e a regeneração de saúde consome a sua nutrição e hidratação mais rapidamente, por isso, é uma boa ideia evitar tomar dano
+                        desnecessariamente!
+                    </doc.warn>
+                    Você pode coletar água para beber utilizando Frascos ou Cantis. A água pode ser coletada usando Frascos ou Cantis, a partir de água no chão (como lagos e rios) e de blocos com inventários de fluídos. Após coletar a água,
+                    na grande maioria das vezes ela virá como não purificada. Para purifica-la, você pode colocar seu Cantil ou Frasco num bloco chamado "Purificador de Água", juntamente com Carvão Vegetal, como na imagem abaixo.
+                    <doc.image src="DocumentationFiles/images/141.png"></doc.image>
+                    Há também um outro bloco chamado "Coletor de Água da Chuva" que acumula água da chuva e lhe permite pegar água já totalmente Purificada. Você pode extrair água do "Coletor de Água da Chuva" usando Frascos ou Cantis.
+                    <br>
+                    <br>
+                    Por fim, você também pode fazer Sucos de Maçã, Cactus, Bagas Brilhantes, Melancia, Abóbora e Bagas Doces.
+                    <doc.image src="DocumentationFiles/images/142.png"></doc.image>
+                    <doc.info>
+                        Você também pode beber água diretamente do chão (como lagos e rios), somente com as mãos. Para isso, segure <doc.detach>SHIFT</doc.detach> e clique com o <doc.detach>Botão Direito</doc.detach> do mouse numa fonte de
+                        água. O porém, é que esta é uma maneira suja de beber água, mas pode ser útil em situações emergênciais.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Sistema de Temperatura</doc.topicsubtitle>
+                    O sistema de temperatura tem o objetivo de trazer mais realismo para a sobrevivência. A sua temperatura corporal é algo ao qual você precisa manter atenção, e caso ela atinja níveis críticos (tanto para o calor, quanto
+                    para o frio), você começará a sofrer os efeitos de Hipotermia ou Hipetermia. Embora você precise manter uma atenção na sua temperatura corporal, ela não é algo que você precisa se ater a TODO o tempo, mas somente em
+                    situações mais extremas, como quando você está em biomas muito quentes ou muito frios. No HUD do jogo, você poderá ver a temperatura ambiente (das suas proximidades), conforme mostra a imagem abaixo.
+                    <doc.image src="DocumentationFiles/images/143.png"></doc.image>
+                    A temperatura ambiente afeta a sua temperatura corporal. Se a temperatura ambiente estiver abaixo de 8ºC sua temperatura corporal começará a abaixar cada vez mais, mas se a temperatura ambiente estiver acima de 37ºC, a
+                    sua temperatura corporal começará a aumentar cada vez mais. No HUD do jogo, você poderá ver a sua temperatura corporal, conforme mostra a imagem abaixo.
+                    <doc.image src="DocumentationFiles/images/144.png"></doc.image>
+                    A maioria das coisas que afetam a temperatura ambiente, fazem parte do próprio mundo. Estas coisas são...
+                    <doc.list>
+                        <doc.listr>A temperatura dos biomas. Por exemplo, os Desertos atingem até 60ºC e locais nevados atingem até -4ºC.</doc.listr>
+                        <doc.listr>A hora do dia. O dia é geralmente mais quente do que a noite. Os períodos mais quentes são entre 11:00 da manhã até 13:00 da manhã.</doc.listr>
+                        <doc.listr>Blocos próximos. Blocos num raio de até 7 blocos próximos a você, como Lava, Gelo, Fogueiras, etc.</doc.listr>
+                        <doc.listr>Sua altitude. Se você estiver numa altitude muito alta ou numa altitude mais baixa, no subsolo, a temperatura ambiente ficará menor.</doc.listr>
+                        <doc.listr>Condição física. Se você estiver molhado ou com neve, sua temperatura corporal abaixa.</doc.listr>
+                        <doc.listr>O Climatizador. O Climatizador pode tanto aumentar quanto abaixar a temperatura ambiente de um local fechado, como uma sala, e manter a temperatura fixa. (Veremos mais sobre isso abaixo)</doc.listr>
+                    </doc.list>
+                    A temperatura ambiente influência sua temperatura corporal, como visto anteriormente, mas há itens que também afetam sua temperatura corporal, de maneira direta.
+                    <doc.list>
+                        <doc.listr>Alimentos quentes, como Ensopados, aumentam sua temperatura corporal instantaneamente.</doc.listr>
+                        <doc.listr>A água em Cantis reduz sua temperatura corporal instantaneamente.</doc.listr>
+                        <doc.listr>A instalação de isolamentos térmicos em suas Armaduras retarda a mudança da sua temperatura corporal, fazendo com que ela se altere mais lentamente. (Veremos mais sobre isso abaixo)</doc.listr>
+                    </doc.list>
+                    Além de levar dano, há uma série de efeitos negativos únicos lhe dados à medida que a temperatura atinge o limite crítico, dependendo se você está muito quente ou muito frio. Veja na tabela abaixo cada ícone que pode
+                    representar sua temperatura corporal e os efeitos que cada nível de temperatura pode lhe dar.
+                    <doc.table>
+                        <doc.tablecw>15%=>30%=>auto</doc.tablecw>
+                        <doc.tablec>Ícone=>Temperatura Corporal=>Efeitos Dados</doc.tablec>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_1.png"></doc.icon>=>Extremamente Alta=><doc.list><doc.listr>Você recebe 1 de dano por segundo.</doc.listr><doc.listr>Visão borrada.</doc.listr><doc.listr>Menor distância de visão.</doc.listr><doc.listr>Tontura (câmera balançando).</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_2.png"></doc.icon>=>Muito Alta=><doc.list><doc.listr>Visão borrada.</doc.listr><doc.listr>Tontura (câmera balançando).</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_3.png"></doc.icon>=>Alta=><doc.list><doc.listr>Pouca tontura (câmera balançando).</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_4.png"></doc.icon>=>Ligeiramente Alta=><doc.list><doc.listr>Nenhum efeito.</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_5.png"></doc.icon>=>Normal=><doc.list><doc.listr>Nenhum efeito.</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_6.png"></doc.icon>=>Ligeiramente Baixa=><doc.list><doc.listr>Nenhum efeito.</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_7.png"></doc.icon>=>Baixa=><doc.list><doc.listr>Menor velocidade de movimento e de mineração.</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_8.png"></doc.icon>=>Muito Baixa=><doc.list><doc.listr>Menor velocidade de movimento e de mineração.</doc.listr><doc.listr>Menor repulsão nos seus ataques.</doc.listr></doc.list></doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/144_9.png"></doc.icon>=>Extremamente Baixa=><doc.list><doc.listr>Você recebe 1 de dano por segundo.</doc.listr><doc.listr>Menor regeneração de vida.</doc.listr><doc.listr>Menor velocidade de movimento e de mineração.</doc.listr><doc.listr>Menor repulsão nos seus ataques.</doc.listr></doc.list></doc.tabler>
+                    </doc.table>
+                    Se sua base fica num local muito frio ou muito quente, o "Climatizador" pode ser a solução perfeita para manter um bom clima! O Climatizador funciona como Ar Condicionado, resfriando ou aquecendo jogadores que estão com
+                    a temperatura corporal baixa ou alta. Após colocar um Climatizador em um cômodo, você precisa fornecer um combustível para ele. Dependendo do combustível fornecido, o Climatizador irá aquecer ou esfriar o os jogadores do
+                    local e o cômodo até o ponto do local ficar com uma temperatura ambiente confortável. Então, por exemplo, se você vive num deserto, você deve alimentar seu Climatizador com combustíveis frios. O Climatizador possui uma
+                    pequena chaminé, e ela não pode ficar obstruída, para que possa controlar o clima do cômodo apropriadamente.
+                    <doc.image src="DocumentationFiles/images/145.png"></doc.image>
+                    Os seguintes combustíveis podem ser usados...
+                    <doc.table>
+                        <doc.tablecw>30%=>30%=>auto</doc.tablecw>
+                        <doc.tablec>Combustível=>Tipo de Climatização=>Potência de Climatização</doc.tablec>
+                        <doc.tabler>Carvões e Carvões Vegetais=>Quente=>3.7%</doc.tabler>
+                        <doc.tabler>Tábuas=>Quente=>3.7%</doc.tabler>
+                        <doc.tabler>Troncos=>Quente=>33%</doc.tabler>
+                        <doc.tabler>Blocos de Carvões=>Quente=>33%</doc.tabler>
+                        <doc.tabler>Lava=>Quente=>100%</doc.tabler>
+                        <doc.tabler>Bola de Neve=>Fria=>3.7%</doc.tabler>
+                        <doc.tabler>Bola de Argila=>Fria=>3.7%</doc.tabler>
+                        <doc.tabler>Bloco de Neve=>Fria=>33%</doc.tabler>
+                        <doc.tabler>Gelo=>Fria=>33%</doc.tabler>
+                        <doc.tabler>Bloco de Argila=>Fria=>33%</doc.tabler>
+                        <doc.tabler>Neve Fofa=>Fria=>33%</doc.tabler>
+                        <doc.tabler>Água=>Fria=>100%</doc.tabler>
+                        <doc.tabler>Gelo Compactado=>Fria=>100%</doc.tabler>
+                    </doc.table>
+                    É possível também, automatizar a alimentação dos Climatizadores. Canos conectados aos lados ou atrás de Climatizadores podem alimenta-los com Água ou Lava. Canos também pode extrair Água dos Tanques dos Climatizadores,
+                    quando conectados a um dos lados dos Climatizadores. Já para extrair Lava, os Canos devem ser conectados a parte de baixo dos Climatizadores.
+                    <br>
+                    <br>
+                    Se você quiser trabalhar com Combustíveis ao invés de Fluídos, saiba que qualquer item que tira ou coloca itens em inventários de outros blocos (como Braços Robôs ou Funis) podem inserir e colocar itens nos
+                    Climatizadores a partir de qualquer lado, automaticamente, exceto por cima onde fica a Chaminé.
+                    <doc.image src="DocumentationFiles/images/146.png"></doc.image>
+                    Por fim, vamos falar do Isolamento Térmico. O Isolamento Térmico é a prática de colocar adereços em suas Armaduras, adereços aos quais possibilitam que suas Armaduras, quando vestidas, retardem o tempo de mudança da sua
+                    temperatura corporal. Então, por exemplo, se antes você levaria 1 minuto para sofrer Hipetermia no Deserto, se você vestir uma Armadura preparada para aguentar o calor, você poderá levar até 5 minutos até sofrer
+                    Hipetermia. Vamos entender perfeitamente como o sistema de Isolamento Térmico funciona!
+                    <br>
+                    <br>
+                    Para colocar adereços na sua Armadura, você precisará do bloco chamado "Mesa de Costura". Cada peça de Armadura pode comportar uma quantidade de adereços, como é mostrado na tabela abaixo...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Peça=>Espaços Para Adereços</doc.tablec>
+                        <doc.tabler>Elmos=>4 Espaços</doc.tabler>
+                        <doc.tabler>Peitorais=>6 Espaços</doc.tabler>
+                        <doc.tabler>Calças=>6 Espaços</doc.tabler>
+                        <doc.tabler>Botas=>4 Espaços</doc.tabler>
+                    </doc.table>
+                    Para colocar adereços na sua Armadura, basta coloca-la numa Mesa de Costura, juntamente com o adereço desejado. Vamos ver sobre cada adereço disponível mais abaixo.
+                    <doc.image src="DocumentationFiles/images/147.png"></doc.image>
+                    Veja abaixo cada um dos adereços disponíveis e suas características.
+                    <doc.table>
+                        <doc.tablecw>10%=>20%=>auto</doc.tablecw>
+                        <doc.tablec>Ícone=>Nome=>Características</doc.tablec>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/147_1.png"></doc.icon>=>Couro=>Oferece resistência mista contra Frio e Calor (<doc.icon src="DocumentationFiles/images/147_5.png"></doc.icon>), quando colocado em Armaduras. Porém, o Couro só oferece 50% de resistência para ambos, quando comparado aos adereços de resistência exclusivas. O Couro pode ser obtido de Vacas, Cavalos e outros animais normais.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/147_2.png"></doc.icon>=>Couro de Porco=>Oferece resistência contra o Calor (<doc.icon src="DocumentationFiles/images/147_6.png"></doc.icon>), quando colocado em Armaduras. O Couro de Porco pode ser obtido de Porcos.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/147_3.png"></doc.icon>=>Pelo de Cabra=>Oferece resistência contra o Frio (<doc.icon src="DocumentationFiles/images/147_7.png"></doc.icon>), quando colocado em Armaduras. O Pelo de Cabra pode ser obtido cortando os Pelos das Cabras, assim como se é feito com Ovelhas.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/147_4.png"></doc.icon>=>Couro de Camaleão=>Oferece resistência adaptativa contra o Frio ou Calor (<doc.icon src="DocumentationFiles/images/147_8.png"></doc.icon>), a depender do ambiente em que você está, porém, essa adaptação automática leva tempo para atingir o auge e além disso, só oferece 75% de resistência, quando comparado aos adereços de resistência exlusivas. O Couro de Camaleão pode ser obtido de Camaleões, que podem ser encontrados em Selvas e Desertos.</doc.tabler>
+                    </doc.table>
+                    Quanto mais adereços existem em cada peça de Armadura, mais a peça de Armadura contribuirá para sua resistência a temperaturas! Além disso, os adereços podem ser misturados na mesma peça de armadura, permitindo uma
+                    poderosa personalização dos benefícios obtidos. Por exemplo, você pode misturar itens de isolamento quentes e neutros para obter um grande benefício contra ambientes quentes, enquanto ainda tem um benefício decente em
+                    ambientes frios, ou você pode optar por usar exclusivamente itens de isolamento quente, abrindo mão de benefícios em qualquer outro clima, mas maximizando a resistência ao calor.
+                    <doc.image src="DocumentationFiles/images/148.png"></doc.image>
+                    <doc.info>
+                        Você pode remover adereços de Armaduras se colocar a peça de Armadura com uma Tesoura na Mesa de Costura.
+                    </doc.info>
+
+                </doc.topic>
+                <!-- #endregion -->
 
                 <!-- #region Elementos Adicionados: Otimizações Gráficas e de Performance -->
                 <doc.topic topicid="2_1">
@@ -389,6 +523,7 @@
                         <doc.listr>Um indicador visual aparecerá ao lado da mira, enquanto o modo de Corrida estiver ativo.</doc.listr>
                         <doc.listr>Animais agora não passarão mais através de Portões de Cercas, se não estiverem amarrados por um Laço.</doc.listr>
                         <doc.listr>Agora, é possível colocar Carne Podre também em Composteiras.</doc.listr>
+                        <doc.listr>Novo bloco redstone adicionado. O "Termomedidor" mede a temperatura ambiente e emite um sinal de redstone de saída entre 0 a 15, onde 0 significa 8ºC ou menos e 15 significa 38ªC ou mais.</doc.listr>
                     </doc.list>
 
                 </doc.topic>
