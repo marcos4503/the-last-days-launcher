@@ -310,6 +310,7 @@ key_key.betterminecarts.redstone:key.keyboard.unknown
 key_key.betterminecarts.data:key.keyboard.unknown
 key_key.visible_toggle_sprint.desc:key.keyboard.unknown
 key_key.smallships.ship_sail:key.keyboard.v
+key_key.healing.use_elixir:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

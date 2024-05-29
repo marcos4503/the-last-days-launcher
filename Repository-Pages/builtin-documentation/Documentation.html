@@ -225,7 +225,7 @@
                         <doc.listr>A hora do dia. O dia é geralmente mais quente do que a noite. Os períodos mais quentes são entre 11:00 da manhã até 13:00 da manhã.</doc.listr>
                         <doc.listr>Blocos próximos. Blocos num raio de até 7 blocos próximos a você, como Lava, Gelo, Fogueiras, etc.</doc.listr>
                         <doc.listr>Sua altitude. Se você estiver numa altitude muito alta ou numa altitude mais baixa, no subsolo, a temperatura ambiente ficará menor.</doc.listr>
-                        <doc.listr>Condição física. Se você estiver molhado ou com neve, sua temperatura corporal abaixa.</doc.listr>
+                        <doc.listr>Condição física. Se você estiver molhado ou com neve, sua temperatura corporal abaixa. Você pode saber se está molhado observando se há pingos de água caindo de você.</doc.listr>
                         <doc.listr>O Climatizador. O Climatizador pode tanto aumentar quanto abaixar a temperatura ambiente de um local fechado, como uma sala, e manter a temperatura fixa. (Veremos mais sobre isso abaixo)</doc.listr>
                     </doc.list>
                     A temperatura ambiente influência sua temperatura corporal, como visto anteriormente, mas há itens que também afetam sua temperatura corporal, de maneira direta.
@@ -333,7 +333,31 @@
                     em 12%. Portanto, agora para causar Acertos Críticos, é só continuar atacando e eles serão causados aleatoriamente. Há também o benefício de gastar menos nutrição, já que não será mais necessário ficar pulando a todo
                     momento durante o combate.
 
-
+                    <doc.topicsubtitle>Danos Realistas</doc.topicsubtitle>
+                    O sistema de dano do jogo foi retrabalhado. Agora, sempre que você sofre dano, você tem uma chance de receber efeitos nocivos causados pelo dano recebido. O objetivo dessas alterações são o de tornar os jogadores mais
+                    frágeis, o que contribui para o realismo da experiência, te tornando destrutível e te fazendo pensar duas vezes antes de procurar uma encrenca. Abaixo estão todos os novos efeitos existentes.
+                    <doc.table>
+                        <doc.tablecw>10%=>20%=>auto=>auto</doc.tablecw>
+                        <doc.tablec>Ícone=>Nome=>Descrição=>Remoção</doc.tablec>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_1.png"></doc.icon>=>Sangramento=>Causa meio coração de dano a cada 5 segundos e inviabiliza a regeneração de vida natural, mesmo que as barras de nutrição e hidratação estejam cheias. Enquanto sangrando, o jogador terá seu sangue pingando no chão. Este efeito não mata o jogador, e para de causar dano a ele quando o jogador tiver apenas meio coração de vida sobrando, porém, se chegar a isto, este efeito pode evoluir para o próximo efeito.<br><br>Em adição, o Sangramento pode ficar mais forte se você continuar recebendo danos corpo a corpo. Por fim, para cada Ponto de Armadura trazido por Armaduras vestidas, há uma redução de 3% no poder dos Sangramentos. Armaduras com Diagramação de "Proteção" reduzem 4% ao invés de 3%.=>Pode ser interrompido ao se curar com "Curativos Com Bandagem" (<doc.icon src="DocumentationFiles/images/149_5.png"></doc.icon> e <doc.icon src="DocumentationFiles/images/149_6.png"></doc.icon>).</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_2.png"></doc.icon>=>Hemorragia=>Reduz a vida máxima do jogador para apenas 4 corações. Começa quando o jogador possui apenas meio coração de vida restante e ainda sim continua recebendo dano proveniente de Sangramento. A cada dano de Sangramento que o jogador recebe, a duração da Hemorragia é extendida ainda mais. Enquanto está com Hemorragia, o jogador fica tremendo.=>Não pode ser removido.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_3.png"></doc.icon>=>Perna Quebrada=>Só acontece quando o jogador cai de um lugar alto e recebe dano igual ou superior a 2 corações. A duração deste efeito é relativa ao dano recebido da queda. Enquanto com a Perna Quebrada, o jogador andará mais lentamente e não conseguirá correr.=>Pode ser tratado com uma "Tala" (<doc.icon src="DocumentationFiles/images/149_7.png"></doc.icon>). Após isso, a Perna Quebrada é substituida apenas por uma Lentidão convencional, que pode ser removida imediatamente com Leite.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_4.png"></doc.icon>=>Perda de Saúde=>Apenas reduz sua vida máxima em 1 coração para cada nível deste efeito.=>Pode ser tratado ao se utilizar o "Curativo Aprimorado Com Bandagem" (<doc.icon src="DocumentationFiles/images/149_6.png"></doc.icon>).</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        Além dos efeitos acima, há dois novos efeitos visuais para simular ainda mais o mal estado. Quando um jogador está com 3 corações ou menos de vida, e recebe dano, sua visão irá sofrer uma leve cegueira rápida, para
+                        simular um nocaute e fraqueza. Além disso, se o jogador só possui meio coração de vida restando, ele sofrerá de cegueira permanente, até que sua vida suba.
+                    </doc.info>
+                    Foram adicionados também alguns itens para tratamentos médicos e suporte para jogadores. Veja abaixo, cada um deles...
+                    <doc.table>
+                        <doc.tablecw>10%=>20%=>auto</doc.tablecw>
+                        <doc.tablec>Ícone=>Nome=>Descrição</doc.tablec>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_5.png"></doc.icon>=>Curativo Com Bandagem=>Cura Sangramentos e restaura 1 coração de vida. Leva alguns segundos até a finalização do uso do item.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_6.png"></doc.icon>=>Curativo Aprimorado Com Bandagem=>Cura Sangramentos e Perdas de Saúde, além de resaturar 2 corações e meio. Leva alguns segundos até a finalização do uso do item.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_7.png"></doc.icon>=>Tala Com Curativo=>Remove o efeito de Perna Quebrada, substituindo o efeito apenas por Lentidão. Leva alguns segundos até a finalização do uso do item.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_8.png"></doc.icon>=>Curativo Rápido=>Restaura 3 corações de vida e pode ser feito a partir de uma erva chamada "Athelas" que pode ser encontrada em florestas. Pode ser usado instantaneamente.</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/149_9.png"></doc.icon>=>Curativo Remediador=>Restaura 1 coração de vida ao longo de 5 segundos. Pode ser feito a partir de uma erva chamada "Athelas" que pode ser encontrada em florestas. Pode ser usado instantaneamente.</doc.tabler>
+                    </doc.table>
 
                 </doc.topic>
                 <!-- #endregion -->
