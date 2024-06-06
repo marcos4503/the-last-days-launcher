@@ -118,6 +118,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_39">Sistema de Acessórios e Chapéus Colecionáveis</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_40">Habitante das Cavernas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_41">Sistema de Combate Retrabalhado</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_42">Armas de Fogo</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -727,8 +728,8 @@ B = rnd()
                     funcionar a sua Mochila precisa estar no Slot de Mochilas.
                     <doc.image src="DocumentationFiles/images/31.png"></doc.image>
                     <doc.info>
-                        Os Slots verdes são Slots de Ferramenta. Nesses Slots é possível colocar Ferramentas como Picaretas, Machados, Pé de Cabras, Caneta Redstone, etc. Além disso, também é possível colocar itens úteis, como todos os
-                        tipos de Curativos e itens médicos para você ou para seus pets.
+                        Os Slots verdes são Slots de Ferramentas. Nesses Slots é possível colocar Ferramentas e Armas como Picaretas, Espadas, Machados, Pé de Cabras, Caneta Redstone, Armas de Fogo, etc. Além disso, também é possível
+                        colocar itens úteis, como todos os tipos de Curativos e itens médicos para você ou para seus pets.
                     </doc.info>
                     Também é possível colocar sua Mochila no chão. Para isso, coloque a Mochila na sua mão, segure <doc.detach>SHIFT</doc.detach> e clique com o <doc.detach>Botão Direito</doc.detach> do mouse, no chão. Uma vez que ela
                     esteja no chão, você poderá usa-la como se fosse um baú e é até possível estender um saco de dormir, à frente dela! Para vesti-la novamente, basta quebra-la com a mão e então coloca-la no Slot de Mochilas em seu
@@ -1591,6 +1592,275 @@ B = rnd()
                     de dano com base na quantidade de inimigos atingidos, com uma redução de dano máxima de 75%. Agora, as armas não vão mais destruir blocos de grama ou folhagem, ao invés de acertar os alvos. Por fim, a Repulsão que você
                     exerce nos inimigos, com ataques rapidos, é reduzida.
                     <doc.image src="DocumentationFiles/images/150.gif"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Armas de Fogo -->
+                <doc.topic topicid="2_42">
+                    <doc.topictitle>Elementos Adicionados: Armas de Fogo</doc.topictitle>
+
+                    As Armas de Fogo serão parte das suas melhores companhias nesse mundo perdido. As Armas de Fogo são uma alternativa válida aos Arcos e Bestas. Elas possuem projéteis bem mais rápidos que os Arcos e Bestas, o
+                    que as tornam armas mais confiáveis de se usarem em momentos de emergência, estratégicos ou a distâncias muito longas. Claro, tudo isso vem com o custo de munições caras e as Armas chamam a atenção de criaturas próximas
+                    a você, quando usadas.
+                    <br>
+                    <br>
+                    Para adquirir suas Armas, você precisará criar um bloco chamado "Bancada de Trabalho Para Armas". Após isso, basta colocar o bloco em qualquer local e interagir com ele, então você terá acesso a interface de criação de
+                    Armas, Acessórios e Munições.
+                    <doc.image src="DocumentationFiles/images/151.png"></doc.image>
+                    As Armas não são Hitscan e funcionam com o princípio de Projéteis onde cada Arma atira Projéteis em diferentes velocidades. Apesar da maioria das Armas se parecerem muito com Armas Hitscan, algumas Armas atiram Projéteis
+                    de menor velocidade, e caso você esteja atirando em um Alvo a distância extrema, nessas Armas você precisará compensar um pouco a altura da sua mira, e o deslocamento, caso o alvo esteja se movendo. Porém, a maioria das
+                    Armas se comportam como Armas Hitscan em distâncias médias ou curtas.
+                    <br>
+                    <br>
+                    Todas as Armas possuem uma Mira de Precisão (também conhecida como Mira ADS) que pode ser acessada segurando o <doc.detach>Botão Direito</doc.detach> do mouse. Usar a Mira de Precisão da Arma, faz com que o Espalhamento
+                    de Projéteis seja reduzido por até 50% enquanto você atira, o que pode ser útil se você precisar atirar em Alvos mais distântes do que a Distância Efetiva da sua Arma.
+                    <br>
+                    <br>
+                    Os tiros que acertarem a Cabeça do alvo causam um dano adicional de 25%, enquanto que tiros que causam danos críticos causam um dano adicional de 50%. Além disso, você ouvirá um som de bipe caso seu tiro acerte a cabeça
+                    ou cause dano crítico no alvo. Os tiros também ignoram Blocos de Folhas!
+                    <doc.warn>
+                        Em comparação com Arcos e Bestas, sem Diagramação, os Arcos causam 3 corações (6) de dano em carga total, e 5 corações e meio (11) de dano em acertos críticos. Já as Bestas, sem Diagramação, causam no mínimo 4
+                        corações (7) de dano até no máximo 5 corações e meio (11) de dano, usando Flechas. Porém, os Arcos e Bestas possuem a vantagem de serem totalmente silenciosos e poderem ter suas Flechas guardadas em Aljavas práticas.
+                    </doc.warn>
+
+                    <doc.topicsubtitle>Munições</doc.topicsubtitle>
+                    Toda Arma utiliza Munições e conforme você atira, as Munições são consumidas. Se o Pente da sua Arma não estiver cheio, você pode pressionar <doc.detach>R</doc.detach> para recarrega-la. As Munições devem estar na sua
+                    Mochila ou no seu Inventário, e sempre que você precisar recarregar sua Arma, as Munições do seu Inventário ou Mochila serão usadas. Cada Arma utiliza um tipo diferente de Munição. As Munições podem ser criadas usando
+                    "Bancadas de Trabalho" convencionais ou "Bancadas de Trabalho Para Armas". Se você quiser descarregar sua Arma, para recuperar as Munições dentro dela, pressione <doc.detach>U</doc.detach>, com a Arma em mãos. A
+                    quantidade de Munição presente no pente da sua Arma pode ser observada através da Barra que aparece no ícone da sua Arma, ou na dica flutuante.
+                    <doc.image src="DocumentationFiles/images/152.png"></doc.image>
+
+                    <doc.topicsubtitle>Acessórios</doc.topicsubtitle>
+                    Os Acessórios oferecem maneiras de aprimorar ou customizar as características das suas Armas. Eles podem ser criados somente a partir da "Bancada de Trabalho Para Armas" e podem ser equipados acessando o Painel de
+                    Acessórios da sua Arma. Para acessar o Painel de Acessórios, pressione <doc.detach>\</doc.detach> com sua Arma em mãos. Veja abaixo a tabela de acessórios disponíveis e o que eles fazem...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Acessório=>Descrição</doc.tablec>
+                        <doc.tabler>Escopo Red Dot 2x=>Oferece um Zoom de 2x para sua Mira de Precisão, mas torna a transição para a Mira de Precisão, 15% mais lenta.</doc.tabler>
+                        <doc.tabler>Escopo Red Dot 4x=>Oferece um Zoom de 4x para sua Mira de Precisão, mas torna a transição para a Mira de Precisão, 20% mais lenta.</doc.tabler>
+                        <doc.tabler>Escopo Red Dot 8x=>Oferece um Zoom de 8x para sua Mira de Precisão, mas torna a transição para a Mira de Precisão, 25% mais lenta.</doc.tabler>
+                        <doc.tabler>Silenciador=>Suprime a maior parte do barulho emitido por uma Arma, ao atirar, entretanto, reduz o dano da Arma em 25%. Usar Silenciadores não impedirá que as criaturas ao seu redor te notem, mas pode ser uma boa opção para combate furtivo contra outras pessoas.</doc.tabler>
+                        <doc.tabler>Coronha Leve=>Reduz o Espalhamento de Projéteis ao atirar em até 20%, e o recuo em até 50%, mas torna a transição para a Mira de Precisão, 35% mais lenta.</doc.tabler>
+                        <doc.tabler>Coronha Tática=>Reduz o Espalhamento de Projéteis ao atirar em até 50%, e o recuo em até 60%, mas torna a transição para a Mira de Precisão, 45% mais lenta.</doc.tabler>
+                        <doc.tabler>Coronha Pesada=>Reduz o Espalhamento de Projéteis ao atirar em até 75%, e o recuo em até 80%, mas torna a transição para a Mira de Precisão, 80% mais lenta, além de reduzir a Cadência da Arma em até 30%.</doc.tabler>
+                        <doc.tabler>Apoio Leve=>Reduz o Espalhamento de Projéteis ao atirar em até 20%, e o recuo em até 20%, além de tornar a transição para a Mira de Precisão, 30% mais rápida.</doc.tabler>
+                        <doc.tabler>Apoio Aprimorado=>Reduz o Espalhamento de Projéteis ao atirar em até 35%, e o recuo em até 40%, mas torna a transição para a Mira de Precisão, 20% mais lenta.</doc.tabler>
+                    </doc.table>
+                    Nem toda Arma pode ter todos os tipos de Acessórios colocados nela. Você pode checar quais Acessórios podem ser colocados em cada Arma, através do Painel de Acessórios da Arma.
+
+                    <doc.topicsubtitle>Customização</doc.topicsubtitle>
+                    Para dar seu toque mais pessoal para suas Armas, você pode Customiza-las! A Customização consiste em colorir Acessórios e Armas, então, você pode colorir suas Armas ou Acessórios usando Corantes! Na "Bancada de Trabalho
+                    Para Armas" você pode colocar o Corante no Slot dedicado antes de realizar a montagem da sua Arma ou Acessório.
+                    <doc.image src="DocumentationFiles/images/153.png"></doc.image>
+                    Você também pode colocar sua Arma ou Acessório numa "Bancada de Trabalho" convencional juntamente de um Corante, para colorir o item!
+                    <doc.image src="DocumentationFiles/images/154.png"></doc.image>
+
+                    <doc.topicsubtitle>Pistola Colt M1911A1</doc.topicsubtitle>
+                    Esta é uma arma básica de curto alcance, que lhe oferece tudo que você espera de uma Arma, e pode ser bem customizada. Basicamente é uma Arma versátil que oferece características medianas e híbridas, que pode ser útil se
+                    você não quer chamar muito a atenção.
+                    <doc.image src="DocumentationFiles/images/155.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>2 corações e meio (5)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>6 corações e meio (12.5)</doc.tabler>
+                        <doc.tabler>Cadência=>2.5 tiros por segundo</doc.tabler>
+                        <doc.tabler>Capacidade=>14 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>9mm</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>2250 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Rápido</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>18 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>28 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Escopo, Silenciador e Coronha</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Escopeta Remington M870</doc.topicsubtitle>
+                    É uma ótima arma para combates de curto alcance. Causa grandes quantidades de dano a curta distância, porém, não pode ter suas características customizadas. Ela é absolutamente não indicada para atirar em alvos a médio
+                    ou longo alcance.
+                    <doc.image src="DocumentationFiles/images/156.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>12 corações e meio (25)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>18 corações (35.7)</doc.tabler>
+                        <doc.tabler>Cadência=>1.4 tiros por segundo</doc.tabler>
+                        <doc.tabler>Capacidade=>4 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>Cartuchos de Escopeta</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>800 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>4 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>8 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Nenhum</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        As Escopetas atiram 9 Projéteis a cada disparo, portanto, para causar o dano total informado em "Dano Por Tiro", é necessário que todos os 9 Projéteis acertem o alvo.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Submetralhadora TEC-9</doc.topicsubtitle>
+                    É uma arma de curto alcance, alternativa as Escopetas, para quem ama SMGs! O problema, é que por ser uma arma de mão, ela possui MUITO recuo e depende fortemente de acessórios para ser mais confortável de se usar. Apesar
+                    do seu Espalhamento de Projéteis poder ser muito reduzido por Acessórios, ainda continua sendo recomendada principalmente para combates de curto e médio alcance.
+                    <doc.image src="DocumentationFiles/images/157.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>1 coração (2.35)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>12 corações (11.75)</doc.tabler>
+                        <doc.tabler>Cadência=>10 tiros por segundo</doc.tabler>
+                        <doc.tabler>Capacidade=>32 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>9mm</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>800 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>4 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>7 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Escopo, Silenciador e Coronha</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Minigun M134</doc.topicsubtitle>
+                    Esta é uma arma que só tem brutalidade e velocidade. Uma ótima arma de curto alcance para limpar hordas de criaturas, rapidamente!
+                    <doc.image src="DocumentationFiles/images/158.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>1 coração e meio (3.25)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>32 corações e meio (65)</doc.tabler>
+                        <doc.tabler>Cadência=>20 tiros por segundo</doc.tabler>
+                        <doc.tabler>Capacidade=>350 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>9mm</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>800 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Muito Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>5 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>5 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Nenhum</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        Esta Arma não possui Mira de Precisão (ADS).
+                    </doc.info>
+
+                    <doc.topicsubtitle>Rifle HK417</doc.topicsubtitle>
+                    Este Rifle é uma alternativa as Metralhadoras TEC-9 e Minigun, que utiliza munição 7.62mm, conhecidas por causarem muito dano e serem mais precisas. Esta é uma Arma indicada para o combate de curta e média distância, e
+                    apesar desta Arma poder ser customizada para funcionar melhor a longas distâncias, seus Projéteis não são tão rápidos, o que faz com que ela não seja recomendada para precisão a longas distâncias.
+                    <doc.image src="DocumentationFiles/images/159.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>4 corações (8.23)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>20 corações e meio (41.1)</doc.tabler>
+                        <doc.tabler>Cadência=>5 tiros por segundo</doc.tabler>
+                        <doc.tabler>Capacidade=>30 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>7.62mm</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>800 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>7 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>12 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Escopo, Silenciador, Coronha e Apoio de Mão</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Rifle FN SCAR-H</doc.topicsubtitle>
+                    Este Rifle combina o poder das munições 7.62mm, conhecidas por causarem muito dano e serem mais precisas, numa Arma versátil e precisa, que é indicada para combates de média e longa distância. É uma boa alternativa para
+                    quem busca uma Arma precisa e que causa um bom dano, apesar de não ser tão precisa quanto um Rifle Sniper. Ela també oferece uma ótima gama de customização de características e pode ser customizada para melhoria de
+                    precisão.
+                    <doc.image src="DocumentationFiles/images/160.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>8 corações (16)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>8 corações (16)</doc.tabler>
+                        <doc.tabler>Cadência=>1 tiro por segundo</doc.tabler>
+                        <doc.tabler>Capacidade=>8 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>7.62mm</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>2250 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>28 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>66 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Escopo, Silenciador, Coronha e Apoio de Mão</doc.tabler>
+                    </doc.table>
+
+                    <doc.topicsubtitle>Rifle Sniper AI AW-F</doc.topicsubtitle>
+                    A Arma ideal para que quer precisão total, não importa a distância! O único problema, é que o Projétil desta Arma é lento, e para acertar alvos a distâncias extremas, você precisará compensar a mira, a levantando e
+                    deslocando para os lados, com base na velocidade de locomoção do Alvo, porém, se o Alvo for acertado, o dano causado é gigantesco. Apesar desta Arma causar uma grande quantidade de dano em um único tiro, ela não é
+                    recomendada para combates de curta distância, visto que se você errar o tiro, sua próxima chance de atirar irá demorar, pois a Cadência desta Arma é muito baixa. Após obter esta Arma, a primeira coisa que você deve fazer
+                    é adquirir um Escopo!
+                    <doc.image src="DocumentationFiles/images/161.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>14 corações (28)</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>5 corações (9.3)</doc.tabler>
+                        <doc.tabler>Cadência=>1 tiro a cada 3 segundos</doc.tabler>
+                        <doc.tabler>Capacidade=>6 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>Projétil de Gauss</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>600 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Mediano</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>∞ blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>∞ blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Escopo, Silenciador e Apoio de Mão</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        Esta Arma possui um Projétil lento, e para acertar alvos muito distantes você precisará compensar a mira!
+                    </doc.info>
+
+                    <doc.topicsubtitle>Lança Granadas</doc.topicsubtitle>
+                    Uma opção barata para quem gosta de destruição, explosões e gritaria! Consegue suprir suas necessidades de explosões e destruição de uma maneira simples, porém, exige uma certa curva de aprendizado. É uma ótima arma para
+                    causar dano em área.
+                    <doc.image src="DocumentationFiles/images/162.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Explosão=>12 corações (24) no centro da explosão</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>8 corações (16) no centro da explosão</doc.tabler>
+                        <doc.tabler>Cadência=>1 tiro a cada 1.5 segundos</doc.tabler>
+                        <doc.tabler>Raio da Explosão=>5 blocos</doc.tabler>
+                        <doc.tabler>Capacidade=>6 granadas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>Granada de Mão</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>150 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>16 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>16 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Escopo e Coronha</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        Esta Arma possui um Projétil lento e que se move em parábola, e para acertar alvos muito distantes você precisará compensar a mira. Pode ser mais fácil acertar inimigos se você tiver em um terreno mais elevado do que
+                        os alvos. Além disso, o Alvo pode mitigar o dano da explosão se estiver atrás de uma parede de blocos. Por fim, os Alvos mais distantes do centro da explosão recebem menos dano.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Lança Foguetes</doc.topicsubtitle>
+                    Essa é uma opção mais cara para subrir suas necessidades de explosão! Pode ser melhor do que o Lança Granadas em diversas situações, e mais precisas em alguns casos. É mais fácil de se utilizar, já que seu Projétil
+                    possui uma trajetória retílinia. Uma ótima arma para causar dano em área!
+                    <doc.image src="DocumentationFiles/images/163.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Explosão=>15 corações (30) no centro da explosão</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>3 corações (6) no centro da explosão</doc.tabler>
+                        <doc.tabler>Cadência=>1 tiro a cada 5 segundos</doc.tabler>
+                        <doc.tabler>Raio da Explosão=>10 blocos</doc.tabler>
+                        <doc.tabler>Capacidade=>1 míssil</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>Míssil</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>200 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Rápido</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>64 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>64 blocos</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Nenhum</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        Esta Arma possui um Projétil lento e que se move em uma trajetória retílinia, porém só pode viajar uma distância máxima de 64 blocos. O Alvo pode mitigar o dano da explosão se estiver atrás de uma parede de blocos.
+                        Por fim, os Alvos mais distantes do centro da explosão recebem menos dano.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Granadas</doc.topicsubtitle>
+                    As Granadas oferecem uma maneira rápida e barata de causar dano em área ou atordoar inimigos. Atualmente existe a "Granada de Mão" e a "Granada Flashbang". A Granada de Mão causa uma explosão em área com raio de 5
+                    blocos, enquanto a Granada Flashbang cega e deixa inimigos atingidos pela explosão, surdos, temporariamente.
+                    <doc.image src="DocumentationFiles/images/164.png"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->

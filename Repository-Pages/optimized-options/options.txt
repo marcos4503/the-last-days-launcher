@@ -313,6 +313,9 @@ key_key.smallships.ship_sail:key.keyboard.v
 key_key.healing.use_elixir:key.keyboard.unknown
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
+key_key.cgm.reload:key.keyboard.r
+key_key.cgm.unload:key.keyboard.u
+key_key.cgm.attachments:key.keyboard.world.2
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
