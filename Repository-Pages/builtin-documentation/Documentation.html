@@ -118,7 +118,9 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_39">Sistema de Acessórios e Chapéus Colecionáveis</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_40">Habitante das Cavernas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_41">Sistema de Combate Retrabalhado</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_41a">Armas Corpo a Corpo</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_42">Armas de Fogo</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_43">Coleta, Transporte e Armazenamento de Experiência</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -1239,9 +1241,12 @@ B = rnd()
                     <doc.image src="DocumentationFiles/images/85.png"></doc.image>
                     O primeiro item que está na ponta do sistema, é o "Funil de Fluídos". O Funil de Fluídos é capaz de absorver fluídos e guardar em seu inventário próprio e expelir fluídos de seu inventário para o mundo.
                     <doc.image src="DocumentationFiles/images/86.png"></doc.image>
-                    O próximo item são os Canos. Os Canos conseguem transportar fluídos de um Bloco com inventário de fluídos (como o Funil de Fluídos ou Caldeirão) para outro bloco com inventário de fluídos. Para que um Cano possa extrair
-                    fluídos de um bloco, o Cano que se conecta ao bloco precisa ter o "Módulo de Extração Para Canos", então, se o encanamento estiver conectado a um bloco com inventário de fluídos, o transporte começa.
+                    O próximo item são os Canos. Os Canos conseguem transportar fluídos de um Bloco com inventário de fluídos ou tanque (como o Funil de Fluídos ou Caldeirão) para outro bloco com inventário de fluídos ou tanque. Para que um
+                    Cano possa extrair fluídos de um bloco, o Cano que se conecta ao bloco precisa ter o "Módulo de Extração Para Canos", então, se o encanamento estiver conectado a um bloco com inventário de fluídos, o transporte começa.
                     <doc.image src="DocumentationFiles/images/87.png"></doc.image>
+                    <doc.info>
+                        Se você colocar uma "Placa de Circuito Impresso Avançada" num Cano, você poderá usar sinal Redstone para controlar o funcionamento do Cano.
+                    </doc.info>
                     Por fim, temos os Tanques. Os Tanques são blocos que servem exclusivamente para armazenar fluídos em seus inventários próprios. É possível tanto adicionar quanto extrair fluídos de dentro de Tanques. Qualquer bloco que
                     consiga extrair fluídos de blocos, podem extrair fluídos de Tanques. Usando Baldes você também pode adicionar ou extrair fluídos dos Tanques, e por fim, se você quiser expandir a capacidade de armazenamento de um Tanque,
                     é só empilhar os Tanques.
@@ -1596,6 +1601,34 @@ B = rnd()
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Armas Corpo a Corpo -->
+                <doc.topic topicid="2_41a">
+                    <doc.topictitle>Elementos Adicionados: Armas Corpo a Corpo</doc.topictitle>
+
+                    Há uma nova seleção de Armas Corpo a Corpo para todos os gostos e estilos de jogo! Escolha a Arma que mais combine com seu perfil e parta para a Ação... Ou Defesa! Além das classicas Espadas e Machados, há 6 novas Armas
+                    Corpo a Corpo, cada uma com suas características próprias e animações de ataque únicas! Elas só possuem as variantes de Ferro, Ouro, Diamante e Netherita, e possuem a mesma durabilidade das armas Vanilla. Por fim, todas
+                    as novas Armas podem ser Diagramadas com os mesmos Diagramas aplicáveis em Armas Vanilla.
+                    <doc.image src="DocumentationFiles/images/165.png"></doc.image>
+                    As Espadas e Machados Vanilla funcionam com Armas equilibradas, enquanto as 6 novas Armas focam em uma característica específica, cada uma. Veja a tabela das Armas, abaixo, para informações e comparativo...
+                    <doc.table>
+                        <doc.tablecw>20%=>auto=>auto=>auto=>auto=>auto=>auto</doc.tablecw>
+                        <doc.tablec>Arma=>Dano Por Golpe=>Dano Por Segundo=>Cadência=>Usável Com Escudo (ou nas duas mãos ao mesmo tempo)=>Alcance de Ataque=>Chance de Crítico</doc.tablec>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_1.png"></doc.icon> Espada=>6 ~ 8=>9.6 ~ 12.8=>1.6 ataques p. seg.=>Sim=>2.5 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_2.png"></doc.icon> Katana=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>2.9 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_3.png"></doc.icon> Machado=>9 ~ 10=>9 ~ 10=>1 ataques p. seg.=>Sim=>2.5 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_4.png"></doc.icon> Machado G.p.C.=>8 ~ 10=>8 ~ 10=>1 ataques p. seg.=>Não=>3.5 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_5.png"></doc.icon> Sai=>4 ~ 6=>14 ~ 21=>3.5 ataques p. seg.=>Sim=>1.8 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_6.png"></doc.icon> Lança=>4.7 ~ 6.7=>7.5 ~ 10.7=>1.6 ataques p. seg.=>Sim=>3.1 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_7.png"></doc.icon> Lâmina Dupla=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>3 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_8.png"></doc.icon> Glaive=>3.7 ~ 5.7=>7.4 ~ 11.4=>2 ataques p. seg.=>Não=>3.25 blocos=>12%</doc.tabler>
+                    </doc.table>
+                    <doc.info>
+                        Note que as informações de "Dano Por Golpe" e "Dano Por Segundo" representam os danos das variantes de Ferro até Netherita, das suas respectivas Armas!
+                    </doc.info>
+
+                </doc.topic>
+                <!-- #endregion -->
+
                 <!-- #region Elementos Adicionados: Armas de Fogo -->
                 <doc.topic topicid="2_42">
                     <doc.topictitle>Elementos Adicionados: Armas de Fogo</doc.topictitle>
@@ -1865,6 +1898,26 @@ B = rnd()
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Coleta, Transporte e Armazenamento de Experiência -->
+                <doc.topic topicid="2_43">
+                    <doc.topictitle>Elementos Adicionados: Coleta, Transporte e Armazenamento de Experiência</doc.topictitle>
+
+                    Agora você pode criar um sistema de automação para Coleta, Transporte e Armazenamento de Experiência e Itens! O item núcleo desse sistema é o "Funil de Items e Orbes de XP". Esse bloco é capaz de coletar Itens e Orbes de
+                    Experiência numa área de 7x7x7. Os Itens coletados são armazenados no inventário interno do bloco, enquanto que os Orbes de Experiência são convertidos em Fluído e armazenado no Tanque interno do bloco. O bloco pode
+                    armazenar até 16 baldes de Fluído de Experiência. Para extrair os Itens coletados do "Funil de Items e Orbes de XP" você pode usar Blocos extratores de Itens, como Funil ou Braço Robô. Para extrair o Fluído de
+                    Experiência coletado do "Funil de Items e Orbes de XP", você pode usar Canos conectados a um outro Bloco Tanque.
+                    <doc.image src="DocumentationFiles/images/166.png"></doc.image>
+                    Se quiser expandir a área de coleta do "Funil de Items e Orbes de XP", você pode usar o item "Módulo de Absorção Para Funis". Para isso, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no "Funil de
+                    Items e Orbes de XP" e então colocar o Módulo no Slot dedicado. Através dessa mesma interface você também pode ativar ou desativar a exibição da área de coleta, para melhor visualização, e também pode reposicionar essa
+                    área de coleta para que ela melhor lhe atenda!
+                    <doc.image src="DocumentationFiles/images/167.png"></doc.image>
+                    <doc.info>
+                        Você também pode colocar uma "Torneira de Orbes de Experiência" ao lado de um Tanque e ao abrir a Torneira, ela começará a extrair o Fluído de Experiência, o convertendo de volta em Orbes de Experiência coletáveis.
+                    </doc.info>
+
+                </doc.topic>
+                <!-- #endregion -->
+
 
 
                 <!-- #region Rebalanceamentos: Diversos Ajustes em Receitas -->
@@ -2129,6 +2182,7 @@ B = rnd()
                         <doc.listr>Mergulhar ou sair da água agora possuem um efeito visual de borrão temporário.</doc.listr>
                         <doc.listr>Agora, ao receber dano de diversas fontes, particulas de sangue ou de outros tipos surgem na tela.</doc.listr>
                         <doc.listr>Há um efeito visual de coração batendo enquanto o jogador está com 3 corações de vida ou menos.</doc.listr>
+                        <doc.listr>Jogadores e Mobs que receberem dano agora exibirão partículas de sangramento.</doc.listr>
                     </doc.list>
 
                 </doc.topic>
