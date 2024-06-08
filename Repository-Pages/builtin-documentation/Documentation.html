@@ -121,6 +121,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_41a">Armas Corpo a Corpo</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_42">Armas de Fogo</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_43">Coleta, Transporte e Armazenamento de Experiência</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_44">Novos Desenhos Para Estandartes</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -146,6 +147,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_16">Melhorias na Geração de Biomas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_17">Decaimento Acelerado de Folhas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_18">Bigorna Melhorada</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_19">Impossibilidade de Pular Noites ou Temporais</a></li>
                     </ul>
                     <li class="summarySubItem">Outros</li>
                     <ul>
@@ -157,7 +159,7 @@
                     <ul>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="6_1">Como Habilitar Anti-Aliasing Sem Shaders (Para GPUs da Nvidia Apenas!)</a></li>
                     </ul>
-                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="98">Links Úteis</a></li>
+                    <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="98">Wiki do Minecraft</a></li>
                     <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="99">Conclusão</a></li>
                 </ul>
                 <!-- -------------------------------------------------------------------------- END OF SUMMARY CONTENT -------------------------------------------------------------------------- -->
@@ -1218,6 +1220,9 @@ B = rnd()
                     <doc.image src="DocumentationFiles/images/82.gif"></doc.image>
                     Por fim, os Filtros de Esteira são capazes de separar itens e envia-los em diferentes direções, com base no tipo de item!
                     <doc.image src="DocumentationFiles/images/83.gif"></doc.image>
+                    <doc.info>
+                        É possível controlar o funcionamento de Esteiras e Braços Robôs, usando sinal de Redstone.
+                    </doc.info>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -1229,6 +1234,9 @@ B = rnd()
                     Os Tubos a Vácuo são um ótimo meio de transportar itens de maneira fácil e versátil, principalmente verticalmente! Para criar um sistema de transporte de itens a vácuo, você precisa de uma "Bomba de itens à vácuo" e de
                     "Tubo de vácuo para itens", então é só conectar a Bomba para um bloco com inventário e conectar a Bomba através de tubos a outro bloco com inventário.
                     <doc.image src="DocumentationFiles/images/84.gif"></doc.image>
+                    <doc.info>
+                        A "Bomba de itens à vácuo" pode ser controlada para ser desligada ou ligada, usando sinal de Redstone.
+                    </doc.info>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -1239,7 +1247,8 @@ B = rnd()
 
                     O Transporte de Fluídos é um novo sistema útil adicionado! Ele pode ser útil para automatizar alguns processos e tornar tudo mais fácil e mais técnico. Vamos conhecer os principais componentes deste sistema.
                     <doc.image src="DocumentationFiles/images/85.png"></doc.image>
-                    O primeiro item que está na ponta do sistema, é o "Funil de Fluídos". O Funil de Fluídos é capaz de absorver fluídos e guardar em seu inventário próprio e expelir fluídos de seu inventário para o mundo.
+                    O primeiro item que está na ponta do sistema, é o "Funil de Fluídos". O Funil de Fluídos é capaz de absorver fluídos e guardar em seu inventário próprio e expelir fluídos de seu inventário para o mundo, além de agir como
+                    um Funil normal, transportando itens do seu Inventário próprio para blocos conectados a ele, que tiverem um Tanque de fluídos.
                     <doc.image src="DocumentationFiles/images/86.png"></doc.image>
                     O próximo item são os Canos. Os Canos conseguem transportar fluídos de um Bloco com inventário de fluídos ou tanque (como o Funil de Fluídos ou Caldeirão) para outro bloco com inventário de fluídos ou tanque. Para que um
                     Cano possa extrair fluídos de um bloco, o Cano que se conecta ao bloco precisa ter o "Módulo de Extração Para Canos", então, se o encanamento estiver conectado a um bloco com inventário de fluídos, o transporte começa.
@@ -1251,6 +1260,10 @@ B = rnd()
                     consiga extrair fluídos de blocos, podem extrair fluídos de Tanques. Usando Baldes você também pode adicionar ou extrair fluídos dos Tanques, e por fim, se você quiser expandir a capacidade de armazenamento de um Tanque,
                     é só empilhar os Tanques.
                     <doc.image src="DocumentationFiles/images/88.png"></doc.image>
+                    Também é possível converter um Fluído em um "Balde com Fluído" ou um "Balde com Fluído" de volta em apenas Fluído. Por exemplo, coletar água do mundo, guarda-la num tanque, extrair a água do tanque, em seguida
+                    converte-la num Balde com Água e por fim transformar esse Balde com Água de volta num Fluído apenas. Para fazer essa conversão, a chave são os blocos Ejetores, que caso tenham um Balde dentro deles, conseguem capturar o
+                    Fluído na frente deles, ou colocar o Fluído na frente deles de volta. Veja o exemplo abaixo...
+                    <doc.image src="DocumentationFiles/images/88a.gif"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -1605,11 +1618,11 @@ B = rnd()
                 <doc.topic topicid="2_41a">
                     <doc.topictitle>Elementos Adicionados: Armas Corpo a Corpo</doc.topictitle>
 
-                    Há uma nova seleção de Armas Corpo a Corpo para todos os gostos e estilos de jogo! Escolha a Arma que mais combine com seu perfil e parta para a Ação... Ou Defesa! Além das classicas Espadas e Machados, há 6 novas Armas
-                    Corpo a Corpo, cada uma com suas características próprias e animações de ataque únicas! Elas só possuem as variantes de Ferro, Ouro, Diamante e Netherita, e possuem a mesma durabilidade das armas Vanilla. Por fim, todas
-                    as novas Armas podem ser Diagramadas com os mesmos Diagramas aplicáveis em Armas Vanilla.
+                    Há uma nova seleção de Armas Corpo a Corpo para todos os gostos e estilos de jogo! Escolha a Arma que mais combine com seu perfil e parta para a Ação... Ou Defesa! Além das classicas Espadas, Machados e Tridentes, há 6
+                    novas Armas Corpo a Corpo, cada uma com suas características próprias e animações de ataque únicas! Elas só possuem as variantes de Ferro, Ouro, Diamante e Netherita, e possuem a mesma durabilidade das armas Vanilla. Por
+                    fim, todas as novas Armas podem ser Diagramadas com os mesmos Diagramas aplicáveis em Armas Vanilla.
                     <doc.image src="DocumentationFiles/images/165.png"></doc.image>
-                    As Espadas e Machados Vanilla funcionam com Armas equilibradas, enquanto as 6 novas Armas focam em uma característica específica, cada uma. Veja a tabela das Armas, abaixo, para informações e comparativo...
+                    As Espadas, Machados e Tridentes Vanilla funcionam com Armas equilibradas, enquanto as 6 novas Armas focam em uma característica específica, cada uma. Veja a tabela das Armas, abaixo, para informações e comparativo...
                     <doc.table>
                         <doc.tablecw>20%=>auto=>auto=>auto=>auto=>auto=>auto</doc.tablecw>
                         <doc.tablec>Arma=>Dano Por Golpe=>Dano Por Segundo=>Cadência=>Usável Com Escudo (ou nas duas mãos ao mesmo tempo)=>Alcance de Ataque=>Chance de Crítico</doc.tablec>
@@ -1617,13 +1630,14 @@ B = rnd()
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_2.png"></doc.icon> Katana=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>2.9 blocos=>12%</doc.tabler>
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_3.png"></doc.icon> Machado=>9 ~ 10=>9 ~ 10=>1 ataques p. seg.=>Sim=>2.5 blocos=>12%</doc.tabler>
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_4.png"></doc.icon> Machado G.p.C.=>8 ~ 10=>8 ~ 10=>1 ataques p. seg.=>Não=>3.5 blocos=>12%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_5a.png"></doc.icon> Tridente=>9 ~ 9=>10 ~ 10=>1.1 ataques p. seg.=>Sim=>2.75 blocos=>12%</doc.tabler>
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_5.png"></doc.icon> Sai=>4 ~ 6=>14 ~ 21=>3.5 ataques p. seg.=>Sim=>1.8 blocos=>12%</doc.tabler>
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_6.png"></doc.icon> Lança=>4.7 ~ 6.7=>7.5 ~ 10.7=>1.6 ataques p. seg.=>Sim=>3.1 blocos=>12%</doc.tabler>
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_7.png"></doc.icon> Lâmina Dupla=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>3 blocos=>12%</doc.tabler>
                         <doc.tabler><doc.icon src="DocumentationFiles/images/165_8.png"></doc.icon> Glaive=>3.7 ~ 5.7=>7.4 ~ 11.4=>2 ataques p. seg.=>Não=>3.25 blocos=>12%</doc.tabler>
                     </doc.table>
                     <doc.info>
-                        Note que as informações de "Dano Por Golpe" e "Dano Por Segundo" representam os danos das variantes de Ferro até Netherita, das suas respectivas Armas!
+                        Note que as informações de "Dano Por Golpe" e "Dano Por Segundo" representam os danos das variantes de Ferro até Netherita, das suas respectivas Armas, com exceção do Tridente, que não possui variações.
                     </doc.info>
 
                 </doc.topic>
@@ -1918,6 +1932,16 @@ B = rnd()
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Novos Desenhos Para Estandartes -->
+                <doc.topic topicid="2_44">
+                    <doc.topictitle>Elementos Adicionados: Novos Desenhos Para Estandartes</doc.topictitle>
+
+                    Há 29 novos desenhos para Estandartes e Bandeiras disponíveis! A maioria deles podem ser fabricados normalmente, porém, alguns só são obtiveis através dos Vendedores Ambulantes!
+                    <doc.image src="DocumentationFiles/images/168.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
 
 
                 <!-- #region Rebalanceamentos: Diversos Ajustes em Receitas -->
@@ -2183,6 +2207,11 @@ B = rnd()
                         <doc.listr>Agora, ao receber dano de diversas fontes, particulas de sangue ou de outros tipos surgem na tela.</doc.listr>
                         <doc.listr>Há um efeito visual de coração batendo enquanto o jogador está com 3 corações de vida ou menos.</doc.listr>
                         <doc.listr>Jogadores e Mobs que receberem dano agora exibirão partículas de sangramento.</doc.listr>
+                        <doc.listr>Todas as Camas agora possuem um modelo 3D, ao invés de serem retas.</doc.listr>
+                        <doc.listr>As partículas de Chamas agora possuem uma nova animação.</doc.listr>
+                        <doc.listr>As Tochas possuem um novo modelo 3D mais bonito e com suporte de parede.</doc.listr>
+                        <doc.listr>Os Cogumelos agora possuem um modelo 3D mais bonito e com diversas variantes.</doc.listr>
+                        <doc.listr>Todos os Trilhos agora possuem um modelo 3D mais bonito e realista.</doc.listr>
                     </doc.list>
 
                 </doc.topic>
@@ -2219,6 +2248,17 @@ B = rnd()
 
                     As bigornas foram melhoradas, e agora ao invés do custo de reparamento subir a cada reparação feita em equipamentos, as reparações possuem um custo fixo de 10 níveis de experiência. Além disso, cada material repara um
                     equipamento até no máximo 33% de sua durabilidade total.
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Alterações do Vanilla: Impossibilidade de Pular Noites ou Temporais -->
+                <doc.topic topicid="4_19">
+                    <doc.topictitle>Alterações do Vanilla: Impossibilidade de Pular Noites ou Temporais</doc.topictitle>
+
+                    Agora não é mais possível pular noites ou temporais ao dormir. Também não é mais possível dormir, porém, você ainda pode deitar-se ou usar as Camas para definir seu ponto de ressurgimento. Por fim, os Phantoms também não
+                    irão nascer mais. Essa mudança foi feita com o objetivo de trazer maiores dificuldades para o jogo, já que a maior parte da ação se concentra nas noites e temporais, então, nada de evitar a ação!
+                    <doc.image src="DocumentationFiles/images/169.png"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -2324,17 +2364,17 @@ B = rnd()
 
 
 
-                <!-- #region Links Úteis -->
+                <!-- #region Wiki do Minecraft -->
                 <doc.topic topicid="98">
-                    <doc.topictitle>Links Úteis</doc.topictitle>
+                    <doc.topictitle>Wiki do Minecraft</doc.topictitle>
 
-                    Aqui estão alguns links que podem ser úteis e contém informações legais para seu jogo!
-                    <doc.list>
-                        <doc.listr><a href="https://minecraft-fandom-com.translate.goog/wiki/Villager?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp">Wiki dos Aldeões Vanilla</a></doc.listr>
-                        <doc.listr><a href="https://minecraft-fandom-com.translate.goog/wiki/Village?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp">Wiki dos Vilarejos Vanilla</a></doc.listr>
-                        <doc.listr><a href="https://minecraft-fandom-com.translate.goog/wiki/Redstone_components?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp">Wiki dos Componentes Redstone Vanilla</a></doc.listr>
-                        <doc.listr><a href="https://minecraft-fandom-com.translate.goog/wiki/Redstone_circuits?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp">Wiki dos Circuitos Redstone Vanilla</a></doc.listr>
-                    </doc.list>
+                    Por fins de comodidade, a Wiki do Minecraft está embutida nesta Documentação, para consulta de coisas Vanilla do jogo, como mecânicas, sistema redstone, itens, mobs, etc. A versão da Wiki usada é em Inglês, pois
+                    é a versão mais completa. Você pode clicar
+                    <a onclick="document.getElementById('wikiIframe').src='https://minecraft.fandom.com/pt/wiki/Categoria:Minecraft';">aqui</a> para acessar a versão em
+                    Português, porém, menos completa, e <a onclick="document.getElementById('wikiIframe').src='https://minecraft.fandom.com/wiki/Category:Minecraft';">aqui</a> se quiser acessar ou recarregar a versão em Inglês.
+                    <br>
+                    <br>
+                    <iframe id="wikiIframe" src="https://minecraft.fandom.com/wiki/Category:Minecraft" style="border-radius: 8px; width: 100%; height: 620px;" secure="true" samesite="none"></iframe>
 
                 </doc.topic>
                 <!-- #endregion -->
