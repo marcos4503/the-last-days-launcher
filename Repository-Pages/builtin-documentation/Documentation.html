@@ -148,6 +148,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_17">Decaimento Acelerado de Folhas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_18">Bigorna Melhorada</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_19">Impossibilidade de Pular Noites ou Temporais</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_20">Animações Adicionais Para o Player</a></li>
                     </ul>
                     <li class="summarySubItem">Outros</li>
                     <ul>
@@ -467,8 +468,8 @@
                     <doc.topictitle>Elementos Adicionados: Ajustes e Adições Menores de Aspectos ou Mecânicas</doc.topictitle>
 
                     Diversos ajustes menores foram feitos e mecânicas menores foram adicionadas ou reformuladas neste modpack, graças aos mods Quark, Vanilla Tweaks, V-Tweaks, Supplementaries, YUNG's Better Mineshafts, YUNG's
-                    Extras, YUNG's Bridges, YUNG's Better Dungeons, The Fence Unleashed, Upcycle, Visible Toggle Sprint e What's That Slot. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividad entre as mudanças
-                    em destaque, que são mudanças menores, mas que merecem um certo destaque, e as mudanças de menor destaque.
+                    Extras, YUNG's Bridges, YUNG's Better Dungeons, The Fence Unleashed, Upcycle, Visible Toggle Sprint, More Wandering Trades, Overworld Netherite Ore, K-Turrets, Overworld Quartz e What's That Slot. Veja a lista completa
+                    de recursos abaixo para saber de tudo. A lista foi dividida entre as mudanças em destaque, que são mudanças menores, mas que merecem um certo destaque, e as mudanças de menor destaque.
 
                     <doc.topicsubtitle>Mudanças de Destaque</doc.topicsubtitle>
                     <doc.list>
@@ -577,7 +578,15 @@
                         <doc.listr>Animais agora não passarão mais através de Portões de Cercas, se não estiverem amarrados por um Laço.</doc.listr>
                         <doc.listr>Agora, é possível colocar Carne Podre também em Composteiras.</doc.listr>
                         <doc.listr>Novo bloco redstone adicionado. O "Termomedidor" mede a temperatura ambiente e emite um sinal de redstone de saída entre 0 a 15, onde 0 significa 8ºC ou menos e 15 significa 38ªC ou mais.</doc.listr>
+                        <doc.listr>Agora, os Vendedores Ambulantes vendem Injeções de Adrenalina, Cabeça de Esqueleto, Cabeça de Zumbi, Cabeça de Creeper, Cabeça de Wither Esqueleto, Ovo de Tartaruga, Mel, Frasco de Experiência, Favo de Mel, Maçã Dourada, Pena e Pólvora, além dos itens já vendidos.</doc.listr>
+                        <doc.listr>Há o novo Minério de Titânio que é mais comum na camada 0 e pode ser melhor coletado com Picaretas de Ferro.</doc.listr>
+                        <doc.listr>Há o novo Minério de Quartzo que é comum em qualquer camada, porém, pode ser melhor minerado na camada 48, e pode ser melhor coletado com Picaretas de Ferro.</doc.listr>
+                        <doc.listr>Há o novo Minério de Detritos Ancestrais que pode ser encontrado em qualquer camada entre 32 e -60, porém, pode ser melhor minerado na camada 0, e deve ser coletado com Picaretas de Ferro, no mínimo.</doc.listr>
                     </doc.list>
+
+                    <doc.topicsubtitle>Melhores Camadas Para Encontrar Minérios Novos e Vanilla</doc.topicsubtitle>
+                    A imagem abaixo mostra quais são as melhores camadas para minerar todos os minérios Vanilla e os novos minérios, encontrados pelo mundo, após os ajustes do Modpack.
+                    <doc.image src="DocumentationFiles/images/171.png"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -987,15 +996,18 @@ B = rnd()
                     <doc.topictitle>Elementos Adicionados: Escudos Retrabalhados</doc.topictitle>
 
                     O sistema de escudo foi retrabalhado. Agora não há mais o escudo padrão do Minecraft, porém, há novos escudos. Agora existem os escudos de Pedra, Ouro, Ferro, Diamante e Netherita. Cada um deles possui diferentes níveis
-                    de durabilidade. Além disso, cada escudo agora possui um tempo de recarga diferente e a maioria deles não pode mais ser levantada eternamente. Isso quer dizer que agora, você precisará levantar o escudo somente na hora
-                    que for bloquear um ataque. Sem essa de andar com o escudo levantando para sempre. Se você mantiver um escudo levantado por mais tempo do que ele pode permanecer levantado, ele entrará automaticamente em tempo de
-                    recarga.
+                    de durabilidade, maiores do que quando se comparado relativamente ao escudo Vanilla. Além disso, cada escudo agora possui um tempo de recarga diferente e a maioria deles não pode mais ser levantada eternamente. Isso quer
+                    dizer que agora, você precisará levantar o escudo somente na hora que for bloquear um ataque. Sem essa de andar com o escudo levantando para sempre. Se você mantiver um escudo levantado por mais tempo do que ele pode
+                    permanecer levantado, ele entrará automaticamente em tempo de recarga.
                     <br>
                     <br>
                     Além disso tudo, agora os escudos começam a defender imediatamente assim que você segura o <doc.detach>Botão Direito</doc.detach> do mouse, ou seja, após 0ms o escudo já estará defendendo, enquanto que no Vanilla, há um
                     pequeno intervalo de 250ms após pressionar o <doc.detach>Botão Direito</doc.detach> até que o escudo realmente comece a defender. Por fim, se um escudo estiver na sua mão secundária, mas você não estiver atualmente
                     defendendendo, o escudo não aparecerá na tela. De resto, os novos escudos se comportam como o escudo Vanilla, até mesmo na customização.
                     <doc.image src="DocumentationFiles/images/61.png"></doc.image>
+                    <doc.info>
+                        O Escudo de Ouro é o único Escudo que se comporta como o Escudo Vanilla, sem tempo de recarga para uso, porém, é mais caro do que outros Escudos e tem a menor durabilidade. Pode ser o Escudo perfeito para PVP.
+                    </doc.info>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -2259,6 +2271,17 @@ B = rnd()
                     Agora não é mais possível pular noites ou temporais ao dormir. Também não é mais possível dormir, porém, você ainda pode deitar-se ou usar as Camas para definir seu ponto de ressurgimento. Por fim, os Phantoms também não
                     irão nascer mais. Essa mudança foi feita com o objetivo de trazer maiores dificuldades para o jogo, já que a maior parte da ação se concentra nas noites e temporais, então, nada de evitar a ação!
                     <doc.image src="DocumentationFiles/images/169.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Alterações do Vanilla: Animações Adicionais Para o Player -->
+                <doc.topic topicid="4_20">
+                    <doc.topictitle>Alterações do Vanilla: Animações Adicionais Para o Player</doc.topictitle>
+
+                    Diversas novas animações de terceira pessoa foram adicionadas ao modelo 3D do jogador. Dentre as novas animações estão as animações de comer, beber, olhar mapas, usar o escudo, usar arcos e bestas, remar com botes e
+                    barcos, segurar as cordas do cavalo, subir escadas, rastejar, etc.
+                    <doc.image src="DocumentationFiles/images/170.gif"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
