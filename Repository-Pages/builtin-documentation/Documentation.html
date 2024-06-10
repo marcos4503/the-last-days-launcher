@@ -2391,14 +2391,41 @@ B = rnd()
                 <doc.topic topicid="98">
                     <doc.topictitle>Wiki do Minecraft</doc.topictitle>
 
-                    Por fins de comodidade, a Wiki do Minecraft está embutida nesta Documentação, para consulta de coisas Vanilla do jogo, como mecânicas, sistema redstone, itens, mobs, etc. A versão da Wiki usada é em Inglês, pois
-                    é a versão mais completa. Você pode clicar
-                    <a onclick="document.getElementById('wikiIframe').src='https://minecraft.fandom.com/pt/wiki/Categoria:Minecraft';">aqui</a> para acessar a versão em
-                    Português, porém, menos completa, e <a onclick="document.getElementById('wikiIframe').src='https://minecraft.fandom.com/wiki/Category:Minecraft';">aqui</a> se quiser acessar ou recarregar a versão em Inglês.
+                    Por fins de comodidade, a Wiki do Minecraft está embutida nesta Documentação, para consulta de coisas Vanilla do jogo, como mecânicas, sistema redstone, itens, mobs, etc. Note que há coisas Vanilla que não estão
+                    presentes neste Modpack ou que foram simplesmente alteradas. Por isso é importante consultar os tópicos dessa Documentação, já que tudo que foi alterado ou adicionado está presente aqui. Você pode usar os botões abaixo
+                    para acessar a Wiki desejada, no idioma desejado, lembrando que as versões em Inglês são mais completas.
                     <br>
                     <br>
-                    <iframe id="wikiIframe" src="https://minecraft.fandom.com/wiki/Category:Minecraft" style="border-radius: 8px; width: 100%; height: 648px;" secure="true" samesite="none"></iframe>
-
+                    <iframe id="wikiIframe" src="" style="border-radius: 8px; width: 100%; height: 648px;" onload="console.log('aa');" secure="true" samesite="none"></iframe>
+                    <br>
+                    <br>
+                    <div style="width: auto; user-select: none;">
+                        <div style="display: inline-block; float: right; width: auto; background-color: #f1f1f1; border-radius: 8px; padding: 8px; display: grid; grid-template-rows: auto auto;">
+                            <div style="text-align: center; font-weight: bolder;">
+                                Minecraft Wiki
+                            </div>
+                            <div style="margin-top: 8px; width: auto; display: flex; justify-content: center;">
+                                <div style="background-color: #679bdb; border-radius: 8px; padding: 8px; cursor: hand; color: #f1f1f1;" onclick="window.open('https://minecraft.wiki/', '_blank');">EN</div>
+                            </div>
+                        </div>
+                        <div style="display: inline-block; float: right; width: auto; background-color: #f1f1f1; border-radius: 8px; padding: 8px; margin-right: 8px; display: grid; grid-template-rows: auto auto;">
+                            <div style="text-align: center; font-weight: bolder;">
+                                Fandom Wiki
+                            </div>
+                            <div style="margin-top: 8px; width: auto; display: flex; justify-content: center;">
+                                <div style="background-color: #679bdb; border-radius: 8px; padding: 8px; cursor: hand; color: #f1f1f1; margin-right: 8px;"
+                                    onclick="document.getElementById('wikiIframe').src = 'https://minecraft.fandom.com/wiki/Category:Minecraft'; document.getElementById('wikiIframe').contentWindow.focus();">EN</div>
+                                <div style="background-color: #679bdb; border-radius: 8px; padding: 8px; cursor: hand; color: #f1f1f1;"
+                                    onclick="document.getElementById('wikiIframe').src = 'https://minecraft.fandom.com/pt/wiki/Categoria:Minecraft'; document.getElementById('wikiIframe').contentWindow.focus();">PT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </doc.topic>
                 <!-- #endregion -->
 
