@@ -116,6 +116,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_37">Salve Seus Pets</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_38">Sistema de Embarcações</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_39">Sistema de Acessórios e Chapéus Colecionáveis</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_39a">Cavernas Melhoradas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_40">Habitante das Cavernas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_41">Sistema de Combate Retrabalhado</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_41a">Armas Corpo a Corpo</a></li>
@@ -149,6 +150,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_18">Bigorna Melhorada</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_19">Impossibilidade de Pular Noites ou Temporais</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_20">Animações Adicionais Para o Player</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="4_21">IA de Mobs Melhorada</a></li>
                     </ul>
                     <li class="summarySubItem">Outros</li>
                     <ul>
@@ -469,8 +471,8 @@
 
                     Diversos ajustes menores foram feitos e mecânicas menores foram adicionadas ou reformuladas neste modpack, graças aos mods Quark, Vanilla Tweaks, V-Tweaks, Supplementaries, YUNG's Better Mineshafts, YUNG's
                     Extras, YUNG's Bridges, YUNG's Better Dungeons, The Fence Unleashed, Upcycle, Visible Toggle Sprint, More Wandering Trades, Overworld Netherite Ore, K-Turrets, Overworld Quartz, Horror Elements Mod, Golems Are Friends
-                    Not Fodder e What's That Slot. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividida entre as mudanças em destaque, que são mudanças menores, mas que merecem um certo destaque, e as mudanças
-                    de menor destaque.
+                    Not Fodder, Mob Sunscreen e What's That Slot. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividida entre as mudanças em destaque, que são mudanças menores, mas que merecem um certo destaque,
+                    e as mudanças de menor destaque.
 
                     <doc.topicsubtitle>Mudanças de Destaque</doc.topicsubtitle>
                     <doc.list>
@@ -585,6 +587,7 @@
                         <doc.listr>Há o novo Minério de Detritos Ancestrais que pode ser encontrado em qualquer camada entre 32 e -60, porém, pode ser melhor minerado na camada 0, e deve ser coletado com Picaretas de Ferro, no mínimo.</doc.listr>
                         <doc.listr>No mundo agora haverão diversos detalhes e estruturas que contribuirão com a temática de fim de mundo e terror.</doc.listr>
                         <doc.listr>Agora os aldeões com cargo de Armeiros, Ferreiros e Armadureiros irão correr para reparar os Golems de Ferro danificados, sempre que possível, automaticamente.</doc.listr>
+                        <doc.listr>Os Zumbis agora não mais entram em combustão durante o dia.</doc.listr>
                     </doc.list>
 
                     <doc.topicsubtitle>Melhores Camadas Para Encontrar Minérios Novos e Vanilla</doc.topicsubtitle>
@@ -1598,6 +1601,19 @@ B = rnd()
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Cavernas Melhoradas -->
+                <doc.topic topicid="2_39a">
+                    <doc.topictitle>Elementos Adicionados: Cavernas Melhoradas</doc.topictitle>
+
+                    As Cavernas agora possuem algumas características para torna-las mais dinâmicas e legais de se minerar, além de trazerem um toque de medo. Agora, algumas Pedras possuem Geodos dentro delas. Geodos são Pedras ocas que
+                    podem conter outras Pedras ou Minérios e podem ser abertos através do bloco "Cortador de Pedras". Bolsões de Lava que estão muito profundos, agora criam Gêisers de Lava que explodem de tempos em tempos. Também é possível
+                    encontrar Caixotes em minas, além de sacolas de mineradores antigos, que são encontradas em Loots. Por fim, podem ocorrer leves tremores de terra raramente. Embora os tremores não quebrem blocos, eles podem fazer com que
+                    Espeleotemas e pequenas Pedras caiam dos tetos das Cavernas. Colunas de mandeira numa área de 3x3 impedem que tremores afetem a determinada área.
+                    <doc.image src="DocumentationFiles/images/172.gif"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
                 <!-- #region Elementos Adicionados: Habitante das Cavernas -->
                 <doc.topic topicid="2_40">
                     <doc.topictitle>Elementos Adicionados: Habitante das Cavernas</doc.topictitle>
@@ -2285,6 +2301,27 @@ B = rnd()
                     Diversas novas animações de terceira pessoa foram adicionadas ao modelo 3D do jogador. Dentre as novas animações estão as animações de comer, beber, olhar mapas, usar o escudo, usar arcos e bestas, remar com botes e
                     barcos, segurar as cordas do cavalo, subir escadas, rastejar, etc.
                     <doc.image src="DocumentationFiles/images/170.gif"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Alterações do Vanilla: IA de Mobs Melhorada -->
+                <doc.topic topicid="4_21">
+                    <doc.topictitle>Alterações do Vanilla: IA de Mobs Melhorada</doc.topictitle>
+
+                    A IA e comportamento de diversos mobs foram alterados ou aprimorados. Agora, alguns monstros são atraídos por sangue que cai de você, sempre que você recebe dano. Além disso, muitos monstros serão atraídos por fontes de
+                    luz expostas, ruídos como blocos quebrando ou pistões funcionando, placas de pressão, baús, alimentação, etc. A maioria dos monstros também serão capazes de te ver de mais longe, e atrairem outros monstros próximos deles
+                    para te atacarem também. Você também ouvirá um efeito sonoro de grunhido sempre que um monstro que é capaz de ouvir, ou ser atraído por sangue, te notar.
+                    <br>
+                    <br>
+                    Já nos mobs passivos, eles gritarão e alertarão seus colegas sempre que entrarem em pânico. Os porcos agora poderão ter ninhadas de 1 a 3 filhotes, as Ovelhas fugirão de Lobos e Jaguatiricas atacarão Papagaios. E
+                    finalmente os Ursos Polares serão capazes de atacarem Peixes. A Cegueira agora é capaz de reduzir o campo de visão de mobs afetados em até 90%. Mobs que são capazes de abrirem Portas (como Aldeões), agora também serão
+                    capazes de abrirem Portões de Cerca.
+                    <br>
+                    <br>
+                    Em mobs hostís específicos, Saqueadores agora possuem uma nova IA que faz com que eles andem o tempo todo para evitarem ser alvos fáceis. Golens de Neve lançam bolas de neve que podem te causar um efeito de congelamento
+                    a cada ataque. Os Zumbis Múmias agora andarão em blocos arenosos e tentarão te enterrar sempre que possível. Por fim, a cereja do bolo é que diversos monstros podem agora pular para te alcançar, sempre que necessário.
+                    <doc.image src="DocumentationFiles/images/173.gif"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
