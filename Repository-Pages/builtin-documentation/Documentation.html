@@ -471,8 +471,8 @@
 
                     Diversos ajustes menores foram feitos e mecânicas menores foram adicionadas ou reformuladas neste modpack, graças aos mods Quark, Vanilla Tweaks, V-Tweaks, Supplementaries, YUNG's Better Mineshafts, YUNG's
                     Extras, YUNG's Bridges, YUNG's Better Dungeons, The Fence Unleashed, Upcycle, Visible Toggle Sprint, More Wandering Trades, Overworld Netherite Ore, K-Turrets, Overworld Quartz, Horror Elements Mod, Golems Are Friends
-                    Not Fodder, Mob Sunscreen e What's That Slot. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividida entre as mudanças em destaque, que são mudanças menores, mas que merecem um certo destaque,
-                    e as mudanças de menor destaque.
+                    Not Fodder, Rex's Additional Structures, Mob Sunscreen e What's That Slot. Veja a lista completa de recursos abaixo para saber de tudo. A lista foi dividida entre as mudanças em destaque, que são mudanças menores, mas
+                    que merecem um certo destaque, e as mudanças de menor destaque.
 
                     <doc.topicsubtitle>Mudanças de Destaque</doc.topicsubtitle>
                     <doc.list>
@@ -588,6 +588,7 @@
                         <doc.listr>No mundo agora haverão diversos detalhes e estruturas que contribuirão com a temática de fim de mundo e terror.</doc.listr>
                         <doc.listr>Agora os aldeões com cargo de Armeiros, Ferreiros e Armadureiros irão correr para reparar os Golems de Ferro danificados, sempre que possível, automaticamente.</doc.listr>
                         <doc.listr>Os Zumbis agora não mais entram em combustão durante o dia.</doc.listr>
+                        <doc.listr>Diversas novas estruturas de ambiente foram adicionadas, como Acampamentos, Pilares, Palmeiras, etc. Além disso, Templos, Dungeons e outras estruturas de exploração foram adicionadas! Cuidado com as armadilhas!</doc.listr>
                     </doc.list>
 
                     <doc.topicsubtitle>Melhores Camadas Para Encontrar Minérios Novos e Vanilla</doc.topicsubtitle>
@@ -1239,7 +1240,9 @@ B = rnd()
                     Por fim, os Filtros de Esteira são capazes de separar itens e envia-los em diferentes direções, com base no tipo de item!
                     <doc.image src="DocumentationFiles/images/83.gif"></doc.image>
                     <doc.info>
-                        É possível controlar o funcionamento de Esteiras e Braços Robôs, usando sinal de Redstone.
+                        Note que os Braços Robôs não conseguem extrair items para enviar para alguns Blocos específicos (como o Minerador ou o Liberador Preciso, geralmente Blocos que usam Fluxo de Redstone), por isso, você pode usar um
+                        Funil para servir de interface universal. Para isso, conecte um Funil ao Bloco que você quer inserir os itens, em seguida, monte uma linha de esteiras e Braços Robôs para levar os itens para o tal Funil e o Funil irá
+                        colocar os itens no Bloco. Além disso, é possível controlar o funcionamento de Esteiras e Braços Robôs, usando sinal de Redstone.
                     </doc.info>
 
                 </doc.topic>
@@ -1253,7 +1256,9 @@ B = rnd()
                     "Tubo de vácuo para itens", então é só conectar a Bomba para um bloco com inventário e conectar a Bomba através de tubos a outro bloco com inventário.
                     <doc.image src="DocumentationFiles/images/84.gif"></doc.image>
                     <doc.info>
-                        A "Bomba de itens à vácuo" pode ser controlada para ser desligada ou ligada, usando sinal de Redstone.
+                        Note que as Bombas não conseguem extrair items para enviar para alguns Blocos específicos (como o Minerador ou o Liberador Preciso, geralmente Blocos que usam Fluxo de Redstone), por isso, você pode usar um Funil
+                        para servir de interface universal. Para isso, conecte um Funil ao Bloco que você quer inserir os itens, em seguida, monte uma linha de Tubos a Vácuo e Bomba de Itens a Vacuo para levar os itens para o tal Funil e o
+                        Funil irá colocar os itens no Bloco. Além disso, a "Bomba de itens à vácuo" pode ser controlada para ser desligada ou ligada, usando sinal de Redstone.
                     </doc.info>
 
                 </doc.topic>
@@ -1270,6 +1275,7 @@ B = rnd()
                     <doc.image src="DocumentationFiles/images/86.png"></doc.image>
                     O próximo item são os Canos. Os Canos conseguem transportar fluídos de um Bloco com inventário de fluídos ou tanque (como o Funil de Fluídos ou Caldeirão) para outro bloco com inventário de fluídos ou tanque. Para que um
                     Cano possa extrair fluídos de um bloco, o Cano que se conecta ao bloco precisa ter o "Módulo de Extração Para Canos", então, se o encanamento estiver conectado a um bloco com inventário de fluídos, o transporte começa.
+                    Você também pode usar uma Chave Inglesa num Cano, se quiser desfazer ou refazer a sua conexão.
                     <doc.image src="DocumentationFiles/images/87.png"></doc.image>
                     <doc.info>
                         Se você colocar uma "Placa de Circuito Impresso Avançada" num Cano, você poderá usar sinal Redstone para controlar o funcionamento do Cano.
@@ -1282,6 +1288,9 @@ B = rnd()
                     converte-la num Balde com Água e por fim transformar esse Balde com Água de volta num Fluído apenas. Para fazer essa conversão, a chave são os blocos Ejetores, que caso tenham um Balde dentro deles, conseguem capturar o
                     Fluído na frente deles, ou colocar o Fluído na frente deles de volta. Veja o exemplo abaixo...
                     <doc.image src="DocumentationFiles/images/88a.gif"></doc.image>
+                    <doc.info>
+                        Os blocos de "Câmara de Solidificação" e "Câmara de Fusão" também oferecem uma maneira alternativa e simplificada para esse trabalho de Engarrafamento ou Desengarrafamento de fluídos.
+                    </doc.info>
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -1335,7 +1344,8 @@ B = rnd()
                     <br>
                     A Locomotiva à Diesel utiliza o combustível de Biodiesel (<doc.icon src="DocumentationFiles/images/105.png"></doc.icon>). Ela possui um tanque com capacidade de 2 Baldes de Biodiesel, o tanque é esvaziado lentamente de
                     acordo com a distância percorrida pela Locomotiva. Para encher o tanque, basta fornecer Frascos com Biodiesel para os Slots indicados. Os Frascos utilizados para encher o tanque da Locomotiva são descartados no Slot
-                    abaixo dos 3 Slots de combustível. Os Frascos vazios ou com combustível também podem ser retirados ou inseridos na Locomotiva, de maneira automática, usando Funis.
+                    abaixo dos 3 Slots de combustível. Os Frascos vazios ou com combustível também podem ser retirados ou inseridos na Locomotiva, de maneira automática, usando Funis. A Fabricação de Biodiesel pode ser automatizada com a
+                    ajuda dos blocos de "Câmara de Solidificação" e "Câmara de Fusão" para o Engarrafamento e Desengarrafamento do Biodiesel.
                     <doc.image src="DocumentationFiles/images/106.png"></doc.image>
                     Você pode pintar a lataria da Locomotiva com um Corante em mãos. Feito isso, é só clicar com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva. Para pintar a base da Locomotiva, segure
                     <doc.detach>SHIFT</doc.detach> e com o Corante em mãos, clique com o <doc.detach>Botão Direito</doc.detach> do mouse na Locomotiva.
@@ -1405,6 +1415,11 @@ B = rnd()
                         <doc.listr><b>Trilho de Cruzamento</b>: Esse Trilho permite que duas linhas de Trilhos se cruzem de maneira funcional.</doc.listr>
                         <doc.listr><b>Trilho Direcional</b>: Esse Trilho, caso esteja energizado com Redstone, só permite que Locomotivas ou Carrinhos de Mina se movam na direção ao qual ele foi colocado. Serve como um limitador de direção para Carrinhos e Locomotivas. Além disso, se um Carrinho se mover contra a direção do Trilho, o Trilho o empurrará na direção em que ele permite os Carrinhos de se moverem.</doc.listr>
                     </doc.list>
+
+                    <doc.topicsubtitle>Novos Tipos de Carrinhos (ou Vagões)</doc.topicsubtitle>
+                    Há alguns novos Carrinhos adicionados, como os Carrinhos com Ejetores e os Carrinhos com Pistões. Consulte o tópico de "Ajustes e Adições Menores de Aspectos ou Mecânicas" para ver todos os novos tipos de Carrinhos
+                    adicionados, e que podem ser conectados as Locomotivas! Alguns dos novos Carrinhos possuem inventários acessíveis, e caso você não consiga conecta-los a uma Locomotiva usando um Pé de Cabra, tente segurar a tecla
+                    <doc.detach>SHIFT</doc.detach> enquanto clica nos vagões.
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -2087,13 +2102,15 @@ B = rnd()
                     conseguiram dominar ao menos o básico dos métodos Farmaceuticos.
 
                     <doc.topicsubtitle>Drogas</doc.topicsubtitle>
-                    Não é mais possível desenvolver Poções ou usar o Suporte de Poções. Agora só há as Drogas, e para os sobreviventes como nós, só existem uma pequena gama de Drogas disponíveis.
+                    Não é mais possível desenvolver Poções ou usar o Suporte de Poções. Agora só há as Drogas, e para os sobreviventes como nós, só existem uma pequena gama de Drogas disponíveis. As Drogas arremessáveis são focadas em
+                    suporte, enquanto as Drogas bebíveis são focadas em utilidade.
                     <doc.image src="DocumentationFiles/images/17.png"></doc.image>
-                    As Drogas agoram podem ser construídas a partir da Crafting Table e possuem diferentes embalagens para facilitar suas identificações. Você pode abrir o inventário para checar as Drogas disponíveis e a receita correta.
+                    Toda Droga, para ser fabricada, precisa de uma solução chamada "Droga Primitiva", que pode ser sintetizada usando os blocos de "Câmara de Fusão" e "Câmara de Solidificação". As Drogas agoram podem ser construídas a
+                    partir da Crafting Table e possuem diferentes embalagens para facilitar suas identificações. Você pode abrir o inventário para checar as Drogas disponíveis e a receita correta.
 
                     <doc.topicsubtitle>Diagramas</doc.topicsubtitle>
-                    Não é mais possível encantar Itens ou usar a Bancada de Encantamentos. Agora só há os Diagramas. Diagramas estão espalhados pelo mundo. É possível conseguir os Diagramas extremamente raros a partir de Loot, pois não
-                    possuem modos de faze-los através da Crafting Table.
+                    Não é mais possível encantar Itens ou usar a Bancada de Encantamentos. Agora só há os Diagramas. Diagramas estão espalhados pelo mundo. Nenhum Diagrama pode ser criado do zero, e a única maneira viável de usa-los, é
+                    encontrando Livros de Diagramas em Loots, em seguida, os copiando. Então após encontrar um Diagrama desejado, você poderá copia-lo quantas vezes quiser, e poderá usa-lo como base para melhorar o Diagrama de nível.
                     <doc.image src="DocumentationFiles/images/18.png"></doc.image>
                     Os Diagramas comuns, que podem ser feitos pelos sobreviventes, podem ser construídos a partir da Crafting Table e possuem diferentes capas para facilitar suas identificações. Você pode abrir o inventário para checar os
                     Diagramas disponíveis e suas respectivas receitas corretas. Os Diagramas podem ser aplicados em equipamentos, usando uma Bigorna.
