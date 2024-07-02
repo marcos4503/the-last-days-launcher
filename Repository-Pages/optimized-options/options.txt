@@ -317,6 +317,11 @@ key_key.cgm.reload:key.keyboard.r
 key_key.cgm.unload:key.keyboard.u
 key_key.cgm.attachments:key.keyboard.world.2
 key_key.spelunkers_charm.flashlight_toggle:key.keyboard.unknown
+key_key.cyclic.cake:key.keyboard.unknown
+key_key.energizedpower.teleporter.use:key.keyboard.unknown
+key_key.openManual:key.keyboard.unknown
+key_key.nextDestination:key.keyboard.unknown
+key_key.prevDestination:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
