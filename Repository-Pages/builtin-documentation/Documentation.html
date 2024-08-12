@@ -124,6 +124,8 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_42">Armas de Fogo</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_43">Coleta, Transporte e Armazenamento de Experiência</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_44">Novos Desenhos Para Estandartes</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_45">Sistema de Marcação com Giz</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_46">Sistema de Segurança</a></li>
                     </ul>
                     <li class="summarySubItem">Rebalanceamentos</li>
                     <ul>
@@ -610,7 +612,7 @@
                         <doc.listr>Diversas novos modelos de Cercas, Muros e Portões foram adicionados, com diversas variações para todos os gostos.</doc.listr>
                         <doc.listr>Foram adicionados também diversos Caminhos, que vão desde Tábuas de Madeira e Pedaços de Pedra.</doc.listr>
                         <doc.listr>Novos items adicionados. A "Carta e Envelope" e "Caixa de Correio" são uma dupla perfeita para comunicação entre jogadores offline. Você pode escrever em cartas, e assina-las. Se você deixar a Carta na sua mão direita e um item na mão esquerda, você poderá anexa-lo a Carta. A Carta por sua vez pode ser postada em Caixas de Correio de outros jogadores.</doc.listr>
-                        <doc.listr>Novos itens de decoração foram adicionados. Eles são a "Pilha de Livros", "Fio de Bandeiras", "Chaminés", "Barras de Ferro de Acabamento", "Porta Retratos", "Tabuleiro de Xadrez", "Pilha de Pergaminhos", "Telescópio" e "Dados".</doc.listr>
+                        <doc.listr>Novos itens de decoração foram adicionados. Eles são a "Pilha de Livros", "Fio de Bandeiras", "Barras de Ferro de Acabamento", "Porta Retratos", "Tabuleiro de Xadrez", "Pilha de Pergaminhos", "Telescópio" e "Dados".</doc.listr>
                         <doc.listr>Novo bloco adicionado. O "Asfalto" é fácil de se criar e ótimo para criar caminhos.</doc.listr>
                         <doc.listr>Novos blocos adicionados. A "Mesa", "Mesa Reforçada" e "Mesa Arredondada" são perfeitas para criar ambientes. A "Mesa" comum também pode ser usada como estrutura multi-blocos.</doc.listr>
                         <doc.listr>Novos blocos adicionados. O "Armário de Cabeceira", "Bancada de Cozinha", "Armário" e "Guarda Roupas" podem ser usados como mesas, podem ser usados como estruturas multi-blocos e ainda podem guardar itens.</doc.listr>
@@ -620,6 +622,7 @@
                         <doc.listr>Novo bloco adicionado. Os "Toldos" são os itens perfeitos para decorar suas janelas. Os Toldos estão disponíveis em todas as cores.</doc.listr>
                         <doc.listr>Novo bloco adicionado. As "Cortinas" possuem diversas cores, e são perfeitas para dar o toque mais bonito as suas janelas, além de poderem ser colocadas como estruturas multi-blocos para aumentar o tamanho da cortina.</doc.listr>
                         <doc.listr>Novo bloco adicionado. Os "Ladrilhos" são perfeitos para alguns tipos de acabamentos.</doc.listr>
+                        <doc.listr>Novos blocos adicionados. As "Chaminés" são itens decorativos que emitem fumaça. Você pode usar sinais de Redstone para desligar a emissão de fumaça. Após um tempo, as Chaminés se sujam e você pode usar um Machado para limpa-las, obtendo Corante Preto no processo.</doc.listr>
                     </doc.list>
 
                     <doc.topicsubtitle>Adições de Blocos de Redstone e Fluxo de Redstone</doc.topicsubtitle>
@@ -729,9 +732,9 @@
                     <doc.topictitle>Elementos Adicionados: Redstone Sem Fio</doc.topictitle>
 
                     O sistema de Redstone Sem Fio permite que você transmita sinais de Redstone em longas distâncias, totalmente sem fio, através de sinal de rádio. Tudo que você precisa para enviar e receber sinais, é de um Transmissor e
-                    um Receptor.
-                    <br>
-                    <br>
+                    um Receptor. Há a maneira Padrão de transmissão Sem Fio e a maneira mais segura de transmissão Sem Fio. Veja as duas, abaixo.
+
+                    <doc.topicsubtitle>Maneira Padrão</doc.topicsubtitle>
                     Para enviar o sinal, você precisará de um "Transmissor Redstone Sem Fio". Em seguida, basta clicar com o <doc.detach>Botão Direito</doc.detach> no Transmissor e escolher um canal. Há um número quase ifinito de canais
                     para se usar. Para receber um sinal de Redstone, você precisará usar o "Receptor Redstone Sem Fio". Ao colocar um destes, clique com o <doc.detach>Botão Direito</doc.detach> do mouse nele, e então defina o mesmo canal do
                     Transmissor. Dessa forma, se o Transmissor emitir um sinal, o Receptor o receberá e repassará para blocos vizinhos. Note que a distância máxima de transmissão sem fio é de 256 blocos.
@@ -740,6 +743,25 @@
                     Redstone", então, basta colocar o Receptor onde preferir e coneta-lo a algo usando redstone. Após isso basta pegar o seu controle e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no bloco Receptor, enquanto
                     está com o controle na mão. Após isso, o controle já estará vinculado e é só usar o <doc.detach>Botão Direito</doc.detach> do mouse para enviar sinais ao bloco Receptor!
                     <doc.image src="DocumentationFiles/images/91.gif"></doc.image>
+
+                    <doc.topicsubtitle>Maneira Mais Segura</doc.topicsubtitle>
+                    Usar o item "Transmissor Redstone Sem Fio" implica numa chance de que alguém que não seja você, conectado no mesmo Canal, possa receber o seu Sinal de Redstone Sem Fio também. Se você estiver numa situação em que seja
+                    necessário que ninguém mais receba seu Sinal de Redstone, ou se você precisar transmitir Sinal Seguro de Redstone (que é o tipo de Sinal emitido por blocos de Segurança, como o Painel de Senha ou Leitor de Cartões), você
+                    pode usar o item "Interface SSL Sem Fio Redstone".
+                    <br>
+                    <br>
+                    A Interface SSL Sem Fio Redstone oferece uma maneira alternativa de enviar e receber Sinal Seguro de Redstone ou Sinal de Redstone comum, sem fio. Graças a tecnologia Secure Socket Layer, este é o único
+                    dispositivo sem fio que pode transportar Sinal Seguro de Redstone, e sem risco de interceptação. Este dispositivo contém o Receptor e Transmissor dentro de si, isso significa que ele pode atuar no modo Receptor ou
+                    Transmissor, cabendo a você, escolher em qual modo ele deve operar.
+                    <br>
+                    <br>
+                    Para enviar o sinal, coloque a Interface no local desejado, conectado a um fio Redstone, dispositivo Redstone ou Bloco de Segurança que emita um Sinal Seguro de Redstone. Interaja com a Interface e configure-a para atuar
+                    no modo "Transmissor" e defina uma Frequência para ela. Para receber o sinal, coloque mais uma Interface conectada ao dispositivo que vai receber o Sinal de Redstone, interaja com a Interface e configure-a para atuar no
+                    modo "Receptor" e configure a mesma Frequência do "Transmissor". Dessa forma, se o Transmissor emitir um sinal, o Receptor o receberá e repassará para blocos vizinhos.
+                    <doc.image src="DocumentationFiles/images/213.png"></doc.image>
+                    Se você quiser que a Interface transmita somente Sinal Seguro de Redstone, alterne a opção "Sinal Seguro" para "Sim", dessa forma a Interface só transmitirá Sinais Seguros encontrados, advindos de dispositivos ou blocos
+                    do Sistema de Segurança, como Sensores a Laser, Paineis de Senha, Leitores de Cartões, etc. Note também que os Transmissores e Receptores que têm Frequências diferentes ou são pertencentes a jogadores diferentes não
+                    podem se comunicar entre si.
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -2037,6 +2059,29 @@ B = rnd()
                         Esta Arma possui um Projétil lento, e para acertar alvos muito distantes você precisará compensar a mira!
                     </doc.info>
 
+                    <doc.topicsubtitle>Pistola Taser</doc.topicsubtitle>
+                    Esta é uma Pistola não letal que é muito útil para defesa pessoal. Sua principal finalidade é retardar o alvo e facilitar a sua fulga ou perseguição. Por padrão, esta Arma não fica no modo carregado, e você pode notar
+                    isso por que ela fica na cor amarela. Enquanto está no modo padrão, ela não consome munição, só causa 0.5 de dano por tiro, e aplica um efeito de Lentidão 1 por 3.5 segundos ao alvo. Se você segurar
+                    <doc.detach>SHIFT</doc.detach> e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse enquanto o Taser está em suas mãos, ela mudará para o modo Carregado. No modo Carregado, ela consumirá 1 de Redstone por tiro,
+                    além de causar 4 de dano por tiro e aplicar os efeitos de Lentidão 4 e Nausea 5 por 5 segundos. Para funcionar, a Redstone precisa estar no seu inventário, pois o Taser não armazena munição dentro dele.
+                    <doc.image src="DocumentationFiles/images/187.png"></doc.image>
+                    Veja a sua Ficha Técnica...
+                    <doc.table>
+                        <doc.tablecw>30%=>auto</doc.tablecw>
+                        <doc.tablec>Status=>Descrição</doc.tablec>
+                        <doc.tabler>Dano Por Tiro=>0.25 corações (0.5) e 2 corações (4) enquanto Carregada</doc.tabler>
+                        <doc.tabler>Dano Por Segundo=>0.004 coração (0.04) e 0.3 coração (0.3) enquanto Carregada</doc.tabler>
+                        <doc.tabler>Cadência=>1 tiro a cada 12 segundos</doc.tabler>
+                        <doc.tabler>Efeitos Dados=>Lentidão I por 3.5 segundos e Lentidão IV + Nausea V por 5.0 segundos enquanto Carregada</doc.tabler>
+                        <doc.tabler>Capacidade=>0 balas</doc.tabler>
+                        <doc.tabler>Tipo de Munição=>Redstone</doc.tabler>
+                        <doc.tabler>Velocidade do Projétil=>2250 metros por segundo</doc.tabler>
+                        <doc.tabler>Tempo de Recarga=>Muito Lento</doc.tabler>
+                        <doc.tabler>Distância Efetiva Sem ADS=>12 blocos</doc.tabler>
+                        <doc.tabler>Distância Efetiva Com ADS=>Sem ADS</doc.tabler>
+                        <doc.tabler>Acessórios Suportados=>Nenhum</doc.tabler>
+                    </doc.table>
+
                     <doc.topicsubtitle>Lança Granadas</doc.topicsubtitle>
                     Uma opção barata para quem gosta de destruição, explosões e gritaria! Consegue suprir suas necessidades de explosões e destruição de uma maneira simples, porém, exige uma certa curva de aprendizado. É uma ótima arma para
                     causar dano em área.
@@ -2121,6 +2166,236 @@ B = rnd()
 
                     Há 29 novos desenhos para Estandartes e Bandeiras disponíveis! A maioria deles podem ser fabricados normalmente, porém, alguns só são obtiveis através dos Vendedores Ambulantes!
                     <doc.image src="DocumentationFiles/images/168.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Sistema de Marcação com Giz -->
+                <doc.topic topicid="2_45">
+                    <doc.topictitle>Elementos Adicionados: Sistema de Marcação com Giz</doc.topictitle>
+
+                    Agora, é possível criar Gizes para desenhar em blocos, o que pode ser muito útil para demarcar locais e direções, bem como marcar locais explorados. Você pode pressionar <doc.detach>E</doc.detach> para ver a receita de
+                    fabricação de Gizes. Eles estão disponíveis em todas as cores.
+                    <doc.image src="DocumentationFiles/images/183.png"></doc.image>
+                    Para fazer uma marcação, com o Giz em mãos, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse num bloco. Por padrão o simbolo desenhado é uma Seta, e ela vai apontar para a direção que você clicou no
+                    bloco. Porém, se você quiser, também é possível desenhar outros simbolos, como Caveira, Casa, Coração, etc. Para isso, segure <doc.detach>SHIFT</doc.detach> e clique com o <doc.detach>Botão Direito</doc.detach> do mouse
+                    no bloco desejado, então você poderá escolher o simbolo a ser desenhado.
+                    <doc.image src="DocumentationFiles/images/184.png"></doc.image>
+                    Para maior comodidade, também é possível guardar seus Gizes numa Caixa de Giz, e com a Caixa de Giz em mãos, você também pode usa-la para desenhar, do mesmo modo que usaria um Giz comum. A Caixa de Giz sempre usará o
+                    primeiro Giz dentro do inventário da Caixa, para desenhar, e quando este Giz acaba, a Caixa escolhe o próximo Giz automaticamente. Você pode ver o Giz sendo usado, no ícone da Caixa de Giz.
+                    <doc.image src="DocumentationFiles/images/185.png"></doc.image>
+                    Você também pode colocar "Sacos de Tinta" ou "Pós de Pedra Luminosa" no Slot especial da Caixa de Giz, para que todos os simbolos que você desenhar, fiquem brilhantes.
+                    <doc.image src="DocumentationFiles/images/186.png"></doc.image>
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Elementos Adicionados: Sistema de Segurança -->
+                <doc.topic topicid="2_46">
+                    <doc.topictitle>Elementos Adicionados: Sistema de Segurança</doc.topictitle>
+
+                    Há um novo Sistema inteiro voltado para a segurança, para facilitar a vigília, monitoramento ou proteção da sua base. Nesse Sistema, há diversos blocos, dispositivos e outras ferramentas para atender a todas as suas
+                    necessidades de privacidade e segurança. Neste tópico, você aprenderá tudo que é relevante sobre esses equipamentos e blocos.
+                    <br>
+                    <br>
+                    Todos os blocos e dispositivos relacionados a segurança, que são possíveis de serem colocados no
+                    mundo, são Blindados. Isso significa que aquele bloco não pode ser destruído por jogadores que não sejam os seus respectivos donos. Além disso, eles também são completamente ivulneráveis e não podem ser explodidos ou
+                    queimados com fogo, além disso, nenhum bloco de Redstone que faça interações com outros blocos (como Funil, Pistão, Comparador) podem interagir com blocos Blindados. Os blocos Blindados só podem ser destruídos usando uma
+                    nova ferramenta chamada "Serra Removedora de Blocos de Segurança ou Blindados".
+                    <br>
+                    <br>
+                    Dito isto, vamos focar primeiramente nos blocos simples. No momento, há versões Blindadas somente para o Vidro, Pedra Lisa, Ardósia Polida, Bloco de Ferro, Bloco de Ouro e Bloco de Quartzo.
+                    <doc.image src="DocumentationFiles/images/188.png"></doc.image>
+                    Para destruir um bloco ou dispositivo Blindado, primeiro, tenha em mãos a "Serra Removedora de Blocos de Segurança ou Blindados", em seguida, basta pressionar o <doc.detach>Botão Direito</doc.detach> do mouse, no bloco a
+                    ser destruido. Não é possível quebrar os blocos Blindados com a mão ou outros tipos de ferramentas, mesmo que você seja o dono dos blocos Blindados.
+                    <doc.image src="DocumentationFiles/images/189.gif"></doc.image>
+                    Agora, você verá mais sobre todos os outros componentes ligados ao Sistema de Segurança!
+                    <doc.info>
+                        Os Blocos Blindados podem transmitir Sinal de Redstone normalmente, assim como as suas versões normais.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Pistões Blindados e Funis Blindados</doc.topicsubtitle>
+                    Os Pistões e Funis são versões Blindadas presentes no Sistema de Segurança. Eles são os ÚNICOS blocos Redstone interativos, capazes de interagir com Blocos Blindados. O "Pistão Blindado" e "Pistão Grudento Blindado"
+                    fazem o mesmo trabalho que os Pistões padrões fazem, porém, eles podem empurrar e puxar tanto Blocos Comuns quanto Blocos Blindados.
+                    <br>
+                    <br>
+                    Já o Funil Blindado, também faz a mesma coisa que o Funil Comum faz, porém, o Funil Blindado é capaz de extrair ou colocar itens em Blocos Blindados. O Funil Blindado pode ser muito útil para transferir itens do
+                    inventário de Blocos Blindados para o inventário de Blocos Comuns e vice-versa.
+                    <doc.image src="DocumentationFiles/images/190.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Portas Blindadas e Alçapões Blindados</doc.topicsubtitle>
+                    A Porta Blindada e Alçapões Blindados funcionam exatamente como as Portas e Alçapões padrões do jogo, porém, a Porta Blindada e Alçapão Blindado não podem ser abertos com a mão ou por Sinal de Redstone comum, somente com
+                    Sinal Seguro de Redstone. O Sinal Seguro de Redstone funciona exatamente como Sinais de Redstone padrão, porém, só é emitido por blocos que emitem Sinal Seguro de Redstone, como Leitores de Cartões, Paineis de Senha e
+                    outros blocos do Sistema de Segurança. Para que essa Porta e Alçapão possam se abrir, o bloco emissor de Sinal Seguro de Redstone deve estar ao lado da Porta ou Alçapão, mas se você preferir deixar o emissor de Sinal
+                    Seguro mais distante, você pode usar a "Interface SSL Sem Fio Redstone", que será falado mais abaixo.
+                    <doc.image src="DocumentationFiles/images/191.png"></doc.image>
+
+                    <doc.topicsubtitle>Painel de Senha</doc.topicsubtitle>
+                    O Painel de Senha é um bloco de segurança que lhe permite guardar uma senha numérica, e uma vez que essa senha esteja armazenada, qualquer jogador que interagir com o Painel de Senha, poderá inserir uma senha, se a
+                    senha correta for inserida, o Painel de Senha emitirá Sinal de Redstone comum e Sinal Seguro de Redstone por um curto período de tempo, configurável.
+                    <doc.image src="DocumentationFiles/images/193.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Baú Cofre e Barril Cofre</doc.topicsubtitle>
+                    O Baú Cofre e Barril Cofre funcionam exatamente como suas versões padrões, porém, se o usuário tentar abrir o Baú ou Barril, será solicitado que ele insira uma senha, exatamente como o bloco "Painel de Senha" funciona.
+                    Se o usuário inserir a senha correta, ele conseguirá acessar todos os itens presentes no Baú ou Cofre. Diferentemente do "Painel de Senha", estes blocos não emitem Sinal de Redstone se uma senha correta for inserida.
+                    <doc.image src="DocumentationFiles/images/194.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Case Cofre de Exibição</doc.topicsubtitle>
+                    O "Case Cofre de Exibição" funciona como as Molduras do Minecraft, porém, é exigido senha para que você possa guardar ou tirar itens do Case. Para abrir o Case, você verá uma tela similar a tela de senha do bloco "Painel
+                    de Senha". Se você inserir a senha correta, o Case se abre. Com ele aberto, você pode clicar com o <doc.detach>Botão Direito</doc.detach> do mouse com o item em mãos, então, ele será guardado dentro do Case. Se quiser
+                    tirar o item do Case, com ele aberto, clique com o <doc.detach>Botão Direito</doc.detach> do mouse enquanto segura <doc.detach>SHIFT</doc.detach>. Para fechar o case, basta clicar com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse no Case. Uma vez que ele esteja fechado, ele só abrirá novamente perante senha correta informada.
+                    <doc.image src="DocumentationFiles/images/195.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Leitor e Codificador de Cartões</doc.topicsubtitle>
+                    O Leitor e Codificador de Cartões oferece uma tecnologia alternativa ao bloco "Painel de Senha". Este bloco funciona de maneira similar ao bloco "Painel de Senha", porém, não exige a digitação de Senhas Numéricas, mas
+                    sim Cartões. Se a autenticação for feita com sucesso, ele também emitirá Sinal de Redstone comum e Sinal Seguro de Redstone.
+                    <br>
+                    <br>
+                    Para usar o sistema de Cartões, você pode colocar o Leitor e Codificador de Cartões no local desejado. Em seguida, interaja com o bloco e defina uma "Chave Eletrônica" que será aceita por este Leitor, conforme a imagem
+                    mostra abaixo.
+                    <doc.image src="DocumentationFiles/images/196.png"></doc.image>
+                    Além de definir uma "Chave Eletrônica", você precisa definir os Níveis de Cartão aos quais o Leitor e Codificador aceitará.
+                    <doc.image src="DocumentationFiles/images/197.png"></doc.image>
+                    Uma vez que a Chave Eletrônica esteja definida e os Níveis configurados, você só precisa gravar a Chave Eletrônica num "Cartão Chave de Acesso". Há um total de 5 níveis desses Cartões, nada demais muda entre eles, apenas
+                    as Cores, mas a maneira de funcionar e usar, é exatamente a mesma. Para gravar a Chave Eletrônica num Cartão, basta coloca-lo no Slot dedicado, e clicar em "Gravar Em", como mostra a imagem abaixo.
+                    <doc.image src="DocumentationFiles/images/198.png"></doc.image>
+                    Uma vez que a Chave Eletrônica estiver gravada no cartão, você poderá visualiza-la passando o mouse sobre o item do Cartão.
+                    <doc.image src="DocumentationFiles/images/199.png"></doc.image>
+                    Agora que o Cartão possui uma Chave Eletrônica gravada nele, você pode usa-lo em seus Leitores e Codificadores de Cartões, para autenticação. Para isso, com o Cartão em mãos, clique com o
+                    <doc.detach>Botão Direito</doc.detach> do mouse no bloco do "Leitor e Codificador de Cartões". Se o Cartão tiver a mesma Chave Eletrônica do Leitor, e obedecer ao requisito de Nível do Leitor, ele será autenticado e irá
+                    emitir Sinal de Redstone e Sinal Seguro de Redstone por um curto período de tempo, configurável. Tenha em mente que seu Cartão só funcionará para autenticação se o Leitor e Codificador tiver a mesma Chave Eletrônica
+                    configurada, e pertencer ao mesmo dono do bloco Leito e Codificador de Cartões.
+                    <doc.image src="DocumentationFiles/images/200.gif"></doc.image>
+                    Se você tiver muitos Cartões, você pode criar um item chamado "Porta Cartões NFC" e guardar seus Cartões dentro dele. Quando precisar usar um Cartão, você não precisa tirar seu Cartão de dentro do Porta Cartões, basta
+                    deixar o Porta Cartões em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Leitor e Codificador de Cartões desejado. Se algum Cartão dentro do Porta Cartões atender aos requisitos do Leitor, a
+                    autenticação será efetuada com sucesso.
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Scanner de Retina</doc.topicsubtitle>
+                    O Scanner de Retina emite Sinal de Redstone comum e Sinal Seguro de Redstone sempre que seu dono ou outro jogador/mob autorizado olha pra ele. O problema, é que ele pode ser enganado se o jogador estiver vestindo a
+                    Cabeça do jogador dono do Scanner.
+                    <doc.image src="DocumentationFiles/images/201.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Sensor de Movimento à Laser</doc.topicsubtitle>
+                    O Sensor de Movimento à Laser detecta jogadores ou entidades que passam através do Laser, e pode emitir Sinal de Redstone comum e Sinal Seguro de Redstone. Você pode configurar o bloco para aplicar filtros e
+                    configurações desejadas na detecção. Se você criar um item chamado "Lente", tingi-la e colocar no Sensor, o Laser poderá ser emitido numa cor diferente.
+                    <doc.image src="DocumentationFiles/images/202.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Scanner de Inventário</doc.topicsubtitle>
+                    O Scanner de Inventário detecta jogadores ou entidades que passam pelo seu Laser e checa seus inventários. Há diversos ajustes possíveis de serem efetuados neste bloco, mas entre seus principais recursos, estão o fato
+                    de ele permitir checar se o inventário do jogador possui um determinado item, e se houver, o Scanner pode pegar o item e/ou emitir Sinal de Redstone comum e Sinal Seguro de Redstone. Se você criar um item chamado
+                    "Lente", tingi-la e colocar no Sensor, o Laser poderá ser emitido numa cor diferente.
+                    <doc.image src="DocumentationFiles/images/203.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Registro Detector de Jogadores</doc.topicsubtitle>
+                    O Registro Detector de Jogadores vai registrar o Nome de Usuário de jogadores próximos, enquanto receber qualquer tipo de Sinal de Redstone.
+                    <doc.image src="DocumentationFiles/images/204.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Alarme Silencioso</doc.topicsubtitle>
+                    O Alarme Silencioso vai te enviar uma mensagem de aviso sempre que um jogador estiver próximo a ele. Essa mensagem é enviada em seu Chat, a qualquer distância que você estiver. Ele também pode emitir Sinal de Redstone
+                    comum e Sinal Seguro de Redstone.
+                    <doc.image src="DocumentationFiles/images/205.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Projetor de Blocos Holográfico</doc.topicsubtitle>
+                    O Projeto de Blocos Holografico projeta Blocos falsos no local que você configurar para projetar. Você só precisar fornecer um Bloco para ele. Os blocos projetos não possuem física.
+                    <doc.image src="DocumentationFiles/images/206.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Câmera de Segurança e Tablet Visualizador</doc.topicsubtitle>
+                    A "Câmera de Segurança" e o "Tablet Visualizador de Câmeras de Segurança" compoem juntos um sistema incrível de vigilância. Para usar as Câmeras, tudo que você vai precisar fazer é colocar as Câmeras onde você preferir.
+                    Há diversas configurações e ajustes disponíveis para as Câmeras. Se você criar um item chamado "Lente", tingi-la e colocar na Câmera, a imagem exibida terá uma cor diferente.
+                    <doc.image src="DocumentationFiles/images/207.png"></doc.image>
+                    Uma vez que você tenha as Câmeras, só precisará do "Tablet Visualizador de Câmeras de Segurança". o Tablet permite que você possa visualizar a imagem das suas Câmeras de Segurança em tempo real, de qualquer distância.
+                    Para isso, o Tablet deve ser vinculado com suas Câmeras de Segurança, e é possível vincular um total de até 30 Câmeras para cada Tablet. Para vincular, com o Tablet em Mãos, basta clicar
+                    com o <doc.detach>Botão Direito</doc.detach> do mouse na Câmera que você deseja vincular, em seguida, ela aparecerá disponível na interface do Tablet, disponível para que você possa acessa-la e visualizar sua imagem.
+                    <doc.image src="DocumentationFiles/images/208.png"></doc.image>
+                    Se você quiser desvincular a Câmera, basta clicar no ícone de exclusão, conforme indicado na imagem abaixo...
+                    <doc.image src="DocumentationFiles/images/209.png"></doc.image>
+                    Se quiser acessar a Câmera, basta clicar no botão contendo o número da Câmera. As Câmeras possuem diversos controles para você utilizar enquanto você está visualizando a imagem delas, e com as melhorias, pode ser até
+                    possível que você emita Sinal de Redstone quando quiser, enquanto está conectado a elas.
+                    <doc.image src="DocumentationFiles/images/210.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Mega Auto-Falante de Alarme Sonoro</doc.topicsubtitle>
+                    O "Mega Auto-Falante de Alarme Sonoro" é capaz de tocar qualquer som do jogo a uma distância de até 256 blocos, configurável. O som é reproduzido enquanto o Mega Auto-Falante recebe qualquer tipo de Sinal de Redstone.
+                    <doc.image src="DocumentationFiles/images/211.png"></doc.image>
+                    <doc.info>
+                        Usando um item chamado "Chave de Ajuste para Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>), você pode ajustar parâmetros e preferências de funcionamento dos Blocos, inclusive
+                        adicionar Módulos opcionais aos Blocos, que trarão funcionalidades adicionais para cada Bloco. Para isso, basta ter a Chave em mãos e clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no Bloco a ser
+                        configurado.
+                    </doc.info>
+
+                    <doc.topicsubtitle>Interface SSL Sem Fio Redstone</doc.topicsubtitle>
+                    A Interface SSL Sem Fio Redstone oferece uma maneira alternativa de enviar e receber Sinal Seguro de Redstone ou Sinal de Redstone comum, sem fio. Graças a tecnologia opcional Secure Socket Layer, este é o único
+                    dispositivo sem fio que pode transportar Sinal Seguro de Redstone. Ele é abordado mais detalhadamente <a href="#2_7b">neste tópico</a>.
+
+                    <doc.topicsubtitle>Módulos e Configurações Exclusivas</doc.topicsubtitle>
+                    Com exceção de pouquissimos blocos, todos os blocos que fazem parte do Sistema de Segurança, possuem opções únicas que podem ser ajustadas para atender melhor ao seu caso de uso. Desde Câmeras e Alarmes, até Baús Cofres
+                    e Sensores, todos possuem configurações únicas e suporte a Módulos de melhorias que desbloqueiam recursos únicos em cada equipamento ou bloco do Sistema de Segurança.
+                    <br>
+                    <br>
+                    Se você quiser acessar a tela de configurações de cada bloco do Sistema de Segurança, basta clicar com o <doc.detach>Botão Direito</doc.detach> do mouse no bloco a ser configurado, enquanto possui a "Chave de Ajuste para
+                    Blocos de Segurança" (<doc.icon src="DocumentationFiles/images/192.png"></doc.icon>) em mãos. Após fazer isso, a tela irá se abrir e você poderá visualizar as configurações adicionais disponíveis para aquele bloco, além
+                    de ver quais Módulos de melhoria aquele bloco oferece suporte. Você pode passar o mouse no ícone de cada Módulo suportado para ver qual funcionalidade aquele Módulo adicionará ao bloco, se usado.
+                    <doc.image src="DocumentationFiles/images/212.gif"></doc.image>
 
                 </doc.topic>
                 <!-- #endregion -->
