@@ -161,6 +161,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="5_1">Sistema de Login</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="5_2">Novo Perfilador</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="5_3">Pré-Geração de Chunks</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="5_4">Alteração do Limite de Mobs</a></li>
                     </ul>
                     <li class="summarySubItem">Dicas</li>
                     <ul>
@@ -3298,6 +3299,40 @@ B = rnd()
                     Agora, os administradores de servidores do The Last Days poderão pré-gerar boa parte do mundo para que a geração de Chunks não ocorra enquanto os jogadores do servidor exploram o mundo. A geração
                     de Chunks é o calcanhar de Aquiles da maioria dos Modpacks, e a pré-geração resolve essa fonte de lag comum nos servidores. A pré-geração pode ser feita pelos administradores de servidores The Last Days, usando
                     o Painel de Servidor do The Last Days. Isso é algo que só será útil para os administradores de servidores de The Last Days, por isso foi colocado aqui nesta categoria! 😀
+
+                </doc.topic>
+                <!-- #endregion -->
+
+                <!-- #region Outros: Alteração do Limite de Mobs -->
+                <doc.topic topicid="5_4">
+                    <doc.topictitle>Outros: Alteração do Limite de Mobs</doc.topictitle>
+
+                    O Limite de Mobs na geração de mobs no Mundo, foi alterado. Os Limites abaixo, valem para cada jogador presente no jogo. Usando a fórmula <doc.detach>numeroDeMobs = constante * chunks / 289</doc.detach>, é possível
+                    chegar ao número de mobs que devem estar existindo para cada jogador.
+                    <br>
+                    <br>
+                    Os números abaixo são a "constante". O "chunks" é o número de chunks disponíveis para spawn de mobs, está em um quadrado 17x17 ao qual o jogador está no centro, então no Single Player a área é sempre 17x17 = 289. Observe
+                    que se houver vários jogadores, esse número pode ser maior, mas se 2 jogadores estiverem no mesmo lugar, a área de 17x17 irá se sobrepor. Os chunks não serão contados duas vezes (ou seja, se 2 jogadores estiverem no
+                    mesmo lugar, a contagem de chunks é a mesma como se houvesse apenas 1 jogador).
+                    <br>
+                    <br>
+                    Suponha que quiséssemos saber quantos mobs hostis podem aparecer se houver 2 jogadores no mundo, a 1 km de distância um do outro (para que suas regiões de spawn não se sobreponham). Haverá 2 * 17 * 17 = 578 chunks. Se a
+                    constante para "monstros" é 70. Portanto, o limite de mobs dessa categoria é de 70 * 578 / 289 = 140.
+                    <br>
+                    <br>
+                    Enquanto o limite de mob não estiver cheio, o jogo continuará gerando mobs desse tipo (a taxa de spawn é uma vez por tick para monstros e pode ser mais lenta para outros mobs). Mobs que são nomeados marcados ou
+                    persistentes não contam (com algumas poucas exceções como Withers e Shulkers). Gaiolas de Mob Spawners também não entram para o limite de mobs.
+                    <doc.table>
+                        <doc.tablecw>30%=>auto=>auto</doc.tablecw>
+                        <doc.tablec>Categoria=>Limite Vanilla=>Limite The Last Days</doc.tablec>
+                        <doc.tabler>Monstros (Zumbi, Afogado, etc)=>70=>80</doc.tabler>
+                        <doc.tabler>Criaturas (Passivos e Neutros)=>10=>30</doc.tabler>
+                        <doc.tabler>Ambientais (Morcegos, etc)=>15=>15</doc.tabler>
+                        <doc.tabler>Aquáticos (Lula, Golfinho, etc)=>5=>10</doc.tabler>
+                        <doc.tabler>Ambientais Aquáticos (Peixes)=>20=>20</doc.tabler>
+                        <doc.tabler>Profundos (Lula Brilhante)=>5=>5</doc.tabler>
+                        <doc.tabler>Axolotes (Somente Eles)=>5=>5</doc.tabler>
+                    </doc.table>
 
                 </doc.topic>
                 <!-- #endregion -->
