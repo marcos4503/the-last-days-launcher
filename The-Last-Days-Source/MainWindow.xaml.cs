@@ -34,6 +34,7 @@ namespace The_Last_Days_Launcher
             Home,
             UploadSkin,
             Documentation,
+            Preferences,
             About
         }
         public enum LauncherState
@@ -51,6 +52,7 @@ namespace The_Last_Days_Launcher
 
         //Private variables
         private System.Windows.Forms.NotifyIcon launcherTrayIcon = null;
+        private Preferences preferences = null;
         private string modpackPath = "";
 
         //Core methods
@@ -102,6 +104,12 @@ namespace The_Last_Days_Launcher
                 }
             };
 
+            //Load the preferences
+            preferences = new Preferences();
+
+            //Show all settings
+            pref_patch1.IsChecked = preferences.loadedData.enableBlackWorldAndBlocksPatch;
+
             //Create the modpack folder
             if (Directory.Exists(modpackPath) == false)
                 Directory.CreateDirectory(modpackPath);
@@ -152,16 +160,18 @@ namespace The_Last_Days_Launcher
             editNick.IsHitTestVisible = false;
             profileNick.Text = "Carregando...";
             playButton.IsEnabled = false;
+            patchWarnIcon.Visibility = Visibility.Collapsed;
 
             //Setup the links buttons
             goGitHub.Click += (s, e) => { System.Diagnostics.Process.Start(new ProcessStartInfo { FileName = "https://github.com/marcos4503/the-last-days-launcher", UseShellExecute = true }); };
             goDonate.Click += (s, e) => { System.Diagnostics.Process.Start(new ProcessStartInfo { FileName = "https://www.paypal.com/donate/?hosted_button_id=MVDJY3AXLL8T2", UseShellExecute = true }); };
-            goDiscord.Click += (s, e) => { System.Diagnostics.Process.Start(new ProcessStartInfo { FileName = "https://discord.gg/VKBWcnQkCN", UseShellExecute = true }); };
+            goDiscord.Click += (s, e) => { System.Diagnostics.Process.Start(new ProcessStartInfo { FileName = "https://discord.gg/cztusQyqrS", UseShellExecute = true }); };
 
             //Setup the menu buttons
             goHome.Click += (s, e) => { ChangeLauncherPage(LauncherPage.Home); };
             goSkin.Click += (s, e) => { ChangeLauncherPage(LauncherPage.UploadSkin); };
             goDocs.Click += (s, e) => { ChangeLauncherPage(LauncherPage.Documentation); };
+            goPrefs.Click += (s, e) => { ChangeLauncherPage(LauncherPage.Preferences); };
             goAbout.Click += (s, e) => { ChangeLauncherPage(LauncherPage.About); };
 
             //Disable documentation button
@@ -171,7 +181,7 @@ namespace The_Last_Days_Launcher
             webviewDocs.CoreWebView2InitializationCompleted += (s, e) => 
             {
                 //Clear browsing cache
-                webviewDocs.CoreWebView2.Profile.ClearBrowsingDataAsync();
+                //webviewDocs.CoreWebView2.Profile.ClearBrowsingDataAsync();
 
                 //Navite to builtin documentation page
                 webviewDocs.CoreWebView2.Navigate("https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/builtin-documentation/Documentation.html");
@@ -179,6 +189,12 @@ namespace The_Last_Days_Launcher
                 //Enable the documentation button
                 goDocs.IsEnabled = true;
             };
+
+            //Prepare the save preferences button
+            savePrefsButton.Click += (s, e) => { SavePreferences(); };
+
+            //Update the patch enabled warning
+            UpdateThePatchEnabledWarning();
 
             //Change to home page
             ChangeLauncherPage(LauncherPage.Home);
@@ -1181,6 +1197,9 @@ namespace The_Last_Days_Launcher
                     return;
                 }
 
+                //Process the patch of glitch of black blocks and world fix
+                ProcessThePatchOfWorldAndBlocksBlack();
+
                 //Try to launch the game
                 try
                 {
@@ -1253,6 +1272,30 @@ namespace The_Last_Days_Launcher
 
         //Auxiliar methods
 
+        private void UpdateThePatchEnabledWarning()
+        {
+            //Enable or disable the warning if have patches enabled
+            if (preferences.loadedData.enableBlackWorldAndBlocksPatch == true)
+                patchWarnIcon.Visibility = Visibility.Visible;
+            if (preferences.loadedData.enableBlackWorldAndBlocksPatch == false)
+                patchWarnIcon.Visibility = Visibility.Collapsed;
+        }
+
+        private void SavePreferences()
+        {
+            //Store the preferences
+            preferences.loadedData.enableBlackWorldAndBlocksPatch = ((bool) pref_patch1.IsChecked);
+
+            //Save the preferences
+            preferences.Save();
+
+            //Update the patch enabled warning
+            UpdateThePatchEnabledWarning();
+
+            //Inform that was saved
+            MessageBox.Show("As Configurações foram salvas com sucesso!", "Pronto", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
         private void OpenLoginCredentialsEdit()
         {
             //Enable the interaction blocker
@@ -1275,12 +1318,14 @@ namespace The_Last_Days_Launcher
             goHome.Background = new SolidColorBrush(Color.FromArgb(255, 253, 253, 253));
             goSkin.Background = new SolidColorBrush(Color.FromArgb(255, 253, 253, 253));
             goDocs.Background = new SolidColorBrush(Color.FromArgb(255, 253, 253, 253));
+            goPrefs.Background = new SolidColorBrush(Color.FromArgb(255, 253, 253, 253));
             goAbout.Background = new SolidColorBrush(Color.FromArgb(255, 253, 253, 253));
 
             //Disable all pages
             pageHome.Visibility = Visibility.Collapsed;
             pageSkins.Visibility = Visibility.Collapsed;
             pageDocs.Visibility = Visibility.Collapsed;
+            pagePrefs.Visibility = Visibility.Collapsed;
             pageAbout.Visibility = Visibility.Collapsed;
 
             //If is "Home"
@@ -1305,6 +1350,14 @@ namespace The_Last_Days_Launcher
                 goDocs.Background = new SolidColorBrush(Color.FromArgb(255, 204, 251, 203));
                 pageDocs.Visibility = Visibility.Visible;
                 pageTitle.Text = "Documentação";
+            }
+
+            //If is "Preferences"
+            if (page == LauncherPage.Preferences)
+            {
+                goPrefs.Background = new SolidColorBrush(Color.FromArgb(255, 204, 251, 203));
+                pagePrefs.Visibility = Visibility.Visible;
+                pageTitle.Text = "Configurações";
             }
 
             //If is "About"
@@ -1448,6 +1501,31 @@ namespace The_Last_Days_Launcher
 
                 //Enable the system tray
                 launcherTrayIcon.Visible = true;
+            }
+        }
+    
+        private void ProcessThePatchOfWorldAndBlocksBlack()
+        {
+            //If the patch is not enabled, remove the patch, if is installed
+            if (preferences.loadedData.enableBlackWorldAndBlocksPatch == false)
+            {
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar")) == true)
+                    File.Delete((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar"));
+
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar")) == true)
+                    File.Delete((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar"));
+            }
+
+            //If the patch is enabled, install the patch, if is not installed
+            if (preferences.loadedData.enableBlackWorldAndBlocksPatch == true)
+            {
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar")) == false)
+                    File.Copy((modpackPath + @"/Game/instances/The Last Days/.minecraft/mod_for_patch/ADDED - ImmediatelyFast 1.2.21.jar"),
+                              (modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar"));
+
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar")) == false)
+                    File.Copy((modpackPath + @"/Game/instances/The Last Days/.minecraft/mod_for_patch/ADDED - ModernFix 5.17.0.jar"),
+                              (modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar"));
             }
         }
     }

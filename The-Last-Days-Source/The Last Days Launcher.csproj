@@ -6,7 +6,7 @@
     <RootNamespace>The_Last_Days_Launcher</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <AssemblyVersion>1.4.1</AssemblyVersion>
+    <AssemblyVersion>1.5.0</AssemblyVersion>
     <ApplicationIcon>Resources\app-icon-32px.ico</ApplicationIcon>
     <UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
@@ -153,6 +153,7 @@
     <None Remove="Resources\mini-icon-32px.png" />
     <None Remove="Resources\mini-icon-64px.png" />
     <None Remove="Resources\moon-texture.png" />
+    <None Remove="Resources\patch-warn.png" />
     <None Remove="Resources\play-icon.png" />
     <None Remove="Resources\Player=bskin_alex.png" />
     <None Remove="Resources\Player=cape.png" />
@@ -522,6 +523,7 @@
     <Resource Include="Resources\mini-icon-32px.png" />
     <Resource Include="Resources\mini-icon-64px.png" />
     <Resource Include="Resources\moon-texture.png" />
+    <Resource Include="Resources\patch-warn.png" />
     <Resource Include="Resources\play-icon.png" />
     <Resource Include="Resources\Player=bskin_alex.png" />
     <Resource Include="Resources\Player=cape.png" />
