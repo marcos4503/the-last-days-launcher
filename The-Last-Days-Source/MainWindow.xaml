@@ -182,11 +182,11 @@
                                 <Grid Background="WhiteSmoke">
                                     <StackPanel VerticalAlignment="Top" Margin="16,16,16,0">
                                         <DockPanel LastChildFill="False" VerticalAlignment="Top">
-                                            <Label Content="Ativar Patch de Correção Para Glitch de Blocos e Mundo Pretos" VerticalAlignment="Center" HorizontalAlignment="Left" Padding="0,0,0,0"/>
+                                            <Label Content="Ativar Patch de Método de Renderização Alternativo e Simplificado" VerticalAlignment="Center" HorizontalAlignment="Left" Padding="0,0,0,0"/>
                                             <CheckBox x:Name="pref_patch1" Content="" DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Padding="0,-1,0,0"/>
                                         </DockPanel>
                                     </StackPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="Tenha em mente que os Patches não foram testados extensivamentes no Modpack. Por esse motivo, eles só devem ser usados como última opção de correção de algum problema com o Modpack ou com o Jogo." VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,16" Foreground="DimGray" TextAlignment="Center" MaxWidth="512"/>
+                                    <TextBlock TextWrapping="Wrap" Text="Tenha em mente que os Patches não foram testados extensivamente e exaustivamente, no Modpack. Por esse motivo, eles só devem ser usados como última opção de correção de algum problema com o Modpack ou com o Jogo." VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,16" Foreground="DimGray" TextAlignment="Center" MaxWidth="512"/>
                                 </Grid>
                             </TabItem>
                         </TabControl>
