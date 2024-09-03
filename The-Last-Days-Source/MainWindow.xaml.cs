@@ -174,20 +174,26 @@ namespace The_Last_Days_Launcher
             goPrefs.Click += (s, e) => { ChangeLauncherPage(LauncherPage.Preferences); };
             goAbout.Click += (s, e) => { ChangeLauncherPage(LauncherPage.About); };
 
-            //Disable documentation button
-            goDocs.IsEnabled = false;
-            //Prepare the documentation webview
-            webviewDocs.EnsureCoreWebView2Async();
-            webviewDocs.CoreWebView2InitializationCompleted += (s, e) => 
+            //Prepare the load documentation button
+            loadDocsButton.Click += (s, e) => 
             {
-                //Clear browsing cache
-                //webviewDocs.CoreWebView2.Profile.ClearBrowsingDataAsync();
+                //Disable the load docs button
+                loadDocsButton.IsEnabled = false;
 
-                //Navite to builtin documentation page
-                webviewDocs.CoreWebView2.Navigate("https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/builtin-documentation/Documentation.html");
+                //Prepare the documentation webview
+                webviewDocs.EnsureCoreWebView2Async();
+                webviewDocs.CoreWebView2InitializationCompleted += (s, e) =>
+                {
+                    //Clear browsing cache
+                    //webviewDocs.CoreWebView2.Profile.ClearBrowsingDataAsync();
 
-                //Enable the documentation button
-                goDocs.IsEnabled = true;
+                    //Navite to builtin documentation page
+                    webviewDocs.CoreWebView2.Navigate("https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/builtin-documentation/Documentation.html");
+
+                    //Change to show the documentation
+                    docsWarn.Visibility = Visibility.Collapsed;
+                    webviewDocs.Visibility = Visibility.Visible;
+                };
             };
 
             //Prepare the save preferences button
@@ -1512,8 +1518,8 @@ namespace The_Last_Days_Launcher
                 if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar")) == true)
                     File.Delete((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar"));
 
-                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar")) == true)
-                    File.Delete((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar"));
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.18.6.jar")) == true)
+                    File.Delete((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.18.6.jar"));
             }
 
             //If the patch is enabled, install the patch, if is not installed
@@ -1523,9 +1529,9 @@ namespace The_Last_Days_Launcher
                     File.Copy((modpackPath + @"/Game/instances/The Last Days/.minecraft/mod_for_patch/ADDED - ImmediatelyFast 1.2.21.jar"),
                               (modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.21.jar"));
 
-                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar")) == false)
-                    File.Copy((modpackPath + @"/Game/instances/The Last Days/.minecraft/mod_for_patch/ADDED - ModernFix 5.17.0.jar"),
-                              (modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar"));
+                if (File.Exists((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.18.6.jar")) == false)
+                    File.Copy((modpackPath + @"/Game/instances/The Last Days/.minecraft/mod_for_patch/ADDED - ModernFix 5.18.6.jar"),
+                              (modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.18.6.jar"));
             }
         }
     }

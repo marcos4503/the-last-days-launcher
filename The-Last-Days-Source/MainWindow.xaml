@@ -173,7 +173,11 @@
                         <Rectangle Height="0.5" VerticalAlignment="Bottom" StrokeThickness="0" Fill="Black" Opacity="0.5"/>
                     </Grid>
                     <Grid x:Name="pageDocs" Visibility="Collapsed" Margin="0,0,0,8">
-                        <wv2:WebView2 x:Name="webviewDocs" Margin="0,0,0,1"/>
+                        <Grid x:Name="docsWarn" HorizontalAlignment="Center" VerticalAlignment="Center" Width="512">
+                            <TextBlock TextWrapping="Wrap" Text="A Documentação não está carregada, para poupar recursos! Se quiser acessa-la, clique no botão abaixo para carrega-la!" HorizontalAlignment="Center" MaxWidth="300" TextAlignment="Center" Margin="0,0,0,46"/>
+                            <BeautyButton:BeautyButton x:Name="loadDocsButton" Padding="0,0,0,0" Background="#FF00A027" BorderBrush="#FF005B16" HoverBackground="#FF00C12F" Cursor="Hand" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="24" Width="100" Content="CARREGAR" Foreground="White" FontWeight="Bold"/>
+                        </Grid>
+                        <wv2:WebView2 x:Name="webviewDocs" Margin="0,0,0,1" Visibility="Collapsed"/>
                         <Rectangle Height="0.5" VerticalAlignment="Bottom" StrokeThickness="0" Fill="Black" Opacity="0.5" Margin="0,0,0,0"/>
                     </Grid>
                     <Grid x:Name="pagePrefs" Visibility="Collapsed" Margin="0,0,0,8">
