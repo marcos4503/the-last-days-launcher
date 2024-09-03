@@ -1,0 +1,2 @@
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\win-x64\The Last Days Updater.pdb
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\win-x64\The Last Days Updater.exe

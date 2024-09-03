@@ -1,0 +1,6 @@
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\The Last Days Updater.exe
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\The Last Days Updater.dll
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\The Last Days Updater.deps.json
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\The Last Days Updater.runtimeconfig.json
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\The Last Days Updater.pdb
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Release\net6.0-windows\publish\DotNetZip.dll
