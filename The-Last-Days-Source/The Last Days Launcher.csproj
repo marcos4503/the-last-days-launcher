@@ -155,6 +155,7 @@
     <None Remove="Resources\moon-texture.png" />
     <None Remove="Resources\patch-warn.png" />
     <None Remove="Resources\play-icon.png" />
+    <None Remove="Resources\player-skin.png" />
     <None Remove="Resources\Player=bskin_alex.png" />
     <None Remove="Resources\Player=cape.png" />
     <None Remove="Resources\Player=elytra.png" />
@@ -525,6 +526,7 @@
     <Resource Include="Resources\moon-texture.png" />
     <Resource Include="Resources\patch-warn.png" />
     <Resource Include="Resources\play-icon.png" />
+    <Resource Include="Resources\player-skin.png" />
     <Resource Include="Resources\Player=bskin_alex.png" />
     <Resource Include="Resources\Player=cape.png" />
     <Resource Include="Resources\Player=elytra.png" />

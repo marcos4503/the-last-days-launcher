@@ -103,11 +103,41 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition Width="24"/>
                                     </Grid.ColumnDefinitions>
-                                    <Border BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="24,24,24,24" Opacity="0.75">
-                                        <Border.Background>
-                                            <ImageBrush ImageSource="/Resources/profile-icon.png"/>
-                                        </Border.Background>
-                                    </Border>
+                                    <Grid>
+                                        <Border x:Name="noPlayerIcon" BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="24,24,24,24" Opacity="0.75" Visibility="Visible">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Resources/profile-icon.png"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <Border x:Name="playerHead" BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="24,24,24,24" Visibility="Collapsed">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Resources/player-skin.png">
+                                                    <ImageBrush.RelativeTransform>
+                                                        <TransformGroup>
+                                                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                                            <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                                            <TranslateTransform Y="0"/>
+                                                        </TransformGroup>
+                                                    </ImageBrush.RelativeTransform>
+                                                </ImageBrush>
+                                            </Border.Background>
+                                        </Border>
+                                        <Border x:Name="playerHeadLayer" BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="24,24,24,24" Visibility="Collapsed">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Resources/player-skin.png">
+                                                    <ImageBrush.RelativeTransform>
+                                                        <TransformGroup>
+                                                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1.2" ScaleY="1.11"/>
+                                                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                                            <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                                            <TranslateTransform Y="-0.055" X="0"/>
+                                                        </TransformGroup>
+                                                    </ImageBrush.RelativeTransform>
+                                                </ImageBrush>
+                                            </Border.Background>
+                                        </Border>
+                                    </Grid>
                                     <TextBlock x:Name="profileNick" TextWrapping="Wrap" Text="nickname" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" Foreground="#FFD6D6D6" Grid.ColumnSpan="3" Grid.Column="2"/>
                                     <Button x:Name="editNick" Margin="0,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="0,0,0,0" BorderThickness="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="24" Width="24" Cursor="Hand" Grid.Column="3" ToolTip="Alterar Nome de Usuário...">
                                         <Image Margin="4,4,4,4" Source="/Resources/edit-icon.png" Opacity="0.5"/>

@@ -1475,8 +1475,151 @@ namespace The_Last_Days_Launcher
 
             //Display the account nickname
             profileNick.Text = accountsData.loadedData.accounts[0].profile.name;
+
+            //Update the account skin display
+            UpdateAccountSkin(profileNick.Text);
         }
     
+        private void UpdateAccountSkin(string nicknameToShow)
+        {
+            //Change to no skin mode in display
+            noPlayerIcon.Visibility = Visibility.Visible;
+            playerHead.Visibility = Visibility.Collapsed;
+            playerHeadLayer.Visibility = Visibility.Collapsed;
+
+            //If the skin exists in cache and is newer than 15 minutes, render it, and stop here
+            if (File.Exists((Directory.GetCurrentDirectory() + @"/" + nicknameToShow + ".inf")) == true)
+                if ((new TimeSpan(DateTime.Now.Ticks - long.Parse(File.ReadAllText((Directory.GetCurrentDirectory() + @"/" + nicknameToShow + ".inf"))))).Minutes <= 15)
+                {
+                    FinishAccountSkinRender(nicknameToShow);
+                    return;
+                }
+
+
+
+            //If the skins exists, clear the cache
+            if (File.Exists((Directory.GetCurrentDirectory() + @"/" + nicknameToShow + ".inf")) == true)
+                File.Delete((Directory.GetCurrentDirectory() + @"/" + nicknameToShow + ".inf"));
+            if (File.Exists((Directory.GetCurrentDirectory() + @"/" + nicknameToShow + ".png")) == true)
+                File.Delete((Directory.GetCurrentDirectory() + @"/" + nicknameToShow + ".png"));
+
+            //Start a thread to download the skin
+            AsyncTaskSimplified asyncTask = new AsyncTaskSimplified(this, new string[] { nicknameToShow });
+            asyncTask.onStartTask_RunMainThread += (callerWindow, startParams) => { };
+            asyncTask.onExecuteTask_RunBackground += (callerWindow, startParams, threadTools) =>
+            {
+                //Get the data
+                string playerNickNameToDownload = startParams[0];
+
+                //Wait some time
+                threadTools.MakeThreadSleep(500);
+
+                //Try to download the alex skin first
+                try
+                {
+                    //Prepare the target download URL
+                    string downloadUrl = (@"https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/cosmetics-db/" + playerNickNameToDownload + "=bskin_alex.png");
+                    string saveAsPath = (Directory.GetCurrentDirectory() + @"/" + playerNickNameToDownload + ".png");
+                    //Download the current version file
+                    HttpClient httpClient = new HttpClient();
+                    HttpResponseMessage httpRequestResult = httpClient.GetAsync(downloadUrl).Result;
+                    httpRequestResult.EnsureSuccessStatusCode();
+                    Stream downloadStream = httpRequestResult.Content.ReadAsStreamAsync().Result;
+                    FileStream fileStream = new FileStream(saveAsPath, FileMode.Create, FileAccess.Write, FileShare.None);
+                    downloadStream.CopyTo(fileStream);
+                    httpClient.Dispose();
+                    fileStream.Dispose();
+                    fileStream.Close();
+                    downloadStream.Dispose();
+                    downloadStream.Close();
+
+                    //If the skin was downloaded, create the cache file
+                    if (File.Exists(saveAsPath) == true)
+                        File.WriteAllText((Directory.GetCurrentDirectory() + @"/" + playerNickNameToDownload + ".inf"), DateTime.Now.Ticks.ToString());
+                }
+                catch (Exception ex)
+                {
+                    //Try to download the steve skin if alex fails
+                    try
+                    {
+                        //Prepare the target download URL
+                        string downloadUrl = (@"https://marcos4503.github.io/the-last-days-launcher/Repository-Pages/cosmetics-db/" + playerNickNameToDownload + "=bskin_steve.png");
+                        string saveAsPath = (Directory.GetCurrentDirectory() + @"/" + playerNickNameToDownload + ".png");
+                        //Download the current version file
+                        HttpClient httpClient = new HttpClient();
+                        HttpResponseMessage httpRequestResult = httpClient.GetAsync(downloadUrl).Result;
+                        httpRequestResult.EnsureSuccessStatusCode();
+                        Stream downloadStream = httpRequestResult.Content.ReadAsStreamAsync().Result;
+                        FileStream fileStream = new FileStream(saveAsPath, FileMode.Create, FileAccess.Write, FileShare.None);
+                        downloadStream.CopyTo(fileStream);
+                        httpClient.Dispose();
+                        fileStream.Dispose();
+                        fileStream.Close();
+                        downloadStream.Dispose();
+                        downloadStream.Close();
+
+                        //If the skin was downloaded, create the cache file
+                        if (File.Exists(saveAsPath) == true)
+                            File.WriteAllText((Directory.GetCurrentDirectory() + @"/" + playerNickNameToDownload + ".inf"), DateTime.Now.Ticks.ToString());
+                    }
+                    catch { }
+                }
+
+                //Finish the thread...
+                return new string[] { playerNickNameToDownload };
+            };
+            asyncTask.onDoneTask_RunMainThread += (callerWindow, backgroundResult) =>
+            {
+                //If the skin was download, render it on display
+                if (File.Exists((Directory.GetCurrentDirectory() + @"/" + backgroundResult[0] + ".png")) == true)
+                    FinishAccountSkinRender(backgroundResult[0]);
+            };
+            asyncTask.Execute(AsyncTaskSimplified.ExecutionMode.NewDefaultThread);
+        }
+
+        private void FinishAccountSkinRender(string nickname)
+        {
+            //Load the skin bitmap
+            BitmapImage bitmapImage = new BitmapImage();
+            bitmapImage.BeginInit();
+            bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+            bitmapImage.UriSource = new Uri((Directory.GetCurrentDirectory() + @"/" + nickname + ".png"));
+            bitmapImage.EndInit();
+
+            //Extract the head of the image
+            CroppedBitmap croppedBitmapOfHead = new CroppedBitmap(bitmapImage, new Int32Rect(8, 8, 8, 8));
+            CroppedBitmap croppedBitmapOfHeadLayer = new CroppedBitmap(bitmapImage, new Int32Rect(39, 7, 10, 9));
+
+            //Render head of the skin bitmap
+            ImageBrush playerHeadImg = new ImageBrush();
+            playerHeadImg.TileMode = TileMode.None;
+            playerHeadImg.Stretch = Stretch.Fill;
+            playerHeadImg.ImageSource = croppedBitmapOfHead;
+            playerHead.Background = playerHeadImg;
+
+            //Render head layer of the skin bitmap
+            ImageBrush playerHeadLayerImg = new ImageBrush();
+            playerHeadLayerImg.TileMode = TileMode.None;
+            playerHeadLayerImg.Stretch = Stretch.Fill;
+            playerHeadLayerImg.ImageSource = croppedBitmapOfHeadLayer;
+            TransformGroup playerHeadLayerTg = new TransformGroup();
+            playerHeadLayerTg.Children.Add(new ScaleTransform(1.2f, 1.11f, 0.5, 0.5));
+            playerHeadLayerTg.Children.Add(new SkewTransform(0.0f, 0.0f, 0.5f, 0.5f));
+            playerHeadLayerTg.Children.Add(new RotateTransform(0.0f, 0.5f, 0.5f));
+            playerHeadLayerTg.Children.Add(new TranslateTransform(0.0f, -0.055f));
+            playerHeadLayerImg.RelativeTransform = playerHeadLayerTg;
+            playerHeadLayer.Background = playerHeadLayerImg;
+
+            //Change the render mod of the image, to not use image filtering, like minecraft
+            RenderOptions.SetBitmapScalingMode(playerHead, BitmapScalingMode.NearestNeighbor);
+            RenderOptions.SetBitmapScalingMode(playerHeadLayer, BitmapScalingMode.NearestNeighbor);
+
+            //Change to show the skin
+            noPlayerIcon.Visibility = Visibility.Collapsed;
+            playerHead.Visibility = Visibility.Visible;
+            playerHeadLayer.Visibility = Visibility.Visible;
+        }
+
         private void SetLauncherState(LauncherState desiredState)
         {
             //If don't have a system tray icon, create it
@@ -1533,6 +1676,18 @@ namespace The_Last_Days_Launcher
                     File.Copy((modpackPath + @"/Game/instances/The Last Days/.minecraft/mod_for_patch/ADDED - ModernFix 5.18.6.jar"),
                               (modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.18.6.jar"));
             }
+
+
+
+            //Prepare a list of unnecessary patch old files
+            List<string> unnecessaryFiles = new List<string>();
+            unnecessaryFiles.Add((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ImmediatelyFast 1.2.20.jar"));
+            unnecessaryFiles.Add((modpackPath + @"/Game/instances/The Last Days/.minecraft/mods/ADDED - ModernFix 5.17.0.jar"));
+
+            //Delete all files of list of unnecessary files
+            foreach (string filePath in unnecessaryFiles)
+                if (File.Exists(filePath) == true)
+                    File.Delete(filePath);
         }
     }
 }
