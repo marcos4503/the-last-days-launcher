@@ -78,7 +78,7 @@ namespace TS3_Dream_Launcher.Controls.ValidableTextBox {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.5.2;component/controls/validabletextbox/validabletextb" +
+            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.5.3;component/controls/validabletextbox/validabletextb" +
                     "ox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Controls\ValidableTextBox\ValidableTextBox.xaml"

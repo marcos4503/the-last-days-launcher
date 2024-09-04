@@ -60,7 +60,7 @@ namespace The_Last_Days_Launcher {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.5.2;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.5.3;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
