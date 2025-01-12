@@ -21,4 +21,4 @@ D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\
 D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\ref\The Last Days Updater.dll
 D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater_Content.g.cs
 D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\bin\Debug\net6.0-windows\DotNetZip.dll
-D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last Days Updater.csproj.CopyComplete
+D:\Visual-Studio\The Last Days Launcher\Add-Ons\The Last Days Updater\obj\Debug\net6.0-windows\The Last.60856064.Up2Date

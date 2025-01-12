@@ -1242,7 +1242,10 @@ namespace The_Last_Days_Launcher
 
                             //If was finished the game process, break the monitor loop
                             if (currentGameProcess.HasExited == true)
+                            {
+                                ProcessPostGameCloseTasks();
                                 break;
+                            }
                         }
 
                         //Return empty response
@@ -1688,6 +1691,29 @@ namespace The_Last_Days_Launcher
             foreach (string filePath in unnecessaryFiles)
                 if (File.Exists(filePath) == true)
                     File.Delete(filePath);
+        }
+    
+        private void ProcessPostGameCloseTasks()
+        {
+            //If the path of updater is informed, continue...
+            if (File.Exists((modpackPath + @"/updater-path.tld")) == true)
+            {
+                //Get the updater path
+                string updaterPath = File.ReadAllText((modpackPath + @"/updater-path.tld"));
+
+                //If the updater is found
+                if (File.Exists(updaterPath) == true)
+                {
+                    //Get the updater drive letter
+                    string driveLetter = updaterPath.Split(":")[0];
+
+                    //Clear possible files created in root of drive, by the modpack
+                    if (Directory.Exists((driveLetter + @":\config")) == true)
+                        Directory.Delete((driveLetter + @":\config"), true);
+                    if (Directory.Exists((driveLetter + @":\fancymenu_data")) == true)
+                        Directory.Delete((driveLetter + @":\fancymenu_data"), true);
+                }
+            }
         }
     }
 }

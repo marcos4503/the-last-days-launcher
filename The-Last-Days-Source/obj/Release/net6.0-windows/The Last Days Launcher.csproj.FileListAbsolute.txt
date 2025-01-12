@@ -134,7 +134,6 @@ D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\GeneratedInte
 D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\Controls\BeautyButton\BeautyButton.baml
 D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\Controls\ValidableTextBox\ValidableTextBox.baml
 D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\WindowNickChange.baml
-D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\The Last Days Launcher.csproj.CopyComplete
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
@@ -143,3 +142,4 @@ D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Microsoft.Web
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\Visual-Studio\The Last Days Launcher\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
 D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\App.baml
+D:\Visual-Studio\The Last Days Launcher\obj\Release\net6.0-windows\The Last.B2FEFF28.Up2Date

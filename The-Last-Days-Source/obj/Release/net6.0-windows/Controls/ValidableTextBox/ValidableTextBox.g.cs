@@ -72,13 +72,13 @@ namespace TS3_Dream_Launcher.Controls.ValidableTextBox {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.25.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.0.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.5.3;component/controls/validabletextbox/validabletextb" +
+            System.Uri resourceLocater = new System.Uri("/The Last Days Launcher;V1.5.6;component/controls/validabletextbox/validabletextb" +
                     "ox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Controls\ValidableTextBox\ValidableTextBox.xaml"
@@ -89,7 +89,7 @@ namespace TS3_Dream_Launcher.Controls.ValidableTextBox {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.25.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.0.0")]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]

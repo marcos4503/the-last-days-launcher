@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JO/Gtx4M1isxvMDJ87WUNKU8jS/5m14XWLhtbaUW1NEIuJ34Rq5YlHMNEbGJQQuZ684Y0+9SfF+fs1MJt+H66Q==",
+  "dgSpecHash": "XH6BWz4uSO4=",
   "success": true,
   "projectFilePath": "D:\\Visual-Studio\\The Last Days Launcher\\Add-Ons\\The Last Days Updater\\The Last Days Updater.csproj",
   "expectedPackageFiles": [
@@ -14,5 +14,26 @@
     "C:\\Users\\junio\\.nuget\\packages\\system.text.encoding.codepages\\4.7.1\\system.text.encoding.codepages.4.7.1.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'DotNetZip' 1.16.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+      "libraryId": "DotNetZip",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.Drawing.Common' 4.7.0 tem uma crítico vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+      "libraryId": "System.Drawing.Common",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

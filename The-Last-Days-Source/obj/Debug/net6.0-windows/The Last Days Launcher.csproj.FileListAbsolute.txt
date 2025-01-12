@@ -125,7 +125,6 @@ D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days L
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.AssemblyInfoInputs.cache
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.AssemblyInfo.cs
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.csproj.CoreCompileInputs.cache
-D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.csproj.CopyComplete
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.dll
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\refint\The Last Days Launcher.dll
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last Days Launcher.pdb
@@ -143,3 +142,4 @@ D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Microsoft.Web.W
 D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\Visual-Studio\The Last Days Launcher\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
 D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\App.baml
+D:\Visual-Studio\The Last Days Launcher\obj\Debug\net6.0-windows\The Last.B2FEFF28.Up2Date
