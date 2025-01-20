@@ -1206,6 +1206,9 @@ namespace The_Last_Days_Launcher
                 //Process the patch of glitch of black blocks and world fix
                 ProcessThePatchOfWorldAndBlocksBlack();
 
+                //Process the pre game open tasks
+                ProcessPreGameOpenTasks();
+
                 //Try to launch the game
                 try
                 {
@@ -1691,6 +1694,22 @@ namespace The_Last_Days_Launcher
             foreach (string filePath in unnecessaryFiles)
                 if (File.Exists(filePath) == true)
                     File.Delete(filePath);
+        }
+
+        private void ProcessPreGameOpenTasks()
+        {
+            //Force the mipmaps and graphics type settings to recommended values...
+            string[] optionsLineFile = File.ReadAllLines((modpackPath + @"/Game/instances/The Last Days/.minecraft/options.txt"));
+            for (int i = 0; i < optionsLineFile.Length; i++)
+            {
+                //If is "graphicsMode" option...
+                if (optionsLineFile[i].Contains("graphicsMode") == true)
+                    optionsLineFile[i] = "graphicsMode:1";
+                //If is "mipmapLevels" option...
+                if (optionsLineFile[i].Contains("mipmapLevels") == true)
+                    optionsLineFile[i] = "mipmapLevels:1";
+            }
+            File.WriteAllLines((modpackPath + @"/Game/instances/The Last Days/.minecraft/options.txt"), optionsLineFile);
         }
     
         private void ProcessPostGameCloseTasks()
