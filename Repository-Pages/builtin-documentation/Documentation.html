@@ -99,6 +99,7 @@
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_18">Indicador Direcional de Dano</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_19">Case de Exibição de Itens</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_20">Escudos Retrabalhados</a></li>
+                        <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_20a">Armaduras Alteradas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_21">Machados Retrabalhados</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_23">Exibição dos Nomes dos Biomas</a></li>
                         <li><a class="summaryItem" onclick="GoToDivSmoothly(this);" correspondentTopicId="2_24">Equinos em Botes</a></li>
@@ -1560,6 +1561,394 @@ B = rnd()
                 </doc.topic>
                 <!-- #endregion -->
 
+                <!-- #region Elementos Adicionados: Armaduras Alteradas -->
+                <doc.topic topicid="2_20a">
+                    <doc.topictitle>Elementos Adicionados: Armaduras Alteradas</doc.topictitle>
+
+                    Todas as Armaduras foram alteradas na maneira em que funcionam para agora poderem ser invisíveis (opcionalmente) como você pode ver <a href="#2_36">aqui</a>. Além disso, o limite de 20 Pontos de Armadura foi removido do
+                    jogo, com agora, esses Pontos de Armadura podendo passar de 20. Para fins de comparação, no Vanilla somente as Armaduras de Diamante e Netherita completas forneciam 20 Pontos de Armadura. Agora é possível conseguir
+                    Pontos de Armadura através de Habilidades da Árvore de Habilidades ou a partir de alguns itens. O mesmo vale para os Pontos de Resistência da Armadura que só eram fornecidos por Armaduras de Diamante e Netherita, com
+                    este, agora sendo exibido também no HUD.
+                    <br>
+                    <br>
+                    O cálculo de como as Armaduras reduzem dano ainda continua igual ao do Vanilla e para fins de utilidade você pode usar a Calculadora abaixo para simular um Dano a receber e saber quanto Dano você ainda receberia, após a
+                    redução da sua Armadura. Para usa-la, basta informar os dados necessários para a situação a ser simulada e então clicar em "Calcular".
+                    <br>
+                    <br>
+                    <div style="width: auto; height: auto; border-radius: 8px; border-width: 1px; border-style: solid; border-color: #0097FC; padding: 8px; display: grid; grid-template-columns: 70% 1px 30%;">
+                        <div style="display: block;">
+                            Dano a Receber
+                            <br>
+                            <div style="width: 300px; display: grid; grid-template-columns: 79% 8px auto;">
+                                <input id="armorCalcDmgReceiving" type="number" value="5.0" />
+                                <div></div>
+                                <div style="display: flex;">
+                                    <input id="armorCalcPlus50percent" type="checkbox" />
+                                    <div style="margin-top: 1px;">+50%</div>
+                                </div>
+                            </div>
+                            Tipo de Dano
+                            <br>
+                            <select id="armorCalcDmgReceivingType" style="width: 300px;">
+                                <option value="melee">Corpo-a-Corpo</option>
+                                <option value="projectile">Projétil</option>
+                            </select>
+                            <br>
+                            Pegar Informações de Criatura...
+                            <br>
+                            <select style="width: 300px;" onchange="PickMobInfo(this);">
+                                <option value="c0">-</option>
+                                <option value="c1">Zumbi</option>
+                                <option value="c2">Aranha</option>
+                                <option value="c3">Estrangulador Mutante</option>
+                                <option value="c4">Saqueador Assimilado</option>
+                                <option value="c5">Mutante Assimilado</option>
+                                <option value="c6">Lamentador Assimilado</option>
+                            </select>
+                            <br>
+                            <br>
+                            Seus Pontos de Armadura
+                            <br>
+                            <input id="armorCalcArmorPoints" type="number" value="20.0" style="width: 300px;" />
+                            <br>
+                            Seus Pontos de Resistência da Armadura
+                            <br>
+                            <input id="armorCalcThougnessPoints" type="number" value="12.0" style="width: 300px;" />
+                            <br>
+                            Pegar Informações de Armadura...
+                            <br>
+                            <select style="width: 300px;" onchange="PickArmorTypeSetInfo(this);">
+                                <option value="s0">-</option>
+                                <option value="s1">Sem Armadura</option>
+                                <option value="s2">Couro</option>
+                                <option value="s3">Ouro</option>
+                                <option value="s4">Malha</option>
+                                <option value="s5">Ferro</option>
+                                <option value="s6">Diamante</option>
+                                <option value="s7">Netherita</option>
+                            </select>
+                            <br>
+                            <br>
+                            Sobre o Capacete
+                            <br>
+                            <select id="armorCalcHelmetEnchant" style="width: 300px;">
+                                <option value="none">Sem Capacete ou Diagramação</option>
+                                <option value="p1">Proteção I</option>
+                                <option value="p2">Proteção II</option>
+                                <option value="p3">Proteção III</option>
+                                <option value="p4">Proteção IV</option>
+                                <option value="pp1">Proteção Contra Projéteis I</option>
+                                <option value="pp2">Proteção Contra Projéteis II</option>
+                                <option value="pp3">Proteção Contra Projéteis III</option>
+                                <option value="pp4">Proteção Contra Projéteis IV</option>
+                            </select>
+                            <br>
+                            Sobre o Peitoral
+                            <br>
+                            <select id="armorCalcChestplateEnchant" style="width: 300px;">
+                                <option value="none">Sem Peitoral ou Diagramação</option>
+                                <option value="p1">Proteção I</option>
+                                <option value="p2">Proteção II</option>
+                                <option value="p3">Proteção III</option>
+                                <option value="p4">Proteção IV</option>
+                                <option value="pp1">Proteção Contra Projéteis I</option>
+                                <option value="pp2">Proteção Contra Projéteis II</option>
+                                <option value="pp3">Proteção Contra Projéteis III</option>
+                                <option value="pp4">Proteção Contra Projéteis IV</option>
+                            </select>
+                            <br>
+                            Sobre as Calças
+                            <br>
+                            <select id="armorCalcLeggingsEnchant" style="width: 300px;">
+                                <option value="none">Sem Calças ou Diagramação</option>
+                                <option value="p1">Proteção I</option>
+                                <option value="p2">Proteção II</option>
+                                <option value="p3">Proteção III</option>
+                                <option value="p4">Proteção IV</option>
+                                <option value="pp1">Proteção Contra Projéteis I</option>
+                                <option value="pp2">Proteção Contra Projéteis II</option>
+                                <option value="pp3">Proteção Contra Projéteis III</option>
+                                <option value="pp4">Proteção Contra Projéteis IV</option>
+                            </select>
+                            <br>
+                            Sobre as Botas
+                            <br>
+                            <select id="armorCalcBootsEnchant" style="width: 300px;">
+                                <option value="none">Sem Botas ou Diagramação</option>
+                                <option value="p1">Proteção I</option>
+                                <option value="p2">Proteção II</option>
+                                <option value="p3">Proteção III</option>
+                                <option value="p4">Proteção IV</option>
+                                <option value="pp1">Proteção Contra Projéteis I</option>
+                                <option value="pp2">Proteção Contra Projéteis II</option>
+                                <option value="pp3">Proteção Contra Projéteis III</option>
+                                <option value="pp4">Proteção Contra Projéteis IV</option>
+                            </select>
+                            <br>
+                            <br>
+                            <div style="display: grid; grid-template-columns: 24px 8px auto; margin-right: 8px;">
+                                <div style="margin-top: 4px; width: 24px; height: 24px; background-image: url(DocumentationFiles/images/calcInfo.png); background-size: 24px; background-repeat: no-repeat; background-position: center;"></div>
+                                <div></div>
+                                <div>
+                                    Se você está informando o Dano que uma Criatura Hostíl causa, e você está jogando na dificuldade Difícil (a recomendada para o Modpack), então o Dano que você informou precisa ser aumentado em 50%, já que
+                                    o Minecraft aumenta o Dano de Criaturas Hostís em 50% na dificuldade Difícil. Nesse caso, marque a caixa "+50%" para aumentar automaticamente o Dano informado no cálculo. Note que o Dano que Jogadores
+                                    causam, nunca sofre alterações pela dificuldade do jogo.
+                                </div>
+                            </div>
+                            <br>
+                            <center>
+                                <button style="cursor: hand;" onclick="RunReset();">Resetar</button>
+                                <div style="display: inline-block; width: 64px;"></div>
+                                <button style="cursor: hand;" onclick="RunCalc();">Calcular</button>
+                            </center>
+                        </div>
+                        <div style="background-color: #0097FC;"></div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div style="display: block; grid-template-rows: auto auto auto;">
+                                <div style="margin-bottom: 4px; opacity: 0.5;">Novo Dano a Receber</div>
+                                <div style="display: grid; grid-template-columns: auto 16px auto;">
+                                    <div id="resultReceiving" style="text-decoration: line-through; text-align: center; font-size: 24px; font-weight: bold;">0.0</div>
+                                    <div style="background-image: url(DocumentationFiles/images/calcArrow.png); background-size: 16px; background-repeat: no-repeat; background-position: center;"></div>
+                                    <div id="resultReceived" style="text-align: center; font-size: 24px; font-weight: bold;">0.0</div>
+                                </div>
+                                <div style="display: block; float: right;">
+                                    <div id="resultReceivedPercent" style="text-align: center; font-size: 24px; font-weight: bold; opacity: 0.3;">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        function RunCalc() {
+                            //Get the references
+                            var damageReceivingInput = document.getElementById("armorCalcDmgReceiving");
+                            var damageReceivingIncreaseInput = document.getElementById("armorCalcPlus50percent");
+                            var damageReceivingTypeInput = document.getElementById("armorCalcDmgReceivingType");
+                            var armorPointsInput = document.getElementById("armorCalcArmorPoints");
+                            var thougnessPointsInput = document.getElementById("armorCalcThougnessPoints");
+                            var helmetEnchantInput = document.getElementById("armorCalcHelmetEnchant");
+                            var chestplateEnchantInput = document.getElementById("armorCalcChestplateEnchant");
+                            var leggingsEnchantInput = document.getElementById("armorCalcLeggingsEnchant");
+                            var bootsEnchantInput = document.getElementById("armorCalcBootsEnchant");
+                            var resultReceivingTxt = document.getElementById("resultReceiving");
+                            var resultReceivedTxt = document.getElementById("resultReceived");
+                            var resultReceivedPercentTxt = document.getElementById("resultReceivedPercent");
+
+                            //Get parsed data
+                            var damageReceiving = 0.0;
+                            if (damageReceivingIncreaseInput.checked == false)
+                                damageReceiving = Number(damageReceivingInput.value);
+                            if (damageReceivingIncreaseInput.checked == true)
+                                damageReceiving = (Number(damageReceivingInput.value) * 1.5);
+                            var damageReceivingType = "none";
+                            if (damageReceivingTypeInput.selectedIndex == 0)
+                                damageReceivingType = "melee";
+                            if (damageReceivingTypeInput.selectedIndex == 1)
+                                damageReceivingType = "projectile";
+                            var armorPoints = Number(armorPointsInput.value);
+                            var thougnessPoints = Number(thougnessPointsInput.value);
+                            var helmetEps = GetEnchantmentProtectionFactor(helmetEnchantInput.selectedIndex, damageReceivingType);
+                            var chestplateEps = GetEnchantmentProtectionFactor(chestplateEnchantInput.selectedIndex, damageReceivingType);
+                            var leggingsEps = GetEnchantmentProtectionFactor(leggingsEnchantInput.selectedIndex, damageReceivingType);
+                            var bootsEps = GetEnchantmentProtectionFactor(bootsEnchantInput.selectedIndex, damageReceivingType);
+
+                            //Show the damage receiving
+                            resultReceivingTxt.innerText = damageReceiving.toFixed(1);
+
+                            //Show the damage received
+                            resultReceivedTxt.innerText = GetDamageAfterArmorReduction(damageReceiving, armorPoints, thougnessPoints, 0.0, (helmetEps + chestplateEps + leggingsEps + bootsEps)).toFixed(1);
+                            resultReceivedPercentTxt.innerText = ((100 - (Number(resultReceivedTxt.innerText) / Number(resultReceivingTxt.innerText)) * 100.0).toFixed(0) + "%");
+                        }
+
+                        function GetEnchantmentProtectionFactor(selectionIndex, damageReceivingType) {
+                            //Prepare the value to return
+                            var toReturn = 0;
+
+                            //Protection: 1 per level
+                            //Other Protections: 2 per level
+
+                            //For the whole set, multiply by 4
+                            //e.g.Full set with Protection IV: 16
+
+                            //If is a melee damage...
+                            if (damageReceivingType == "melee") {
+                                //If is "Sem Capacete/Diagramação"
+                                if (selectionIndex == 0)
+                                    toReturn = 0;
+                                //If is "Proteção I"
+                                if (selectionIndex == 1)
+                                    toReturn = 1;
+                                //If is "Proteção II"
+                                if (selectionIndex == 2)
+                                    toReturn = 2;
+                                //If is "Proteção III"
+                                if (selectionIndex == 3)
+                                    toReturn = 3;
+                                //If is "Proteção IV"
+                                if (selectionIndex == 4)
+                                    toReturn = 4;
+                                //If is "Proteção Contra Projéteis I"
+                                if (selectionIndex == 5)
+                                    toReturn = 0;
+                                //If is "Proteção Contra Projéteis II"
+                                if (selectionIndex == 6)
+                                    toReturn = 0;
+                                //If is "Proteção Contra Projéteis III"
+                                if (selectionIndex == 7)
+                                    toReturn = 0;
+                                //If is "Proteção Contra Projéteis IV"
+                                if (selectionIndex == 8)
+                                    toReturn = 0;
+                            }
+                            //If is a ranged damage...
+                            if (damageReceivingType == "projectile") {
+                                //If is "Sem Capacete/Diagramação"
+                                if (selectionIndex == 0)
+                                    toReturn = 0;
+                                //If is "Proteção I"
+                                if (selectionIndex == 1)
+                                    toReturn = 1;
+                                //If is "Proteção II"
+                                if (selectionIndex == 2)
+                                    toReturn = 2;
+                                //If is "Proteção III"
+                                if (selectionIndex == 3)
+                                    toReturn = 3;
+                                //If is "Proteção IV"
+                                if (selectionIndex == 4)
+                                    toReturn = 4;
+                                //If is "Proteção Contra Projéteis I"
+                                if (selectionIndex == 5)
+                                    toReturn = 2;
+                                //If is "Proteção Contra Projéteis II"
+                                if (selectionIndex == 6)
+                                    toReturn = 4;
+                                //If is "Proteção Contra Projéteis III"
+                                if (selectionIndex == 7)
+                                    toReturn = 6;
+                                //If is "Proteção Contra Projéteis IV"
+                                if (selectionIndex == 8)
+                                    toReturn = 8;
+                            }
+
+                            //Return the value
+                            return toReturn;
+                        }
+
+                        function GetDamageAfterArmorReduction(damageReceiving, armorPoints, thougnessPoints, resistence, totalEps) {
+                            //Prepare the result
+                            var toReturn = -1.01;
+
+                            //Formula...
+                            //damage*(1-MÍNIMO(20;MÁXIMO(armor/5;armor-damage/(2+toughness/4)))/25)*(1-MÍNIMO(protection;20)/25)*(1-MÍNIMO(resistance;5)/5)
+
+                            //Do the calc
+                            toReturn = damageReceiving * (1.0 - GetMin([20.0, (GetMax([(armorPoints / 5.0), (armorPoints - damageReceiving / (2.0 + thougnessPoints / 4.0))]))]) / 25.0) * (1.0 - GetMin([totalEps, 20.0]) / 25.0) * (1.0 - GetMin([resistence, 5.0]) / 5.0);
+
+                            //Return the result
+                            return toReturn;
+                        }
+
+                        function GetMin(arrayOfNumbers) {
+                            //Return the minimum value in array
+                            return Math.min.apply(null, arrayOfNumbers);
+                        }
+
+                        function GetMax(arrayOfNumbers) {
+                            //Return the maximum value in array
+                            return Math.max.apply(null, arrayOfNumbers);
+                        }
+
+                        function RunReset() {
+                            //Reset the form
+                            document.getElementById("armorCalcDmgReceiving").value = "5.0";
+                            document.getElementById("armorCalcPlus50percent").checked = false;
+                            document.getElementById("armorCalcDmgReceivingType").selectedIndex = 0;
+                            document.getElementById("armorCalcArmorPoints").value = "20.0";
+                            document.getElementById("armorCalcThougnessPoints").value = "12.0";
+                            document.getElementById("armorCalcHelmetEnchant").selectedIndex = 0;
+                            document.getElementById("armorCalcChestplateEnchant").selectedIndex = 0;
+                            document.getElementById("armorCalcLeggingsEnchant").selectedIndex = 0;
+                            document.getElementById("armorCalcBootsEnchant").selectedIndex = 0;
+                            document.getElementById("resultReceiving").innerText = "0.0";
+                            document.getElementById("resultReceived").innerText = "0.0";
+                            document.getElementById("resultReceivedPercent").innerText = "0%";
+                        }
+
+                        function PickArmorTypeSetInfo(element) {
+                            //Fill the information...
+                            if (element.selectedIndex == 1) {   //<-- Sem
+                                document.getElementById("armorCalcArmorPoints").value = "0.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "0.0";
+                                document.getElementById("armorCalcHelmetEnchant").selectedIndex = 0;
+                                document.getElementById("armorCalcChestplateEnchant").selectedIndex = 0;
+                                document.getElementById("armorCalcLeggingsEnchant").selectedIndex = 0;
+                                document.getElementById("armorCalcBootsEnchant").selectedIndex = 0;
+                            }
+                            if (element.selectedIndex == 2) {   //<-- Couro
+                                document.getElementById("armorCalcArmorPoints").value = "7.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "0.0";
+                            }
+                            if (element.selectedIndex == 3) {   //<-- Ouro
+                                document.getElementById("armorCalcArmorPoints").value = "11.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "0.0";
+                            }
+                            if (element.selectedIndex == 4) {   //<-- Malha
+                                document.getElementById("armorCalcArmorPoints").value = "12.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "0.0";
+                            }
+                            if (element.selectedIndex == 5) {   //<-- Ferro
+                                document.getElementById("armorCalcArmorPoints").value = "15.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "0.0";
+                            }
+                            if (element.selectedIndex == 6) {   //<-- Diamante
+                                document.getElementById("armorCalcArmorPoints").value = "20.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "8.0";
+                            }
+                            if (element.selectedIndex == 7) {   //<-- Netherita
+                                document.getElementById("armorCalcArmorPoints").value = "20.0";
+                                document.getElementById("armorCalcThougnessPoints").value = "12.0";
+                            }
+
+                            //Reset to default value
+                            element.selectedIndex = 0;
+                        }
+
+                        function PickMobInfo(element) {
+                            //Fill the information...
+                            if (element.selectedIndex == 1) {   //<-- Zumbi
+                                document.getElementById("armorCalcDmgReceiving").value = "3.5";
+                                document.getElementById("armorCalcDmgReceivingType").selectedIndex = 0;
+                            }
+                            if (element.selectedIndex == 2) {   //<-- Aranha
+                                document.getElementById("armorCalcDmgReceiving").value = "4.0";
+                                document.getElementById("armorCalcDmgReceivingType").selectedIndex = 0;
+                            }
+                            if (element.selectedIndex == 3) {   //<-- Estrangulador Mutante
+                                document.getElementById("armorCalcDmgReceiving").value = "12.0";
+                                document.getElementById("armorCalcDmgReceivingType").selectedIndex = 0;
+                            }
+                            if (element.selectedIndex == 4) {   //<-- Saqueador Assimilado
+                                document.getElementById("armorCalcDmgReceiving").value = "7.3";
+                                document.getElementById("armorCalcDmgReceivingType").selectedIndex = 1;
+                            }
+                            if (element.selectedIndex == 5) {   //<-- Mutante Assimilado
+                                document.getElementById("armorCalcDmgReceiving").value = "12.0";
+                                document.getElementById("armorCalcDmgReceivingType").selectedIndex = 0;
+                            }
+                            if (element.selectedIndex == 6) {   //<-- Lamentador Assimilado
+                                document.getElementById("armorCalcDmgReceiving").value = "25.0";
+                                document.getElementById("armorCalcDmgReceivingType").selectedIndex = 0;
+                            }
+
+                            //Reset to default value
+                            element.selectedIndex = 0;
+                        }
+                    </script>
+
+                </doc.topic>
+                <!-- #endregion -->
+
                 <!-- #region Elementos Adicionados: Machados Retrabalhados -->
                 <doc.topic topicid="2_21">
                     <doc.topictitle>Elementos Adicionados: Machados Retrabalhados</doc.topictitle>
@@ -1641,6 +2030,10 @@ B = rnd()
                     Entidades como Mobs hostís, pacíficos ou objetos interativos agora podem exibir suas barras de saúde acima deles. Somente os Mobs que não tiverem vida cheia exibirão a barra de saúde. Além disso, as barras de vida só
                     aparecem para Mobs a no máximo 24 blocos de distância de você.
                     <doc.image src="DocumentationFiles/images/71.png"></doc.image>
+                    As barras de vida acima não aparecem para Jogadores, Cachorros Treinados e algumas criaturas específicas por questões de Design, entretanto, há um outro mostrador de vida que é exibido no canto Superior Esquerdo da tela
+                    e aparece quando você olha para qualquer criatura a uma distância de até 60 blocos de distância.
+                    <doc.image src="DocumentationFiles/images/71a.png"></doc.image>
+                    Esse mostrador exibe também a quantidade de vida que a criatura está perdendo ou curando atualmente.
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -2203,8 +2596,8 @@ B = rnd()
                     <br>
                     <br>
                     Algumas armas agora possuem combos, como as espadas e é possível usar duas ao mesmo tempo, também como exemplo, as espadas. Os ataques de dano em área podem ser feitos por Espadas e Machados, porém, agora há uma redução
-                    de dano com base na quantidade de inimigos atingidos, com uma redução de dano máxima de 75%. Agora, as armas não vão mais destruir blocos de grama ou folhagem, ao invés de acertar os alvos. Por fim, a Repulsão que você
-                    exerce nos inimigos, com ataques rapidos, é reduzida.
+                    de dano com base na quantidade de inimigos atingidos, com uma redução de dano máxima de 45%. Agora, as armas não vão mais destruir blocos de grama ou folhagem, ao invés de acertar os alvos. Por fim, a Repulsão
+                    que você exerce nos inimigos, com ataques rapidos, é reduzida.
                     <doc.image src="DocumentationFiles/images/150.gif"></doc.image>
 
                 </doc.topic>
@@ -2980,7 +3373,7 @@ B = rnd()
                     poderá fazer isso através do servidor do Discord do The Last Days. Basta clicar no ícone do Discord, que está no Launcher.
                     <br>
                     <br>
-                    Com o novo serviço de Skins, você poderá enviar Skins para seu personagem, bem como escolher o modelo como sendo da Alex (braços mais finos) ou do Steve (braços normais). Você também pode definir
+                    Com o novo serviço de Skins, você poderá enviar Skins para seu personagem, bem como escolher o modelo como sendo da Alex (braços mais finos e seios) ou do Steve (braços normais). Você também pode definir
                     sua Skin de Elytra e Capa, separadamente.
 
                 </doc.topic>
@@ -3331,7 +3724,6 @@ B = rnd()
                     Os mobs abaixo foram removidos, para maior adequação ao tema do modpack. No entando, a maioria dos drops destes mobs foram re-alocados para outros, e alguns poucos drops agora são obtíveis de outras maneiras, como
                     Crafting e/ou Loot proveniente de exploração.
                     <doc.list>
-                        <doc.listr>Cavalo Esqueleto</doc.listr>
                         <doc.listr>Lavagante</doc.listr>
                         <doc.listr>Enderman</doc.listr>
                         <doc.listr>Piglin</doc.listr>
@@ -3453,9 +3845,9 @@ B = rnd()
                 <doc.topic topicid="5_6">
                     <doc.topictitle>Outros: Gerenciamento Próprio de Spawn de Alguns Mobs</doc.topictitle>
 
-                    O Modpack possui um gerencimento próprio do spawn de todos os monstros hostís que nascem naturalmente pelo mundo, com excessão de Saqueadores, Bruxas, Vingadores, Invocadores, Afogados e Zumbis-Múmias. Todos os outros
-                    monstros hostís que não os anteriormente mencionados, são spawnados e gerenciados pelo próprio Modpack. Isso foi feito para que o balanceamento seja mais fácil e possível. Tenha em mente que todas as criaturas pacíficas
-                    ainda são gereciadas e spawnadas pelo sistema Vanilla.
+                    O Modpack possui um gerenciamento próprio do Spawn de todas as criaturas que nascem naturalmente pelo mundo, hostís ou não. Todas as criaturas são geradas pelo sistema de Spawn do Minecraft Vanilla, porém, o Modpack tem
+                    acesso a todas as regras de spawn e as modifica quando necessário. Isso foi feito para que o balanceamento seja mais fácil e possível, dessa forma é possível controlar quais criaturas spawnam, em que taxa spawnam, etc.
+                    Isso se aplica tanto para a geração natural, quanto para a geração em Estruturas, com exceção dos Vilarejos, que só geram Aldeões uma vez na geração de mundo.
 
                 </doc.topic>
                 <!-- #endregion -->
@@ -3543,7 +3935,7 @@ B = rnd()
                                 Minecraft Wiki
                             </div>
                             <div style="margin-top: 8px; width: auto; display: flex; justify-content: center;">
-                                <a href="https://minecraft.wiki/" target="_blank">
+                                <a href="https://minecraft.wiki/">
                                     <div style="background-color: #679bdb; border-radius: 8px; padding: 8px; cursor: hand; color: #f1f1f1;">EN</div>
                                 </a>
                             </div>
