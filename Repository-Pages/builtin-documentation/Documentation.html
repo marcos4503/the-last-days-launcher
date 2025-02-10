@@ -350,8 +350,8 @@
 
                     <doc.topicsubtitle>Acertos Críticos</doc.topicsubtitle>
                     Agora, não é mais possível causar Acertos Críticos enquanto se está em queda (ou pulando) durante o Combate. Agora, cada arma possui uma Chance de Crítico fixa e a maioria possui uma taxa de Acertos Críticos fixada
-                    em 12%. Portanto, agora para causar Acertos Críticos, é só continuar atacando e eles serão causados aleatoriamente. Há também o benefício de gastar menos nutrição, já que não será mais necessário ficar pulando a todo
-                    momento durante o combate.
+                    em 5%. Portanto, agora para causar Acertos Críticos, é só continuar atacando e eles serão causados aleatoriamente. Há também o benefício de gastar menos nutrição, já que não será mais necessário ficar pulando a todo
+                    momento durante o combate. Caso você possua o efeito de "Sorte", a chance de ACerto Crítico base da sua arma é aumentada em +5%.
 
                     <doc.topicsubtitle>Processamento de Minérios</doc.topicsubtitle>
                     Agora, o Alto Forno não pode mais ser usado. Além disso, as Fornalhas levam 5x mais tempo para processar cada Minério Bruto coletado por você. Em contra partida, há um novo bloco chamado "Peneira Trommel" que é capaz de
@@ -2762,19 +2762,20 @@ B = rnd()
                     novas Armas Corpo a Corpo, cada uma com suas características próprias e animações de ataque únicas! Elas só possuem as variantes de Ferro, Ouro, Diamante e Netherita, e possuem a mesma durabilidade das armas Vanilla. Por
                     fim, todas as novas Armas podem ser Diagramadas com os mesmos Diagramas aplicáveis em Armas Vanilla.
                     <doc.image src="DocumentationFiles/images/165.png"></doc.image>
-                    As Espadas, Machados e Tridentes Vanilla funcionam com Armas equilibradas, enquanto as 6 novas Armas focam em uma característica específica, cada uma. Veja a tabela das Armas, abaixo, para informações e comparativo...
+                    As Espadas, Machados e Tridentes Vanilla funcionam com Armas equilibradas, enquanto as 7 novas Armas focam em uma característica específica, cada uma. Veja a tabela das Armas, abaixo, para informações e comparativo...
                     <doc.table>
                         <doc.tablecw>20%=>auto=>auto=>auto=>auto=>auto=>auto</doc.tablecw>
-                        <doc.tablec>Arma=>Dano Por Golpe=>Dano Por Segundo=>Cadência=>Usável Com Escudo (ou nas duas mãos ao mesmo tempo)=>Alcance de Ataque=>Chance de Crítico</doc.tablec>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_1.png"></doc.icon> Espada=>6 ~ 8=>9.6 ~ 12.8=>1.6 ataques p. seg.=>Sim=>2.5 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_2.png"></doc.icon> Katana=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>2.9 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_3.png"></doc.icon> Machado=>9 ~ 10=>9 ~ 10=>1 ataques p. seg.=>Sim=>2.5 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_4.png"></doc.icon> Machado G.p.C.=>8 ~ 10=>8 ~ 10=>1 ataques p. seg.=>Não=>3.5 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_5a.png"></doc.icon> Tridente=>9 ~ 9=>10 ~ 10=>1.1 ataques p. seg.=>Sim=>2.75 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_5.png"></doc.icon> Sai=>4 ~ 6=>14 ~ 21=>3.5 ataques p. seg.=>Sim=>1.8 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_6.png"></doc.icon> Lança=>4.7 ~ 6.7=>7.5 ~ 10.7=>1.6 ataques p. seg.=>Sim=>3.1 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_7.png"></doc.icon> Lâmina Dupla=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>3 blocos=>12%</doc.tabler>
-                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_8.png"></doc.icon> Glaive=>3.7 ~ 5.7=>7.4 ~ 11.4=>2 ataques p. seg.=>Não=>3.25 blocos=>12%</doc.tabler>
+                        <doc.tablec>Arma=>Dano Por Golpe=>Dano Por Segundo=>Cadência=>Usável Com Escudo=>Usável Em Ambas Mãos=>Alcance de Ataque=>Chance de Crítico</doc.tablec>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_1.png"></doc.icon> Espada=>6 ~ 8=>9.6 ~ 12.8=>1.6 ataques p. seg.=>Sim=>Sim=>2.5 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_2.png"></doc.icon> Katana=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>Não=>2.9 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_3.png"></doc.icon> Machado=>9 ~ 10=>9 ~ 10=>1 ataques p. seg.=>Sim=>Não=>2.5 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_4.png"></doc.icon> Machado G.p.C.=>8 ~ 10=>8 ~ 10=>1 ataques p. seg.=>Não=>Não=>3.5 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_5a.png"></doc.icon> Tridente=>9 ~ 9=>10 ~ 10=>1.1 ataques p. seg.=>Sim=>Não=>2.75 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_5.png"></doc.icon> Sai=>4 ~ 6=>14 ~ 21=>3.5 ataques p. seg.=>Sim=>Sim=>1.8 blocos=>8%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_6.png"></doc.icon> Lança=>4.7 ~ 6.7=>7.5 ~ 10.7=>1.6 ataques p. seg.=>Sim=>Não=>3.1 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_7.png"></doc.icon> Lâmina Dupla=>4 ~ 6=>8 ~ 12=>2 ataques p. seg.=>Não=>Não=>3 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_8.png"></doc.icon> Glaive=>3.7 ~ 5.7=>7.4 ~ 11.4=>2 ataques p. seg.=>Não=>Não=>3.25 blocos=>5%</doc.tabler>
+                        <doc.tabler><doc.icon src="DocumentationFiles/images/165_9.png"></doc.icon> Faca=>3.5 ~ 5.5=>7 ~ 11=>2 ataques p. seg.=>Sim=>Sim=>2 blocos=>8%</doc.tabler>
                     </doc.table>
                     <doc.info>
                         Note que as informações de "Dano Por Golpe" e "Dano Por Segundo" representam os danos das variantes de Ferro até Netherita, das suas respectivas Armas, com exceção do Tridente, que não possui variações.
