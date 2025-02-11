@@ -366,6 +366,11 @@ key_key.irons_spellbooks.spell_quick_cast_12:key.keyboard.unknown
 key_key.irons_spellbooks.spell_quick_cast_13:key.keyboard.unknown
 key_key.irons_spellbooks.spell_quick_cast_14:key.keyboard.unknown
 key_key.irons_spellbooks.spell_quick_cast_15:key.keyboard.unknown
+key_key.toggleVisualItemContents:key.keyboard.unknown
+key_key.toggleSelectedItemTooltips:key.keyboard.unknown
+key_key.toggleCarriedItemTooltips:key.keyboard.unknown
+key_key.cycleLeft:key.keyboard.unknown
+key_key.cycleRight:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
